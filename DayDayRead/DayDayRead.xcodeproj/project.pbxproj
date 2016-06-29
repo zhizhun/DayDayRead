@@ -21,6 +21,29 @@
 		D60482361D23FA2200CFA284 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60482271D23FA2200CFA284 /* BookCell.xib */; };
 		D60482371D23FA2200CFA284 /* BookHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482291D23FA2200CFA284 /* BookHeaderView.m */; };
 		D60482381D23FA2200CFA284 /* SingletonBook.m in Sources */ = {isa = PBXBuildFile; fileRef = D604822B1D23FA2200CFA284 /* SingletonBook.m */; };
+		D60482671D23FD8000CFA284 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D604823C1D23FD8000CFA284 /* ListViewController.m */; };
+		D60482681D23FD8000CFA284 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D604823D1D23FD8000CFA284 /* ListViewController.xib */; };
+		D60482691D23FD8000CFA284 /* ListDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482401D23FD8000CFA284 /* ListDetailViewController.m */; };
+		D604826A1D23FD8000CFA284 /* ListDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60482411D23FD8000CFA284 /* ListDetailViewController.xib */; };
+		D604826B1D23FD8000CFA284 /* OneDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482431D23FD8000CFA284 /* OneDetailViewController.m */; };
+		D604826C1D23FD8000CFA284 /* OneDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60482441D23FD8000CFA284 /* OneDetailViewController.xib */; };
+		D604826D1D23FD8000CFA284 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482461D23FD8000CFA284 /* OneViewController.m */; };
+		D604826E1D23FD8000CFA284 /* ThrDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482481D23FD8000CFA284 /* ThrDetailViewController.m */; };
+		D604826F1D23FD8000CFA284 /* ThrDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60482491D23FD8000CFA284 /* ThrDetailViewController.xib */; };
+		D60482701D23FD8000CFA284 /* ThrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D604824B1D23FD8000CFA284 /* ThrViewController.m */; };
+		D60482711D23FD8000CFA284 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D604824D1D23FD8000CFA284 /* TwoViewController.m */; };
+		D60482721D23FD8000CFA284 /* Hot.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482501D23FD8000CFA284 /* Hot.m */; };
+		D60482731D23FD8000CFA284 /* HotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482521D23FD8000CFA284 /* HotCell.m */; };
+		D60482741D23FD8000CFA284 /* HotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60482531D23FD8000CFA284 /* HotCell.xib */; };
+		D60482751D23FD8000CFA284 /* SingletonList.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482551D23FD8000CFA284 /* SingletonList.m */; };
+		D60482761D23FD8000CFA284 /* EndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482581D23FD8000CFA284 /* EndViewController.m */; };
+		D60482771D23FD8000CFA284 /* HotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D604825A1D23FD8000CFA284 /* HotViewController.m */; };
+		D60482781D23FD8000CFA284 /* PotentialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D604825C1D23FD8000CFA284 /* PotentialViewController.m */; };
+		D60482791D23FD8000CFA284 /* RemainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D604825E1D23FD8000CFA284 /* RemainViewController.m */; };
+		D604827A1D23FD8000CFA284 /* WEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482601D23FD8000CFA284 /* WEndViewController.m */; };
+		D604827B1D23FD8000CFA284 /* WHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482621D23FD8000CFA284 /* WHotViewController.m */; };
+		D604827C1D23FD8000CFA284 /* WPotentialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482641D23FD8000CFA284 /* WPotentialViewController.m */; };
+		D604827D1D23FD8000CFA284 /* WRemainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482661D23FD8000CFA284 /* WRemainViewController.m */; };
 		D60E335D1D1CC18C005CF58F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D60E335C1D1CC18C005CF58F /* main.m */; };
 		D60E33631D1CC18C005CF58F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60E33621D1CC18C005CF58F /* ViewController.m */; };
 		D60E33661D1CC18C005CF58F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60E33641D1CC18C005CF58F /* Main.storyboard */; };
@@ -161,6 +184,47 @@
 		D60482291D23FA2200CFA284 /* BookHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookHeaderView.m; sourceTree = "<group>"; };
 		D604822A1D23FA2200CFA284 /* SingletonBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonBook.h; sourceTree = "<group>"; };
 		D604822B1D23FA2200CFA284 /* SingletonBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonBook.m; sourceTree = "<group>"; };
+		D604823B1D23FD8000CFA284 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		D604823C1D23FD8000CFA284 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		D604823D1D23FD8000CFA284 /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		D604823F1D23FD8000CFA284 /* ListDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListDetailViewController.h; sourceTree = "<group>"; };
+		D60482401D23FD8000CFA284 /* ListDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListDetailViewController.m; sourceTree = "<group>"; };
+		D60482411D23FD8000CFA284 /* ListDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListDetailViewController.xib; sourceTree = "<group>"; };
+		D60482421D23FD8000CFA284 /* OneDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneDetailViewController.h; sourceTree = "<group>"; };
+		D60482431D23FD8000CFA284 /* OneDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneDetailViewController.m; sourceTree = "<group>"; };
+		D60482441D23FD8000CFA284 /* OneDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneDetailViewController.xib; sourceTree = "<group>"; };
+		D60482451D23FD8000CFA284 /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		D60482461D23FD8000CFA284 /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		D60482471D23FD8000CFA284 /* ThrDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThrDetailViewController.h; sourceTree = "<group>"; };
+		D60482481D23FD8000CFA284 /* ThrDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThrDetailViewController.m; sourceTree = "<group>"; };
+		D60482491D23FD8000CFA284 /* ThrDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThrDetailViewController.xib; sourceTree = "<group>"; };
+		D604824A1D23FD8000CFA284 /* ThrViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThrViewController.h; sourceTree = "<group>"; };
+		D604824B1D23FD8000CFA284 /* ThrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThrViewController.m; sourceTree = "<group>"; };
+		D604824C1D23FD8000CFA284 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		D604824D1D23FD8000CFA284 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		D604824F1D23FD8000CFA284 /* Hot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hot.h; sourceTree = "<group>"; };
+		D60482501D23FD8000CFA284 /* Hot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hot.m; sourceTree = "<group>"; };
+		D60482511D23FD8000CFA284 /* HotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotCell.h; sourceTree = "<group>"; };
+		D60482521D23FD8000CFA284 /* HotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotCell.m; sourceTree = "<group>"; };
+		D60482531D23FD8000CFA284 /* HotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotCell.xib; sourceTree = "<group>"; };
+		D60482541D23FD8000CFA284 /* SingletonList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonList.h; sourceTree = "<group>"; };
+		D60482551D23FD8000CFA284 /* SingletonList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonList.m; sourceTree = "<group>"; };
+		D60482571D23FD8000CFA284 /* EndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndViewController.h; sourceTree = "<group>"; };
+		D60482581D23FD8000CFA284 /* EndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndViewController.m; sourceTree = "<group>"; };
+		D60482591D23FD8000CFA284 /* HotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotViewController.h; sourceTree = "<group>"; };
+		D604825A1D23FD8000CFA284 /* HotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotViewController.m; sourceTree = "<group>"; };
+		D604825B1D23FD8000CFA284 /* PotentialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PotentialViewController.h; sourceTree = "<group>"; };
+		D604825C1D23FD8000CFA284 /* PotentialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PotentialViewController.m; sourceTree = "<group>"; };
+		D604825D1D23FD8000CFA284 /* RemainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemainViewController.h; sourceTree = "<group>"; };
+		D604825E1D23FD8000CFA284 /* RemainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemainViewController.m; sourceTree = "<group>"; };
+		D604825F1D23FD8000CFA284 /* WEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WEndViewController.h; sourceTree = "<group>"; };
+		D60482601D23FD8000CFA284 /* WEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WEndViewController.m; sourceTree = "<group>"; };
+		D60482611D23FD8000CFA284 /* WHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHotViewController.h; sourceTree = "<group>"; };
+		D60482621D23FD8000CFA284 /* WHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHotViewController.m; sourceTree = "<group>"; };
+		D60482631D23FD8000CFA284 /* WPotentialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPotentialViewController.h; sourceTree = "<group>"; };
+		D60482641D23FD8000CFA284 /* WPotentialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPotentialViewController.m; sourceTree = "<group>"; };
+		D60482651D23FD8000CFA284 /* WRemainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRemainViewController.h; sourceTree = "<group>"; };
+		D60482661D23FD8000CFA284 /* WRemainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRemainViewController.m; sourceTree = "<group>"; };
 		D60E33581D1CC18B005CF58F /* DayDayRead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayDayRead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60E335C1D1CC18C005CF58F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D60E33611D1CC18C005CF58F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -430,6 +494,86 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D60482391D23FD8000CFA284 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				D604823A1D23FD8000CFA284 /* Controller */,
+				D604823E1D23FD8000CFA284 /* ListView */,
+				D604824E1D23FD8000CFA284 /* Model */,
+				D60482561D23FD8000CFA284 /* View */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		D604823A1D23FD8000CFA284 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D604823B1D23FD8000CFA284 /* ListViewController.h */,
+				D604823C1D23FD8000CFA284 /* ListViewController.m */,
+				D604823D1D23FD8000CFA284 /* ListViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D604823E1D23FD8000CFA284 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				D604823F1D23FD8000CFA284 /* ListDetailViewController.h */,
+				D60482401D23FD8000CFA284 /* ListDetailViewController.m */,
+				D60482411D23FD8000CFA284 /* ListDetailViewController.xib */,
+				D60482421D23FD8000CFA284 /* OneDetailViewController.h */,
+				D60482431D23FD8000CFA284 /* OneDetailViewController.m */,
+				D60482441D23FD8000CFA284 /* OneDetailViewController.xib */,
+				D60482451D23FD8000CFA284 /* OneViewController.h */,
+				D60482461D23FD8000CFA284 /* OneViewController.m */,
+				D60482471D23FD8000CFA284 /* ThrDetailViewController.h */,
+				D60482481D23FD8000CFA284 /* ThrDetailViewController.m */,
+				D60482491D23FD8000CFA284 /* ThrDetailViewController.xib */,
+				D604824A1D23FD8000CFA284 /* ThrViewController.h */,
+				D604824B1D23FD8000CFA284 /* ThrViewController.m */,
+				D604824C1D23FD8000CFA284 /* TwoViewController.h */,
+				D604824D1D23FD8000CFA284 /* TwoViewController.m */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		D604824E1D23FD8000CFA284 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D604824F1D23FD8000CFA284 /* Hot.h */,
+				D60482501D23FD8000CFA284 /* Hot.m */,
+				D60482511D23FD8000CFA284 /* HotCell.h */,
+				D60482521D23FD8000CFA284 /* HotCell.m */,
+				D60482531D23FD8000CFA284 /* HotCell.xib */,
+				D60482541D23FD8000CFA284 /* SingletonList.h */,
+				D60482551D23FD8000CFA284 /* SingletonList.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D60482561D23FD8000CFA284 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D60482571D23FD8000CFA284 /* EndViewController.h */,
+				D60482581D23FD8000CFA284 /* EndViewController.m */,
+				D60482591D23FD8000CFA284 /* HotViewController.h */,
+				D604825A1D23FD8000CFA284 /* HotViewController.m */,
+				D604825B1D23FD8000CFA284 /* PotentialViewController.h */,
+				D604825C1D23FD8000CFA284 /* PotentialViewController.m */,
+				D604825D1D23FD8000CFA284 /* RemainViewController.h */,
+				D604825E1D23FD8000CFA284 /* RemainViewController.m */,
+				D604825F1D23FD8000CFA284 /* WEndViewController.h */,
+				D60482601D23FD8000CFA284 /* WEndViewController.m */,
+				D60482611D23FD8000CFA284 /* WHotViewController.h */,
+				D60482621D23FD8000CFA284 /* WHotViewController.m */,
+				D60482631D23FD8000CFA284 /* WPotentialViewController.h */,
+				D60482641D23FD8000CFA284 /* WPotentialViewController.m */,
+				D60482651D23FD8000CFA284 /* WRemainViewController.h */,
+				D60482661D23FD8000CFA284 /* WRemainViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D60E334F1D1CC18B005CF58F = {
 			isa = PBXGroup;
 			children = (
@@ -587,6 +731,7 @@
 		D60E34061D1CC6BF005CF58F /* Scences */ = {
 			isa = PBXGroup;
 			children = (
+				D60482391D23FD8000CFA284 /* List */,
 				D604820F1D23FA2200CFA284 /* Book */,
 				D6B284461D22BE2B000D81EC /* bookHelpe */,
 				D6B2843E1D22567D000D81EC /* Set */,
@@ -1088,6 +1233,7 @@
 				D6B1E4131D1E18DB004EAEB1 /* ComunityViewCell.xib in Resources */,
 				D637ACED1D23BC7200BB5900 /* DetailViewCell.xib in Resources */,
 				D6B284391D222691000D81EC /* hsm_icon_3@3x.png in Resources */,
+				D604826C1D23FD8000CFA284 /* OneDetailViewController.xib in Resources */,
 				D60E33F51D1CC4D0005CF58F /* Icon.png in Resources */,
 				D6B1E45C1D1EA816004EAEB1 /* ComicViewCell.xib in Resources */,
 				D60E33EA1D1CC4D0005CF58F /* Icon-72@2x.png in Resources */,
@@ -1106,12 +1252,16 @@
 				D60E33F21D1CC4D0005CF58F /* Icon-Small.png in Resources */,
 				D6B1E4441D1E653B004EAEB1 /* GameViewCell.xib in Resources */,
 				D653CA4C1D216248000E881A /* nav_menu_icon@2x.png in Resources */,
+				D60482741D23FD8000CFA284 /* HotCell.xib in Resources */,
 				D6B1E4A01D1EC512004EAEB1 /* MJRefresh.bundle in Resources */,
 				D6B1E4621D1EA9F4004EAEB1 /* bd_add_count@2x.png in Resources */,
+				D604826F1D23FD8000CFA284 /* ThrDetailViewController.xib in Resources */,
+				D604826A1D23FD8000CFA284 /* ListDetailViewController.xib in Resources */,
 				D6B284511D22BF70000D81EC /* BookHelpeViewCell.xib in Resources */,
 				D60E33F41D1CC4D0005CF58F /* Icon-Small@3x.png in Resources */,
 				D6B284531D22CCA0000D81EC /* d_comment@3x.png in Resources */,
 				D60482361D23FA2200CFA284 /* BookCell.xib in Resources */,
+				D60482681D23FD8000CFA284 /* ListViewController.xib in Resources */,
 				D6B284351D221CE4000D81EC /* hsm_default_avatar@3x.png in Resources */,
 				D60E33F81D1CC4D0005CF58F /* icon01.png in Resources */,
 				D60E33F71D1CC4D0005CF58F /* iTunesArtwork@2x.png in Resources */,
@@ -1202,18 +1352,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6B1E49F1D1EC512004EAEB1 /* MJRefreshStateHeader.m in Sources */,
+				D60482771D23FD8000CFA284 /* HotViewController.m in Sources */,
 				D6B1E49B1D1EC512004EAEB1 /* MJRefreshBackNormalFooter.m in Sources */,
+				D60482671D23FD8000CFA284 /* ListViewController.m in Sources */,
+				D604827D1D23FD8000CFA284 /* WRemainViewController.m in Sources */,
+				D604826D1D23FD8000CFA284 /* OneViewController.m in Sources */,
+				D60482761D23FD8000CFA284 /* EndViewController.m in Sources */,
 				D637ACF01D23BEA300BB5900 /* Detail.m in Sources */,
 				D6B1E4951D1EC512004EAEB1 /* MJRefreshFooter.m in Sources */,
 				D6B1E4571D1EA6A3004EAEB1 /* Comic.m in Sources */,
 				D6B1E49C1D1EC512004EAEB1 /* MJRefreshBackStateFooter.m in Sources */,
 				D6C779E61D1FDB0D00A07CFB /* SearchViewController.m in Sources */,
 				D653CA441D20D4C9000E881A /* ResultsViewCell.m in Sources */,
+				D604827A1D23FD8000CFA284 /* WEndViewController.m in Sources */,
+				D604827C1D23FD8000CFA284 /* WPotentialViewController.m in Sources */,
 				D6B1E43C1D1E5B04004EAEB1 /* Game.m in Sources */,
 				D60E34071D1CC6BF005CF58F /* AppDelegate.m in Sources */,
 				D653CA711D21778A000E881A /* LeftViewController.m in Sources */,
 				D6B1E4A11D1EC512004EAEB1 /* MJRefreshConst.m in Sources */,
 				D60482381D23FA2200CFA284 /* SingletonBook.m in Sources */,
+				D60482711D23FD8000CFA284 /* TwoViewController.m in Sources */,
 				D6B1E4A31D1EC512004EAEB1 /* UIScrollView+MJExtension.m in Sources */,
 				D6B284501D22BF70000D81EC /* BookHelpeViewCell.m in Sources */,
 				D6B1E4351D1E5938004EAEB1 /* README.md in Sources */,
@@ -1221,6 +1379,7 @@
 				D6B1E43F1D1E5EBE004EAEB1 /* GameViewController.m in Sources */,
 				D653CA6A1D217581000E881A /* RECommonFunctions.m in Sources */,
 				D6B1E4971D1EC512004EAEB1 /* MJRefreshAutoGifFooter.m in Sources */,
+				D604826E1D23FD8000CFA284 /* ThrDetailViewController.m in Sources */,
 				D653CA6C1D217581000E881A /* UIViewController+RESideMenu.m in Sources */,
 				D637ACEC1D23BC7200BB5900 /* DetailViewCell.m in Sources */,
 				D69B34D41D235DE100BD3F0A /* BookHelpe.m in Sources */,
@@ -1232,9 +1391,13 @@
 				D6B1E4121D1E18DB004EAEB1 /* ComunityViewCell.m in Sources */,
 				D6B2844C1D22BE44000D81EC /* BookHelpeViewController.m in Sources */,
 				D6B1E4A51D1EC512004EAEB1 /* UIView+MJExtension.m in Sources */,
+				D60482731D23FD8000CFA284 /* HotCell.m in Sources */,
+				D604826B1D23FD8000CFA284 /* OneDetailViewController.m in Sources */,
 				D653CA3D1D20D486000E881A /* ResultsViewController.m in Sources */,
 				D6B1E4921D1EC512004EAEB1 /* MJRefreshAutoFooter.m in Sources */,
 				D6B1E4431D1E653B004EAEB1 /* GameViewCell.m in Sources */,
+				D60482751D23FD8000CFA284 /* SingletonList.m in Sources */,
+				D60482781D23FD8000CFA284 /* PotentialViewController.m in Sources */,
 				D6B1E49A1D1EC512004EAEB1 /* MJRefreshBackGifFooter.m in Sources */,
 				D653CA481D20D68C000E881A /* Result.m in Sources */,
 				D6B1E4961D1EC512004EAEB1 /* MJRefreshHeader.m in Sources */,
@@ -1255,14 +1418,19 @@
 				D6B1E4341D1E5938004EAEB1 /* README.md in Sources */,
 				D653CA6B1D217581000E881A /* RESideMenu.m in Sources */,
 				D6B1E4331D1E5938004EAEB1 /* README.md in Sources */,
+				D60482701D23FD8000CFA284 /* ThrViewController.m in Sources */,
 				D6B1E44A1D1E7D6D004EAEB1 /* PlayViewController.m in Sources */,
+				D60482791D23FD8000CFA284 /* RemainViewController.m in Sources */,
 				D6B284451D2256CC000D81EC /* SetViewController.m in Sources */,
 				D6B1E49E1D1EC512004EAEB1 /* MJRefreshNormalHeader.m in Sources */,
 				D60482341D23FA2200CFA284 /* BookAllCell.m in Sources */,
 				D604822C1D23FA2200CFA284 /* BookOneViewController.m in Sources */,
 				D604822D1D23FA2200CFA284 /* BookThrViewController.m in Sources */,
+				D60482721D23FD8000CFA284 /* Hot.m in Sources */,
+				D60482691D23FD8000CFA284 /* ListDetailViewController.m in Sources */,
 				D6B1E4A41D1EC512004EAEB1 /* UIScrollView+MJRefresh.m in Sources */,
 				D6B1E45B1D1EA816004EAEB1 /* ComicViewCell.m in Sources */,
+				D604827B1D23FD8000CFA284 /* WHotViewController.m in Sources */,
 				D6B1E4931D1EC512004EAEB1 /* MJRefreshBackFooter.m in Sources */,
 				D6B284421D2256B4000D81EC /* LoginViewController.m in Sources */,
 				D65F49841D1D32A20023A740 /* RootViewController.m in Sources */,

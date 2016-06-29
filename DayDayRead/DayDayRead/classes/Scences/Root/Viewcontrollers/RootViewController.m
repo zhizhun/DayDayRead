@@ -15,7 +15,7 @@
 #import "SearchViewController.h"
 #import "BookHelpeViewController.h"
 #import "BookAllViewController.h"
-
+#import "ListViewController.h"
 #define kWith self.view.frame.size.width
 #define kHeight 50
 #define kSHeight self.view.frame.size.height
@@ -304,7 +304,9 @@ int isNum = 1;
         }
     }
     if (isNum == 3) {
-        if (indexPath.row == 1) {
+        if (indexPath.row == 0) {
+            [self.navigationController pushViewController:[[ListViewController alloc] init] animated:YES];
+        } else if (indexPath.row == 1) {
             [self.navigationController pushViewController:[[BookAllViewController alloc] init] animated:YES];
         }
         if (indexPath.row == 4) {
