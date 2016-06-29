@@ -16,9 +16,13 @@
 #import "BookHelpeViewController.h"
 #import "ClassifyViewController.h"
 #import "BookAllViewController.h"
+<<<<<<< HEAD
 #import "DynamicViewController.h"
 #import "ComprehensiveViewController.h"
 
+=======
+#import "ListViewController.h"
+>>>>>>> bd63ed78dcbda7615d1739098f2cf9f772a0d7b1
 #define kWith self.view.frame.size.width
 #define kHeight 50
 #define kSHeight self.view.frame.size.height
@@ -313,6 +317,9 @@ int isNum = 1;
         }
     }
     if (isNum == 3) {
+        if (indexPath.row == 0) {
+            [self.navigationController pushViewController:[[ListViewController alloc] init] animated:YES];
+        }
         if (indexPath.row == 2) {
             [self.navigationController pushViewController:[[ClassifyViewController alloc] init] animated:YES];
         }
