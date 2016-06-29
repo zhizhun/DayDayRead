@@ -45,6 +45,24 @@
 		D637ACEC1D23BC7200BB5900 /* DetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D637ACEA1D23BC7200BB5900 /* DetailViewCell.m */; };
 		D637ACED1D23BC7200BB5900 /* DetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D637ACEB1D23BC7200BB5900 /* DetailViewCell.xib */; };
 		D637ACF01D23BEA300BB5900 /* Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = D637ACEF1D23BEA300BB5900 /* Detail.m */; };
+		D6399A0D1D23F7B80006CD28 /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A0C1D23F7B80006CD28 /* NSString+URL.m */; };
+		D6399A0F1D23F7E50006CD28 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6399A0E1D23F7E50006CD28 /* 1.jpg */; };
+		D6399A141D23FA020006CD28 /* CommonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A131D23FA020006CD28 /* CommonModel.m */; };
+		D6399A1D1D23FA170006CD28 /* ClassifyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A171D23FA170006CD28 /* ClassifyCell.m */; };
+		D6399A1E1D23FA170006CD28 /* CommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A191D23FA170006CD28 /* CommonCell.m */; };
+		D6399A1F1D23FA170006CD28 /* CommonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6399A1A1D23FA170006CD28 /* CommonCell.xib */; };
+		D6399A201D23FA170006CD28 /* HeadReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A1C1D23FA170006CD28 /* HeadReusableView.m */; };
+		D6399A341D23FA680006CD28 /* ClassifyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A231D23FA680006CD28 /* ClassifyDetailViewController.m */; };
+		D6399A351D23FA680006CD28 /* ClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A251D23FA680006CD28 /* ClassifyViewController.m */; };
+		D6399A361D23FA680006CD28 /* BurglarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A291D23FA680006CD28 /* BurglarViewController.m */; };
+		D6399A371D23FA680006CD28 /* NewBookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A2B1D23FA680006CD28 /* NewBookTableViewController.m */; };
+		D6399A381D23FA680006CD28 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A2D1D23FA680006CD28 /* NSArray+log.m */; };
+		D6399A391D23FA680006CD28 /* ReputablyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A2F1D23FA680006CD28 /* ReputablyViewController.m */; };
+		D6399A3A1D23FA680006CD28 /* SingleList.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A311D23FA680006CD28 /* SingleList.m */; };
+		D6399A3B1D23FA680006CD28 /* HotTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A331D23FA680006CD28 /* HotTableViewController.m */; };
+		D6399A441D23FAFB0006CD28 /* BookStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A3F1D23FAFB0006CD28 /* BookStoreViewController.m */; };
+		D6399A451D23FAFB0006CD28 /* BookStoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6399A401D23FAFB0006CD28 /* BookStoreViewController.xib */; };
+		D6399A461D23FAFB0006CD28 /* BookStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A431D23FAFB0006CD28 /* BookStore.m */; };
 		D653CA3D1D20D486000E881A /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D653CA3C1D20D486000E881A /* ResultsViewController.m */; };
 		D653CA441D20D4C9000E881A /* ResultsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D653CA421D20D4C9000E881A /* ResultsViewCell.m */; };
 		D653CA451D20D4C9000E881A /* ResultsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D653CA431D20D4C9000E881A /* ResultsViewCell.xib */; };
@@ -170,6 +188,39 @@
 		D637ACEB1D23BC7200BB5900 /* DetailViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewCell.xib; sourceTree = "<group>"; };
 		D637ACEE1D23BEA300BB5900 /* Detail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail.h; sourceTree = "<group>"; };
 		D637ACEF1D23BEA300BB5900 /* Detail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail.m; sourceTree = "<group>"; };
+		D6399A0B1D23F7B80006CD28 /* NSString+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
+		D6399A0C1D23F7B80006CD28 /* NSString+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
+		D6399A0E1D23F7E50006CD28 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		D6399A121D23FA020006CD28 /* CommonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonModel.h; sourceTree = "<group>"; };
+		D6399A131D23FA020006CD28 /* CommonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonModel.m; sourceTree = "<group>"; };
+		D6399A161D23FA170006CD28 /* ClassifyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifyCell.h; sourceTree = "<group>"; };
+		D6399A171D23FA170006CD28 /* ClassifyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassifyCell.m; sourceTree = "<group>"; };
+		D6399A181D23FA170006CD28 /* CommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonCell.h; sourceTree = "<group>"; };
+		D6399A191D23FA170006CD28 /* CommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonCell.m; sourceTree = "<group>"; };
+		D6399A1A1D23FA170006CD28 /* CommonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonCell.xib; sourceTree = "<group>"; };
+		D6399A1B1D23FA170006CD28 /* HeadReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadReusableView.h; sourceTree = "<group>"; };
+		D6399A1C1D23FA170006CD28 /* HeadReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadReusableView.m; sourceTree = "<group>"; };
+		D6399A221D23FA680006CD28 /* ClassifyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifyDetailViewController.h; sourceTree = "<group>"; };
+		D6399A231D23FA680006CD28 /* ClassifyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassifyDetailViewController.m; sourceTree = "<group>"; };
+		D6399A241D23FA680006CD28 /* ClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifyViewController.h; sourceTree = "<group>"; };
+		D6399A251D23FA680006CD28 /* ClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassifyViewController.m; sourceTree = "<group>"; };
+		D6399A281D23FA680006CD28 /* BurglarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurglarViewController.h; sourceTree = "<group>"; };
+		D6399A291D23FA680006CD28 /* BurglarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BurglarViewController.m; sourceTree = "<group>"; };
+		D6399A2A1D23FA680006CD28 /* NewBookTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewBookTableViewController.h; sourceTree = "<group>"; };
+		D6399A2B1D23FA680006CD28 /* NewBookTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBookTableViewController.m; sourceTree = "<group>"; };
+		D6399A2C1D23FA680006CD28 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		D6399A2D1D23FA680006CD28 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		D6399A2E1D23FA680006CD28 /* ReputablyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReputablyViewController.h; sourceTree = "<group>"; };
+		D6399A2F1D23FA680006CD28 /* ReputablyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReputablyViewController.m; sourceTree = "<group>"; };
+		D6399A301D23FA680006CD28 /* SingleList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleList.h; sourceTree = "<group>"; };
+		D6399A311D23FA680006CD28 /* SingleList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleList.m; sourceTree = "<group>"; };
+		D6399A321D23FA680006CD28 /* HotTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotTableViewController.h; sourceTree = "<group>"; };
+		D6399A331D23FA680006CD28 /* HotTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotTableViewController.m; sourceTree = "<group>"; };
+		D6399A3E1D23FAFB0006CD28 /* BookStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookStoreViewController.h; sourceTree = "<group>"; };
+		D6399A3F1D23FAFB0006CD28 /* BookStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookStoreViewController.m; sourceTree = "<group>"; };
+		D6399A401D23FAFB0006CD28 /* BookStoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookStoreViewController.xib; sourceTree = "<group>"; };
+		D6399A421D23FAFB0006CD28 /* BookStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookStore.h; sourceTree = "<group>"; };
+		D6399A431D23FAFB0006CD28 /* BookStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookStore.m; sourceTree = "<group>"; };
 		D653CA371D20B43C000E881A /* DB_COLOR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DB_COLOR.h; sourceTree = "<group>"; };
 		D653CA3B1D20D486000E881A /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
 		D653CA3C1D20D486000E881A /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
@@ -430,6 +481,7 @@
 		D60E33DF1D1CC4D0005CF58F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D6399A0E1D23F7E50006CD28 /* 1.jpg */,
 				D60E33E01D1CC4D0005CF58F /* icon01.png */,
 				D60E33E11D1CC4D0005CF58F /* ip4@2x.png */,
 				D60E33E21D1CC4D0005CF58F /* ip5@2x.png */,
@@ -468,6 +520,8 @@
 			children = (
 				D6B1E4451D1E6F70004EAEB1 /* CALayer+XibBorderColor.h */,
 				D6B1E4461D1E6F70004EAEB1 /* CALayer+XibBorderColor.m */,
+				D6399A0B1D23F7B80006CD28 /* NSString+URL.h */,
+				D6399A0C1D23F7B80006CD28 /* NSString+URL.m */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -487,6 +541,7 @@
 		D60E34061D1CC6BF005CF58F /* Scences */ = {
 			isa = PBXGroup;
 			children = (
+				D6399A101D23F9C50006CD28 /* Classification */,
 				D6B284461D22BE2B000D81EC /* bookHelpe */,
 				D6B2843E1D22567D000D81EC /* Set */,
 				D6B2843A1D225677000D81EC /* Login */,
@@ -509,6 +564,109 @@
 				D637ACE61D23B31600BB5900 /* Tool.m */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		D6399A101D23F9C50006CD28 /* Classification */ = {
+			isa = PBXGroup;
+			children = (
+				D6399A211D23FA680006CD28 /* Controller */,
+				D6399A151D23FA170006CD28 /* View */,
+				D6399A111D23FA020006CD28 /* Model */,
+			);
+			path = Classification;
+			sourceTree = "<group>";
+		};
+		D6399A111D23FA020006CD28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6399A121D23FA020006CD28 /* CommonModel.h */,
+				D6399A131D23FA020006CD28 /* CommonModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6399A151D23FA170006CD28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6399A161D23FA170006CD28 /* ClassifyCell.h */,
+				D6399A171D23FA170006CD28 /* ClassifyCell.m */,
+				D6399A181D23FA170006CD28 /* CommonCell.h */,
+				D6399A191D23FA170006CD28 /* CommonCell.m */,
+				D6399A1A1D23FA170006CD28 /* CommonCell.xib */,
+				D6399A1B1D23FA170006CD28 /* HeadReusableView.h */,
+				D6399A1C1D23FA170006CD28 /* HeadReusableView.m */,
+			);
+			name = View;
+			path = Model/View;
+			sourceTree = "<group>";
+		};
+		D6399A211D23FA680006CD28 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6399A221D23FA680006CD28 /* ClassifyDetailViewController.h */,
+				D6399A231D23FA680006CD28 /* ClassifyDetailViewController.m */,
+				D6399A241D23FA680006CD28 /* ClassifyViewController.h */,
+				D6399A251D23FA680006CD28 /* ClassifyViewController.m */,
+				D6399A261D23FA680006CD28 /* ItemDetail */,
+			);
+			name = Controller;
+			path = Model/Controller;
+			sourceTree = "<group>";
+		};
+		D6399A261D23FA680006CD28 /* ItemDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D6399A271D23FA680006CD28 /* Controller */,
+				D6399A321D23FA680006CD28 /* HotTableViewController.h */,
+				D6399A331D23FA680006CD28 /* HotTableViewController.m */,
+				D6399A3C1D23FAFB0006CD28 /* BookStrore */,
+			);
+			path = ItemDetail;
+			sourceTree = "<group>";
+		};
+		D6399A271D23FA680006CD28 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6399A281D23FA680006CD28 /* BurglarViewController.h */,
+				D6399A291D23FA680006CD28 /* BurglarViewController.m */,
+				D6399A2A1D23FA680006CD28 /* NewBookTableViewController.h */,
+				D6399A2B1D23FA680006CD28 /* NewBookTableViewController.m */,
+				D6399A2C1D23FA680006CD28 /* NSArray+log.h */,
+				D6399A2D1D23FA680006CD28 /* NSArray+log.m */,
+				D6399A2E1D23FA680006CD28 /* ReputablyViewController.h */,
+				D6399A2F1D23FA680006CD28 /* ReputablyViewController.m */,
+				D6399A301D23FA680006CD28 /* SingleList.h */,
+				D6399A311D23FA680006CD28 /* SingleList.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D6399A3C1D23FAFB0006CD28 /* BookStrore */ = {
+			isa = PBXGroup;
+			children = (
+				D6399A3D1D23FAFB0006CD28 /* Controller */,
+				D6399A411D23FAFB0006CD28 /* Model */,
+			);
+			path = BookStrore;
+			sourceTree = "<group>";
+		};
+		D6399A3D1D23FAFB0006CD28 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6399A3E1D23FAFB0006CD28 /* BookStoreViewController.h */,
+				D6399A3F1D23FAFB0006CD28 /* BookStoreViewController.m */,
+				D6399A401D23FAFB0006CD28 /* BookStoreViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D6399A411D23FAFB0006CD28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6399A421D23FAFB0006CD28 /* BookStore.h */,
+				D6399A431D23FAFB0006CD28 /* BookStore.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D653CA631D217581000E881A /* RESideMenu */ = {
@@ -996,6 +1154,7 @@
 				D60E33F11D1CC4D0005CF58F /* Icon-Small-50@2x.png in Resources */,
 				D6B1E42B1D1E35FE004EAEB1 /* rsm_icon_8@2x.png in Resources */,
 				D60E33ED1D1CC4D0005CF58F /* Icon-Small-40.png in Resources */,
+				D6399A1F1D23FA170006CD28 /* CommonCell.xib in Resources */,
 				D60E33EB1D1CC4D0005CF58F /* Icon-76.png in Resources */,
 				D60E33FB1D1CC4D0005CF58F /* ip6@2x.png in Resources */,
 				D60E336B1D1CC18C005CF58F /* LaunchScreen.storyboard in Resources */,
@@ -1005,6 +1164,7 @@
 				D60E33F21D1CC4D0005CF58F /* Icon-Small.png in Resources */,
 				D6B1E4441D1E653B004EAEB1 /* GameViewCell.xib in Resources */,
 				D653CA4C1D216248000E881A /* nav_menu_icon@2x.png in Resources */,
+				D6399A451D23FAFB0006CD28 /* BookStoreViewController.xib in Resources */,
 				D6B1E4A01D1EC512004EAEB1 /* MJRefresh.bundle in Resources */,
 				D6B1E4621D1EA9F4004EAEB1 /* bd_add_count@2x.png in Resources */,
 				D6B284511D22BF70000D81EC /* BookHelpeViewCell.xib in Resources */,
@@ -1023,6 +1183,7 @@
 				D60E33FA1D1CC4D0005CF58F /* ip5@2x.png in Resources */,
 				D60E33661D1CC18C005CF58F /* Main.storyboard in Resources */,
 				D637ACDD1D23B0BD00BB5900 /* DetailViewController.xib in Resources */,
+				D6399A0F1D23F7E50006CD28 /* 1.jpg in Resources */,
 				D60E33F91D1CC4D0005CF58F /* ip4@2x.png in Resources */,
 				D65F497B1D1D1DB80023A740 /* 257.png in Resources */,
 				D60E33E71D1CC4D0005CF58F /* Icon-60@2x.png in Resources */,
@@ -1099,18 +1260,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6B1E49F1D1EC512004EAEB1 /* MJRefreshStateHeader.m in Sources */,
+				D6399A1D1D23FA170006CD28 /* ClassifyCell.m in Sources */,
+				D6399A351D23FA680006CD28 /* ClassifyViewController.m in Sources */,
 				D6B1E49B1D1EC512004EAEB1 /* MJRefreshBackNormalFooter.m in Sources */,
 				D637ACF01D23BEA300BB5900 /* Detail.m in Sources */,
 				D6B1E4951D1EC512004EAEB1 /* MJRefreshFooter.m in Sources */,
+				D6399A3B1D23FA680006CD28 /* HotTableViewController.m in Sources */,
 				D6B1E4571D1EA6A3004EAEB1 /* Comic.m in Sources */,
 				D6B1E49C1D1EC512004EAEB1 /* MJRefreshBackStateFooter.m in Sources */,
 				D6C779E61D1FDB0D00A07CFB /* SearchViewController.m in Sources */,
+				D6399A371D23FA680006CD28 /* NewBookTableViewController.m in Sources */,
 				D653CA441D20D4C9000E881A /* ResultsViewCell.m in Sources */,
 				D6B1E43C1D1E5B04004EAEB1 /* Game.m in Sources */,
 				D60E34071D1CC6BF005CF58F /* AppDelegate.m in Sources */,
 				D653CA711D21778A000E881A /* LeftViewController.m in Sources */,
+				D6399A201D23FA170006CD28 /* HeadReusableView.m in Sources */,
 				D6B1E4A11D1EC512004EAEB1 /* MJRefreshConst.m in Sources */,
 				D6B1E4A31D1EC512004EAEB1 /* UIScrollView+MJExtension.m in Sources */,
+				D6399A3A1D23FA680006CD28 /* SingleList.m in Sources */,
+				D6399A391D23FA680006CD28 /* ReputablyViewController.m in Sources */,
 				D6B284501D22BF70000D81EC /* BookHelpeViewCell.m in Sources */,
 				D6B1E4351D1E5938004EAEB1 /* README.md in Sources */,
 				D6B1E43F1D1E5EBE004EAEB1 /* GameViewController.m in Sources */,
@@ -1119,29 +1287,37 @@
 				D653CA6C1D217581000E881A /* UIViewController+RESideMenu.m in Sources */,
 				D637ACEC1D23BC7200BB5900 /* DetailViewCell.m in Sources */,
 				D69B34D41D235DE100BD3F0A /* BookHelpe.m in Sources */,
+				D6399A461D23FAFB0006CD28 /* BookStore.m in Sources */,
 				D637ACE71D23B31600BB5900 /* NetWorkRequestManager.m in Sources */,
 				D6B1E4991D1EC512004EAEB1 /* MJRefreshAutoStateFooter.m in Sources */,
 				D6B1E40D1D1E119C004EAEB1 /* RunViewCell.m in Sources */,
 				D6B1E4121D1E18DB004EAEB1 /* ComunityViewCell.m in Sources */,
 				D6B2844C1D22BE44000D81EC /* BookHelpeViewController.m in Sources */,
+				D6399A141D23FA020006CD28 /* CommonModel.m in Sources */,
+				D6399A341D23FA680006CD28 /* ClassifyDetailViewController.m in Sources */,
 				D6B1E4A51D1EC512004EAEB1 /* UIView+MJExtension.m in Sources */,
 				D653CA3D1D20D486000E881A /* ResultsViewController.m in Sources */,
 				D6B1E4921D1EC512004EAEB1 /* MJRefreshAutoFooter.m in Sources */,
 				D6B1E4431D1E653B004EAEB1 /* GameViewCell.m in Sources */,
 				D6B1E49A1D1EC512004EAEB1 /* MJRefreshBackGifFooter.m in Sources */,
 				D653CA481D20D68C000E881A /* Result.m in Sources */,
+				D6399A0D1D23F7B80006CD28 /* NSString+URL.m in Sources */,
 				D6B1E4961D1EC512004EAEB1 /* MJRefreshHeader.m in Sources */,
 				D60E33631D1CC18C005CF58F /* ViewController.m in Sources */,
 				D6B1E49D1D1EC512004EAEB1 /* MJRefreshGifHeader.m in Sources */,
 				D6B1E4941D1EC512004EAEB1 /* MJRefreshComponent.m in Sources */,
 				D637ACDC1D23B0BD00BB5900 /* DetailViewController.m in Sources */,
+				D6399A441D23FAFB0006CD28 /* BookStoreViewController.m in Sources */,
 				D6B1E4471D1E6F70004EAEB1 /* CALayer+XibBorderColor.m in Sources */,
 				D6B1E4A21D1EC512004EAEB1 /* NSBundle+MJRefresh.m in Sources */,
+				D6399A1E1D23FA170006CD28 /* CommonCell.m in Sources */,
+				D6399A361D23FA680006CD28 /* BurglarViewController.m in Sources */,
 				D6B1E4981D1EC512004EAEB1 /* MJRefreshAutoNormalFooter.m in Sources */,
 				D6B1E4541D1EA688004EAEB1 /* ComicViewController.m in Sources */,
 				D637ACE81D23B31600BB5900 /* Tool.m in Sources */,
 				D60E335D1D1CC18C005CF58F /* main.m in Sources */,
 				D6B1E4341D1E5938004EAEB1 /* README.md in Sources */,
+				D6399A381D23FA680006CD28 /* NSArray+log.m in Sources */,
 				D653CA6B1D217581000E881A /* RESideMenu.m in Sources */,
 				D6B1E4331D1E5938004EAEB1 /* README.md in Sources */,
 				D6B1E44A1D1E7D6D004EAEB1 /* PlayViewController.m in Sources */,
