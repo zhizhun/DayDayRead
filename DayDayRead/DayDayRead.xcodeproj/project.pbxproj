@@ -785,11 +785,8 @@
 		D60E34061D1CC6BF005CF58F /* Scences */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				D60482391D23FD8000CFA284 /* List */,
-=======
 				D6399A101D23F9C50006CD28 /* Classification */,
->>>>>>> b0c4cbc1b89e250effef47b60acef6d63794aba4
 				D604820F1D23FA2200CFA284 /* Book */,
 				D6B284461D22BE2B000D81EC /* bookHelpe */,
 				D6B2843E1D22567D000D81EC /* Set */,
@@ -1414,11 +1411,8 @@
 				D60E33F21D1CC4D0005CF58F /* Icon-Small.png in Resources */,
 				D6B1E4441D1E653B004EAEB1 /* GameViewCell.xib in Resources */,
 				D653CA4C1D216248000E881A /* nav_menu_icon@2x.png in Resources */,
-<<<<<<< HEAD
 				D60482741D23FD8000CFA284 /* HotCell.xib in Resources */,
-=======
 				D6399A451D23FAFB0006CD28 /* BookStoreViewController.xib in Resources */,
->>>>>>> b0c4cbc1b89e250effef47b60acef6d63794aba4
 				D6B1E4A01D1EC512004EAEB1 /* MJRefresh.bundle in Resources */,
 				D6B1E4621D1EA9F4004EAEB1 /* bd_add_count@2x.png in Resources */,
 				D604826F1D23FD8000CFA284 /* ThrDetailViewController.xib in Resources */,
@@ -1519,12 +1513,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6B1E49F1D1EC512004EAEB1 /* MJRefreshStateHeader.m in Sources */,
-<<<<<<< HEAD
 				D60482771D23FD8000CFA284 /* HotViewController.m in Sources */,
-=======
 				D6399A1D1D23FA170006CD28 /* ClassifyCell.m in Sources */,
 				D6399A351D23FA680006CD28 /* ClassifyViewController.m in Sources */,
->>>>>>> b0c4cbc1b89e250effef47b60acef6d63794aba4
 				D6B1E49B1D1EC512004EAEB1 /* MJRefreshBackNormalFooter.m in Sources */,
 				D60482671D23FD8000CFA284 /* ListViewController.m in Sources */,
 				D604827D1D23FD8000CFA284 /* WRemainViewController.m in Sources */,
