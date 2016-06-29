@@ -641,11 +641,8 @@
 		D60E34061D1CC6BF005CF58F /* Scences */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				D6399A101D23F9C50006CD28 /* Classification */,
-=======
 				D604820F1D23FA2200CFA284 /* Book */,
->>>>>>> 802c30cdf977e4fb8b45801bcab175db09ad82d3
 				D6B284461D22BE2B000D81EC /* bookHelpe */,
 				D6B2843E1D22567D000D81EC /* Set */,
 				D6B2843A1D225677000D81EC /* Login */,
@@ -1395,11 +1392,8 @@
 				D653CA6C1D217581000E881A /* UIViewController+RESideMenu.m in Sources */,
 				D637ACEC1D23BC7200BB5900 /* DetailViewCell.m in Sources */,
 				D69B34D41D235DE100BD3F0A /* BookHelpe.m in Sources */,
-<<<<<<< HEAD
 				D6399A461D23FAFB0006CD28 /* BookStore.m in Sources */,
-=======
 				D60482351D23FA2200CFA284 /* BookCell.m in Sources */,
->>>>>>> 802c30cdf977e4fb8b45801bcab175db09ad82d3
 				D637ACE71D23B31600BB5900 /* NetWorkRequestManager.m in Sources */,
 				D6B1E4991D1EC512004EAEB1 /* MJRefreshAutoStateFooter.m in Sources */,
 				D6B1E40D1D1E119C004EAEB1 /* RunViewCell.m in Sources */,
@@ -1420,11 +1414,8 @@
 				D6B1E49D1D1EC512004EAEB1 /* MJRefreshGifHeader.m in Sources */,
 				D6B1E4941D1EC512004EAEB1 /* MJRefreshComponent.m in Sources */,
 				D637ACDC1D23B0BD00BB5900 /* DetailViewController.m in Sources */,
-<<<<<<< HEAD
 				D6399A441D23FAFB0006CD28 /* BookStoreViewController.m in Sources */,
-=======
 				D604822E1D23FA2200CFA284 /* BookTwoViewController.m in Sources */,
->>>>>>> 802c30cdf977e4fb8b45801bcab175db09ad82d3
 				D6B1E4471D1E6F70004EAEB1 /* CALayer+XibBorderColor.m in Sources */,
 				D60482311D23FA2200CFA284 /* Book.m in Sources */,
 				D6B1E4A21D1EC512004EAEB1 /* NSBundle+MJRefresh.m in Sources */,
