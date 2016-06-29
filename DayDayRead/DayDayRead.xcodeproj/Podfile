@@ -1,0 +1,5 @@
+target 'DayDayRead' do
+ pod 'RESideMenu', '~> 4.0.7'
+ pod 'SDWebImage', '~> 3.8.1’
+ xcodeproj ‘DayDayRead/DayDayRead.xcodeproj’
+ end
