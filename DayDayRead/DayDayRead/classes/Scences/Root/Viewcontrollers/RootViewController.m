@@ -14,6 +14,7 @@
 #import "MJRefresh.h"
 #import "SearchViewController.h"
 #import "BookHelpeViewController.h"
+#import "ClassifyViewController.h"
 #import "BookAllViewController.h"
 #import "ListViewController.h"
 #define kWith self.view.frame.size.width
@@ -304,9 +305,16 @@ int isNum = 1;
         }
     }
     if (isNum == 3) {
+<<<<<<< HEAD
         if (indexPath.row == 0) {
             [self.navigationController pushViewController:[[ListViewController alloc] init] animated:YES];
         } else if (indexPath.row == 1) {
+=======
+        if (indexPath.row == 2) {
+            [self.navigationController pushViewController:[[ClassifyViewController alloc] init] animated:YES];
+        }
+        if (indexPath.row == 1) {
+>>>>>>> b0c4cbc1b89e250effef47b60acef6d63794aba4
             [self.navigationController pushViewController:[[BookAllViewController alloc] init] animated:YES];
         }
         if (indexPath.row == 4) {
