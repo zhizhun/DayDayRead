@@ -1,0 +1,3 @@
+target 'DayDayRead' do
+pod 'SDWebImage', '~> 3.8.1' 
+end
