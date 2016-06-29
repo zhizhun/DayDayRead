@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		644A4605A727D92A95F9C4B5 /* libPods-DayDayRead.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 768C144FEAB23B24074B1805 /* libPods-DayDayRead.a */; };
+		D604822C1D23FA2200CFA284 /* BookOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482121D23FA2200CFA284 /* BookOneViewController.m */; };
+		D604822D1D23FA2200CFA284 /* BookThrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482141D23FA2200CFA284 /* BookThrViewController.m */; };
+		D604822E1D23FA2200CFA284 /* BookTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482161D23FA2200CFA284 /* BookTwoViewController.m */; };
+		D604822F1D23FA2200CFA284 /* BookAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482191D23FA2200CFA284 /* BookAllViewController.m */; };
+		D60482301D23FA2200CFA284 /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D604821B1D23FA2200CFA284 /* BookViewController.m */; };
+		D60482311D23FA2200CFA284 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = D604821E1D23FA2200CFA284 /* Book.m */; };
+		D60482321D23FA2200CFA284 /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = D604821F1D23FA2200CFA284 /* book.png */; };
+		D60482331D23FA2200CFA284 /* BookView.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482211D23FA2200CFA284 /* BookView.m */; };
+		D60482341D23FA2200CFA284 /* BookAllCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482241D23FA2200CFA284 /* BookAllCell.m */; };
+		D60482351D23FA2200CFA284 /* BookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482261D23FA2200CFA284 /* BookCell.m */; };
+		D60482361D23FA2200CFA284 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60482271D23FA2200CFA284 /* BookCell.xib */; };
+		D60482371D23FA2200CFA284 /* BookHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482291D23FA2200CFA284 /* BookHeaderView.m */; };
+		D60482381D23FA2200CFA284 /* SingletonBook.m in Sources */ = {isa = PBXBuildFile; fileRef = D604822B1D23FA2200CFA284 /* SingletonBook.m */; };
 		D60E335D1D1CC18C005CF58F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D60E335C1D1CC18C005CF58F /* main.m */; };
 		D60E33631D1CC18C005CF58F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60E33621D1CC18C005CF58F /* ViewController.m */; };
 		D60E33661D1CC18C005CF58F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60E33641D1CC18C005CF58F /* Main.storyboard */; };
@@ -124,6 +137,30 @@
 		5D619B38EC8FFE4D9C2FB466 /* Pods-DayDayRead.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayDayRead.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DayDayRead/Pods-DayDayRead.debug.xcconfig"; sourceTree = "<group>"; };
 		768C144FEAB23B24074B1805 /* libPods-DayDayRead.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DayDayRead.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1553C804E93C2DDE7E11CD /* Pods-DayDayRead.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayDayRead.release.xcconfig"; path = "Pods/Target Support Files/Pods-DayDayRead/Pods-DayDayRead.release.xcconfig"; sourceTree = "<group>"; };
+		D60482111D23FA2200CFA284 /* BookOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookOneViewController.h; sourceTree = "<group>"; };
+		D60482121D23FA2200CFA284 /* BookOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookOneViewController.m; sourceTree = "<group>"; };
+		D60482131D23FA2200CFA284 /* BookThrViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookThrViewController.h; sourceTree = "<group>"; };
+		D60482141D23FA2200CFA284 /* BookThrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookThrViewController.m; sourceTree = "<group>"; };
+		D60482151D23FA2200CFA284 /* BookTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookTwoViewController.h; sourceTree = "<group>"; };
+		D60482161D23FA2200CFA284 /* BookTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookTwoViewController.m; sourceTree = "<group>"; };
+		D60482181D23FA2200CFA284 /* BookAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookAllViewController.h; sourceTree = "<group>"; };
+		D60482191D23FA2200CFA284 /* BookAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookAllViewController.m; sourceTree = "<group>"; };
+		D604821A1D23FA2200CFA284 /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
+		D604821B1D23FA2200CFA284 /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
+		D604821D1D23FA2200CFA284 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		D604821E1D23FA2200CFA284 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		D604821F1D23FA2200CFA284 /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book.png; sourceTree = "<group>"; };
+		D60482201D23FA2200CFA284 /* BookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookView.h; sourceTree = "<group>"; };
+		D60482211D23FA2200CFA284 /* BookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookView.m; sourceTree = "<group>"; };
+		D60482231D23FA2200CFA284 /* BookAllCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookAllCell.h; sourceTree = "<group>"; };
+		D60482241D23FA2200CFA284 /* BookAllCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookAllCell.m; sourceTree = "<group>"; };
+		D60482251D23FA2200CFA284 /* BookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookCell.h; sourceTree = "<group>"; };
+		D60482261D23FA2200CFA284 /* BookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookCell.m; sourceTree = "<group>"; };
+		D60482271D23FA2200CFA284 /* BookCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
+		D60482281D23FA2200CFA284 /* BookHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookHeaderView.h; sourceTree = "<group>"; };
+		D60482291D23FA2200CFA284 /* BookHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookHeaderView.m; sourceTree = "<group>"; };
+		D604822A1D23FA2200CFA284 /* SingletonBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonBook.h; sourceTree = "<group>"; };
+		D604822B1D23FA2200CFA284 /* SingletonBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonBook.m; sourceTree = "<group>"; };
 		D60E33581D1CC18B005CF58F /* DayDayRead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayDayRead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60E335C1D1CC18C005CF58F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D60E33611D1CC18C005CF58F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -330,6 +367,69 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D604820F1D23FA2200CFA284 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				D60482101D23FA2200CFA284 /* BookView */,
+				D60482171D23FA2200CFA284 /* Controller */,
+				D604821C1D23FA2200CFA284 /* Model */,
+				D60482221D23FA2200CFA284 /* View */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		D60482101D23FA2200CFA284 /* BookView */ = {
+			isa = PBXGroup;
+			children = (
+				D60482111D23FA2200CFA284 /* BookOneViewController.h */,
+				D60482121D23FA2200CFA284 /* BookOneViewController.m */,
+				D60482131D23FA2200CFA284 /* BookThrViewController.h */,
+				D60482141D23FA2200CFA284 /* BookThrViewController.m */,
+				D60482151D23FA2200CFA284 /* BookTwoViewController.h */,
+				D60482161D23FA2200CFA284 /* BookTwoViewController.m */,
+			);
+			path = BookView;
+			sourceTree = "<group>";
+		};
+		D60482171D23FA2200CFA284 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D60482181D23FA2200CFA284 /* BookAllViewController.h */,
+				D60482191D23FA2200CFA284 /* BookAllViewController.m */,
+				D604821A1D23FA2200CFA284 /* BookViewController.h */,
+				D604821B1D23FA2200CFA284 /* BookViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D604821C1D23FA2200CFA284 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D604821D1D23FA2200CFA284 /* Book.h */,
+				D604821E1D23FA2200CFA284 /* Book.m */,
+				D604821F1D23FA2200CFA284 /* book.png */,
+				D60482201D23FA2200CFA284 /* BookView.h */,
+				D60482211D23FA2200CFA284 /* BookView.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D60482221D23FA2200CFA284 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D60482231D23FA2200CFA284 /* BookAllCell.h */,
+				D60482241D23FA2200CFA284 /* BookAllCell.m */,
+				D60482251D23FA2200CFA284 /* BookCell.h */,
+				D60482261D23FA2200CFA284 /* BookCell.m */,
+				D60482271D23FA2200CFA284 /* BookCell.xib */,
+				D60482281D23FA2200CFA284 /* BookHeaderView.h */,
+				D60482291D23FA2200CFA284 /* BookHeaderView.m */,
+				D604822A1D23FA2200CFA284 /* SingletonBook.h */,
+				D604822B1D23FA2200CFA284 /* SingletonBook.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D60E334F1D1CC18B005CF58F = {
 			isa = PBXGroup;
 			children = (
@@ -487,6 +587,7 @@
 		D60E34061D1CC6BF005CF58F /* Scences */ = {
 			isa = PBXGroup;
 			children = (
+				D604820F1D23FA2200CFA284 /* Book */,
 				D6B284461D22BE2B000D81EC /* bookHelpe */,
 				D6B2843E1D22567D000D81EC /* Set */,
 				D6B2843A1D225677000D81EC /* Login */,
@@ -1010,6 +1111,7 @@
 				D6B284511D22BF70000D81EC /* BookHelpeViewCell.xib in Resources */,
 				D60E33F41D1CC4D0005CF58F /* Icon-Small@3x.png in Resources */,
 				D6B284531D22CCA0000D81EC /* d_comment@3x.png in Resources */,
+				D60482361D23FA2200CFA284 /* BookCell.xib in Resources */,
 				D6B284351D221CE4000D81EC /* hsm_default_avatar@3x.png in Resources */,
 				D60E33F81D1CC4D0005CF58F /* icon01.png in Resources */,
 				D60E33F71D1CC4D0005CF58F /* iTunesArtwork@2x.png in Resources */,
@@ -1034,6 +1136,7 @@
 				D60E33EF1D1CC4D0005CF58F /* Icon-Small-40@3x.png in Resources */,
 				D60E33FD1D1CC4D0005CF58F /* ip@1x.png in Resources */,
 				D60E33E91D1CC4D0005CF58F /* Icon-72.png in Resources */,
+				D60482321D23FA2200CFA284 /* book.png in Resources */,
 				D6B284371D22266A000D81EC /* hsm_icon_1@3x.png in Resources */,
 				D6B1E41B1D1E1F9D004EAEB1 /* forum_public_help_icon@2x.png in Resources */,
 				D6B284551D22CD13000D81EC /* f_like_icon@3x.png in Resources */,
@@ -1110,18 +1213,22 @@
 				D60E34071D1CC6BF005CF58F /* AppDelegate.m in Sources */,
 				D653CA711D21778A000E881A /* LeftViewController.m in Sources */,
 				D6B1E4A11D1EC512004EAEB1 /* MJRefreshConst.m in Sources */,
+				D60482381D23FA2200CFA284 /* SingletonBook.m in Sources */,
 				D6B1E4A31D1EC512004EAEB1 /* UIScrollView+MJExtension.m in Sources */,
 				D6B284501D22BF70000D81EC /* BookHelpeViewCell.m in Sources */,
 				D6B1E4351D1E5938004EAEB1 /* README.md in Sources */,
+				D60482301D23FA2200CFA284 /* BookViewController.m in Sources */,
 				D6B1E43F1D1E5EBE004EAEB1 /* GameViewController.m in Sources */,
 				D653CA6A1D217581000E881A /* RECommonFunctions.m in Sources */,
 				D6B1E4971D1EC512004EAEB1 /* MJRefreshAutoGifFooter.m in Sources */,
 				D653CA6C1D217581000E881A /* UIViewController+RESideMenu.m in Sources */,
 				D637ACEC1D23BC7200BB5900 /* DetailViewCell.m in Sources */,
 				D69B34D41D235DE100BD3F0A /* BookHelpe.m in Sources */,
+				D60482351D23FA2200CFA284 /* BookCell.m in Sources */,
 				D637ACE71D23B31600BB5900 /* NetWorkRequestManager.m in Sources */,
 				D6B1E4991D1EC512004EAEB1 /* MJRefreshAutoStateFooter.m in Sources */,
 				D6B1E40D1D1E119C004EAEB1 /* RunViewCell.m in Sources */,
+				D60482371D23FA2200CFA284 /* BookHeaderView.m in Sources */,
 				D6B1E4121D1E18DB004EAEB1 /* ComunityViewCell.m in Sources */,
 				D6B2844C1D22BE44000D81EC /* BookHelpeViewController.m in Sources */,
 				D6B1E4A51D1EC512004EAEB1 /* UIView+MJExtension.m in Sources */,
@@ -1135,18 +1242,25 @@
 				D6B1E49D1D1EC512004EAEB1 /* MJRefreshGifHeader.m in Sources */,
 				D6B1E4941D1EC512004EAEB1 /* MJRefreshComponent.m in Sources */,
 				D637ACDC1D23B0BD00BB5900 /* DetailViewController.m in Sources */,
+				D604822E1D23FA2200CFA284 /* BookTwoViewController.m in Sources */,
 				D6B1E4471D1E6F70004EAEB1 /* CALayer+XibBorderColor.m in Sources */,
+				D60482311D23FA2200CFA284 /* Book.m in Sources */,
 				D6B1E4A21D1EC512004EAEB1 /* NSBundle+MJRefresh.m in Sources */,
 				D6B1E4981D1EC512004EAEB1 /* MJRefreshAutoNormalFooter.m in Sources */,
 				D6B1E4541D1EA688004EAEB1 /* ComicViewController.m in Sources */,
 				D637ACE81D23B31600BB5900 /* Tool.m in Sources */,
+				D604822F1D23FA2200CFA284 /* BookAllViewController.m in Sources */,
 				D60E335D1D1CC18C005CF58F /* main.m in Sources */,
+				D60482331D23FA2200CFA284 /* BookView.m in Sources */,
 				D6B1E4341D1E5938004EAEB1 /* README.md in Sources */,
 				D653CA6B1D217581000E881A /* RESideMenu.m in Sources */,
 				D6B1E4331D1E5938004EAEB1 /* README.md in Sources */,
 				D6B1E44A1D1E7D6D004EAEB1 /* PlayViewController.m in Sources */,
 				D6B284451D2256CC000D81EC /* SetViewController.m in Sources */,
 				D6B1E49E1D1EC512004EAEB1 /* MJRefreshNormalHeader.m in Sources */,
+				D60482341D23FA2200CFA284 /* BookAllCell.m in Sources */,
+				D604822C1D23FA2200CFA284 /* BookOneViewController.m in Sources */,
+				D604822D1D23FA2200CFA284 /* BookThrViewController.m in Sources */,
 				D6B1E4A41D1EC512004EAEB1 /* UIScrollView+MJRefresh.m in Sources */,
 				D6B1E45B1D1EA816004EAEB1 /* ComicViewCell.m in Sources */,
 				D6B1E4931D1EC512004EAEB1 /* MJRefreshBackFooter.m in Sources */,

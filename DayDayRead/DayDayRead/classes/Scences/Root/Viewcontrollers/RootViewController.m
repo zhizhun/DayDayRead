@@ -14,6 +14,7 @@
 #import "MJRefresh.h"
 #import "SearchViewController.h"
 #import "BookHelpeViewController.h"
+#import "BookAllViewController.h"
 
 #define kWith self.view.frame.size.width
 #define kHeight 50
@@ -303,6 +304,9 @@ int isNum = 1;
         }
     }
     if (isNum == 3) {
+        if (indexPath.row == 1) {
+            [self.navigationController pushViewController:[[BookAllViewController alloc] init] animated:YES];
+        }
         if (indexPath.row == 4) {
             [self.navigationController pushViewController:[[GameViewController alloc] init] animated:YES];
         }
