@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "RootViewController.h"
+#import "LeftViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    RootViewController *rootVC = [[RootViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rootVC];
+    LeftViewController *leftVC = [[LeftViewController alloc] init];
+    //抽屉对象
+    RESideMenu *sideVC = [[RESideMenu alloc] initWithContentViewController:nav leftMenuViewController:leftVC rightMenuViewController:nil];
+    //sideVC.backgroundImage = [UIImage imageNamed:@"ip6p@3x"];
+    sideVC.menuPreferredStatusBarStyle = 1;
+    sideVC.delegate = self;
+    sideVC.contentViewShadowColor = [UIColor blackColor];
+    sideVC.contentViewShadowOffset = CGSizeMake(0, 0);
+    sideVC.contentViewShadowOpacity = 0.6;
+    sideVC.contentViewShadowRadius = 12;
+    sideVC.scaleContentView = NO; //抽屉效果不变小
+    sideVC.panGestureEnabled = NO; //关闭侧滑效果
+    sideVC.contentViewInLandscapeOffsetCenterX = -[UIScreen mainScreen].bounds.size.width/4;
+    sideVC.contentViewInPortraitOffsetCenterX = -[UIScreen mainScreen].bounds.size.width/4;
+    self.window.rootViewController = sideVC;
     return YES;
 }
 
