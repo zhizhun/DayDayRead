@@ -99,29 +99,6 @@
 		D6399A441D23FAFB0006CD28 /* BookStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A3F1D23FAFB0006CD28 /* BookStoreViewController.m */; };
 		D6399A451D23FAFB0006CD28 /* BookStoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6399A401D23FAFB0006CD28 /* BookStoreViewController.xib */; };
 		D6399A461D23FAFB0006CD28 /* BookStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A431D23FAFB0006CD28 /* BookStore.m */; };
-		D6399A501D2403820006CD28 /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A4A1D2403820006CD28 /* SetViewController.m */; };
-		D6399A511D2403820006CD28 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D6399A4C1D2403820006CD28 /* README.md */; };
-		D6399A521D2403820006CD28 /* SetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A4F1D2403820006CD28 /* SetCell.m */; };
-		D6399A831D2404960006CD28 /* ComprehensiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A561D2404960006CD28 /* ComprehensiveViewController.m */; };
-		D6399A841D2404960006CD28 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D6399A581D2404960006CD28 /* README.md */; };
-		D6399A851D2404960006CD28 /* DynamicColumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A5C1D2404960006CD28 /* DynamicColumnViewController.m */; };
-		D6399A861D2404960006CD28 /* DynamicHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A5E1D2404960006CD28 /* DynamicHotViewController.m */; };
-		D6399A871D2404960006CD28 /* DynamicMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A601D2404960006CD28 /* DynamicMineViewController.m */; };
-		D6399A881D2404960006CD28 /* DynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A621D2404960006CD28 /* DynamicViewController.m */; };
-		D6399A891D2404960006CD28 /* HeadPortraitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A661D2404960006CD28 /* HeadPortraitViewController.m */; };
-		D6399A8A1D2404960006CD28 /* NickNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A681D2404960006CD28 /* NickNameViewController.m */; };
-		D6399A8B1D2404960006CD28 /* MyInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A6A1D2404960006CD28 /* MyInformationViewController.m */; };
-		D6399A8C1D2404960006CD28 /* DynamicColumnDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A6E1D2404960006CD28 /* DynamicColumnDetailViewController.m */; };
-		D6399A8D1D2404960006CD28 /* DynamicColumnDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6399A6F1D2404960006CD28 /* DynamicColumnDetailViewController.xib */; };
-		D6399A8E1D2404960006CD28 /* DynamicHotDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A711D2404960006CD28 /* DynamicHotDetailViewController.m */; };
-		D6399A8F1D2404960006CD28 /* DynamicHotDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6399A721D2404960006CD28 /* DynamicHotDetailViewController.xib */; };
-		D6399A901D2404960006CD28 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D6399A741D2404960006CD28 /* README.md */; };
-		D6399A911D2404960006CD28 /* Dynamic.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A771D2404960006CD28 /* Dynamic.m */; };
-		D6399A921D2404960006CD28 /* DynamicHot.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A791D2404960006CD28 /* DynamicHot.m */; };
-		D6399A931D2404960006CD28 /* DynamicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A7C1D2404960006CD28 /* DynamicCell.m */; };
-		D6399A941D2404960006CD28 /* DynamicHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A7E1D2404960006CD28 /* DynamicHotCell.m */; };
-		D6399A951D2404960006CD28 /* DynamicMineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A801D2404960006CD28 /* DynamicMineCell.m */; };
-		D6399A961D2404960006CD28 /* MyInformationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A821D2404960006CD28 /* MyInformationCell.m */; };
 		D653CA3D1D20D486000E881A /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D653CA3C1D20D486000E881A /* ResultsViewController.m */; };
 		D653CA441D20D4C9000E881A /* ResultsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D653CA421D20D4C9000E881A /* ResultsViewCell.m */; };
 		D653CA451D20D4C9000E881A /* ResultsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D653CA431D20D4C9000E881A /* ResultsViewCell.xib */; };
@@ -192,6 +169,9 @@
 		D6B284511D22BF70000D81EC /* BookHelpeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B2844F1D22BF70000D81EC /* BookHelpeViewCell.xib */; };
 		D6B284531D22CCA0000D81EC /* d_comment@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B284521D22CCA0000D81EC /* d_comment@3x.png */; };
 		D6B284551D22CD13000D81EC /* f_like_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B284541D22CD13000D81EC /* f_like_icon@3x.png */; };
+		D6C0C13F1D24A170005B541F /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1391D24A170005B541F /* SetViewController.m */; };
+		D6C0C1401D24A170005B541F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C13B1D24A170005B541F /* README.md */; };
+		D6C0C1411D24A170005B541F /* SetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C13E1D24A170005B541F /* SetCell.m */; };
 		D6C779DF1D1FCBB500A07CFB /* 1055.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C779DE1D1FCBB500A07CFB /* 1055.png */; };
 		D6C779E61D1FDB0D00A07CFB /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C779E51D1FDB0D00A07CFB /* SearchViewController.m */; };
 /* End PBXBuildFile section */
@@ -344,47 +324,6 @@
 		D6399A401D23FAFB0006CD28 /* BookStoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookStoreViewController.xib; sourceTree = "<group>"; };
 		D6399A421D23FAFB0006CD28 /* BookStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookStore.h; sourceTree = "<group>"; };
 		D6399A431D23FAFB0006CD28 /* BookStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookStore.m; sourceTree = "<group>"; };
-		D6399A491D2403820006CD28 /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
-		D6399A4A1D2403820006CD28 /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
-		D6399A4C1D2403820006CD28 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D6399A4E1D2403820006CD28 /* SetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetCell.h; sourceTree = "<group>"; };
-		D6399A4F1D2403820006CD28 /* SetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetCell.m; sourceTree = "<group>"; };
-		D6399A551D2404960006CD28 /* ComprehensiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComprehensiveViewController.h; sourceTree = "<group>"; };
-		D6399A561D2404960006CD28 /* ComprehensiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComprehensiveViewController.m; sourceTree = "<group>"; };
-		D6399A581D2404960006CD28 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D6399A5B1D2404960006CD28 /* DynamicColumnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicColumnViewController.h; sourceTree = "<group>"; };
-		D6399A5C1D2404960006CD28 /* DynamicColumnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicColumnViewController.m; sourceTree = "<group>"; };
-		D6399A5D1D2404960006CD28 /* DynamicHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicHotViewController.h; sourceTree = "<group>"; };
-		D6399A5E1D2404960006CD28 /* DynamicHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicHotViewController.m; sourceTree = "<group>"; };
-		D6399A5F1D2404960006CD28 /* DynamicMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicMineViewController.h; sourceTree = "<group>"; };
-		D6399A601D2404960006CD28 /* DynamicMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicMineViewController.m; sourceTree = "<group>"; };
-		D6399A611D2404960006CD28 /* DynamicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicViewController.h; sourceTree = "<group>"; };
-		D6399A621D2404960006CD28 /* DynamicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicViewController.m; sourceTree = "<group>"; };
-		D6399A651D2404960006CD28 /* HeadPortraitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadPortraitViewController.h; sourceTree = "<group>"; };
-		D6399A661D2404960006CD28 /* HeadPortraitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadPortraitViewController.m; sourceTree = "<group>"; };
-		D6399A671D2404960006CD28 /* NickNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NickNameViewController.h; sourceTree = "<group>"; };
-		D6399A681D2404960006CD28 /* NickNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NickNameViewController.m; sourceTree = "<group>"; };
-		D6399A691D2404960006CD28 /* MyInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInformationViewController.h; sourceTree = "<group>"; };
-		D6399A6A1D2404960006CD28 /* MyInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInformationViewController.m; sourceTree = "<group>"; };
-		D6399A6D1D2404960006CD28 /* DynamicColumnDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicColumnDetailViewController.h; sourceTree = "<group>"; };
-		D6399A6E1D2404960006CD28 /* DynamicColumnDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicColumnDetailViewController.m; sourceTree = "<group>"; };
-		D6399A6F1D2404960006CD28 /* DynamicColumnDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicColumnDetailViewController.xib; sourceTree = "<group>"; };
-		D6399A701D2404960006CD28 /* DynamicHotDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicHotDetailViewController.h; sourceTree = "<group>"; };
-		D6399A711D2404960006CD28 /* DynamicHotDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicHotDetailViewController.m; sourceTree = "<group>"; };
-		D6399A721D2404960006CD28 /* DynamicHotDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicHotDetailViewController.xib; sourceTree = "<group>"; };
-		D6399A741D2404960006CD28 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D6399A761D2404960006CD28 /* Dynamic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dynamic.h; sourceTree = "<group>"; };
-		D6399A771D2404960006CD28 /* Dynamic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dynamic.m; sourceTree = "<group>"; };
-		D6399A781D2404960006CD28 /* DynamicHot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicHot.h; sourceTree = "<group>"; };
-		D6399A791D2404960006CD28 /* DynamicHot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicHot.m; sourceTree = "<group>"; };
-		D6399A7B1D2404960006CD28 /* DynamicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicCell.h; sourceTree = "<group>"; };
-		D6399A7C1D2404960006CD28 /* DynamicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicCell.m; sourceTree = "<group>"; };
-		D6399A7D1D2404960006CD28 /* DynamicHotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicHotCell.h; sourceTree = "<group>"; };
-		D6399A7E1D2404960006CD28 /* DynamicHotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicHotCell.m; sourceTree = "<group>"; };
-		D6399A7F1D2404960006CD28 /* DynamicMineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicMineCell.h; sourceTree = "<group>"; };
-		D6399A801D2404960006CD28 /* DynamicMineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicMineCell.m; sourceTree = "<group>"; };
-		D6399A811D2404960006CD28 /* MyInformationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInformationCell.h; sourceTree = "<group>"; };
-		D6399A821D2404960006CD28 /* MyInformationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInformationCell.m; sourceTree = "<group>"; };
 		D653CA371D20B43C000E881A /* DB_COLOR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DB_COLOR.h; sourceTree = "<group>"; };
 		D653CA3B1D20D486000E881A /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
 		D653CA3C1D20D486000E881A /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
@@ -505,6 +444,11 @@
 		D6B2844F1D22BF70000D81EC /* BookHelpeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookHelpeViewCell.xib; sourceTree = "<group>"; };
 		D6B284521D22CCA0000D81EC /* d_comment@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d_comment@3x.png"; sourceTree = "<group>"; };
 		D6B284541D22CD13000D81EC /* f_like_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f_like_icon@3x.png"; sourceTree = "<group>"; };
+		D6C0C1381D24A170005B541F /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
+		D6C0C1391D24A170005B541F /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
+		D6C0C13B1D24A170005B541F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D6C0C13D1D24A170005B541F /* SetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetCell.h; sourceTree = "<group>"; };
+		D6C0C13E1D24A170005B541F /* SetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetCell.m; sourceTree = "<group>"; };
 		D6C779DE1D1FCBB500A07CFB /* 1055.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1055.png; sourceTree = "<group>"; };
 		D6C779E41D1FDB0D00A07CFB /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		D6C779E51D1FDB0D00A07CFB /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
@@ -846,13 +790,8 @@
 		D60E34061D1CC6BF005CF58F /* Scences */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				D6399A531D2404960006CD28 /* Comprehensive */,
-				D6399A591D2404960006CD28 /* dynamic */,
-				D6399A471D2403820006CD28 /* Set */,
-=======
+				D6C0C1361D24A170005B541F /* Set */,
 				D60482391D23FD8000CFA284 /* List */,
->>>>>>> bd63ed78dcbda7615d1739098f2cf9f772a0d7b1
 				D6399A101D23F9C50006CD28 /* Classification */,
 				D604820F1D23FA2200CFA284 /* Book */,
 				D6B284461D22BE2B000D81EC /* bookHelpe */,
@@ -979,172 +918,6 @@
 				D6399A431D23FAFB0006CD28 /* BookStore.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		D6399A471D2403820006CD28 /* Set */ = {
-			isa = PBXGroup;
-			children = (
-				D6399A481D2403820006CD28 /* Controller */,
-				D6399A4B1D2403820006CD28 /* Model */,
-				D6399A4D1D2403820006CD28 /* View */,
-			);
-			path = Set;
-			sourceTree = "<group>";
-		};
-		D6399A481D2403820006CD28 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D6399A491D2403820006CD28 /* SetViewController.h */,
-				D6399A4A1D2403820006CD28 /* SetViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		D6399A4B1D2403820006CD28 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D6399A4C1D2403820006CD28 /* README.md */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D6399A4D1D2403820006CD28 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D6399A4E1D2403820006CD28 /* SetCell.h */,
-				D6399A4F1D2403820006CD28 /* SetCell.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		D6399A531D2404960006CD28 /* Comprehensive */ = {
-			isa = PBXGroup;
-			children = (
-				D6399A541D2404960006CD28 /* Controller */,
-				D6399A571D2404960006CD28 /* View */,
-			);
-			path = Comprehensive;
-			sourceTree = "<group>";
-		};
-		D6399A541D2404960006CD28 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D6399A551D2404960006CD28 /* ComprehensiveViewController.h */,
-				D6399A561D2404960006CD28 /* ComprehensiveViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		D6399A571D2404960006CD28 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D6399A581D2404960006CD28 /* README.md */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		D6399A591D2404960006CD28 /* dynamic */ = {
-			isa = PBXGroup;
-			children = (
-				D6399A5A1D2404960006CD28 /* Controller */,
-				D6399A6B1D2404960006CD28 /* dynamicDetail */,
-				D6399A751D2404960006CD28 /* Model */,
-				D6399A7A1D2404960006CD28 /* View */,
-			);
-			path = dynamic;
-			sourceTree = "<group>";
-		};
-		D6399A5A1D2404960006CD28 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D6399A5B1D2404960006CD28 /* DynamicColumnViewController.h */,
-				D6399A5C1D2404960006CD28 /* DynamicColumnViewController.m */,
-				D6399A5D1D2404960006CD28 /* DynamicHotViewController.h */,
-				D6399A5E1D2404960006CD28 /* DynamicHotViewController.m */,
-				D6399A5F1D2404960006CD28 /* DynamicMineViewController.h */,
-				D6399A601D2404960006CD28 /* DynamicMineViewController.m */,
-				D6399A611D2404960006CD28 /* DynamicViewController.h */,
-				D6399A621D2404960006CD28 /* DynamicViewController.m */,
-				D6399A631D2404960006CD28 /* MyInformationDetail */,
-				D6399A691D2404960006CD28 /* MyInformationViewController.h */,
-				D6399A6A1D2404960006CD28 /* MyInformationViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		D6399A631D2404960006CD28 /* MyInformationDetail */ = {
-			isa = PBXGroup;
-			children = (
-				D6399A641D2404960006CD28 /* Controller */,
-			);
-			path = MyInformationDetail;
-			sourceTree = "<group>";
-		};
-		D6399A641D2404960006CD28 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D6399A651D2404960006CD28 /* HeadPortraitViewController.h */,
-				D6399A661D2404960006CD28 /* HeadPortraitViewController.m */,
-				D6399A671D2404960006CD28 /* NickNameViewController.h */,
-				D6399A681D2404960006CD28 /* NickNameViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		D6399A6B1D2404960006CD28 /* dynamicDetail */ = {
-			isa = PBXGroup;
-			children = (
-				D6399A6C1D2404960006CD28 /* Controller */,
-				D6399A731D2404960006CD28 /* View */,
-			);
-			path = dynamicDetail;
-			sourceTree = "<group>";
-		};
-		D6399A6C1D2404960006CD28 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D6399A6D1D2404960006CD28 /* DynamicColumnDetailViewController.h */,
-				D6399A6E1D2404960006CD28 /* DynamicColumnDetailViewController.m */,
-				D6399A6F1D2404960006CD28 /* DynamicColumnDetailViewController.xib */,
-				D6399A701D2404960006CD28 /* DynamicHotDetailViewController.h */,
-				D6399A711D2404960006CD28 /* DynamicHotDetailViewController.m */,
-				D6399A721D2404960006CD28 /* DynamicHotDetailViewController.xib */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		D6399A731D2404960006CD28 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D6399A741D2404960006CD28 /* README.md */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		D6399A751D2404960006CD28 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D6399A761D2404960006CD28 /* Dynamic.h */,
-				D6399A771D2404960006CD28 /* Dynamic.m */,
-				D6399A781D2404960006CD28 /* DynamicHot.h */,
-				D6399A791D2404960006CD28 /* DynamicHot.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D6399A7A1D2404960006CD28 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D6399A7B1D2404960006CD28 /* DynamicCell.h */,
-				D6399A7C1D2404960006CD28 /* DynamicCell.m */,
-				D6399A7D1D2404960006CD28 /* DynamicHotCell.h */,
-				D6399A7E1D2404960006CD28 /* DynamicHotCell.m */,
-				D6399A7F1D2404960006CD28 /* DynamicMineCell.h */,
-				D6399A801D2404960006CD28 /* DynamicMineCell.m */,
-				D6399A811D2404960006CD28 /* MyInformationCell.h */,
-				D6399A821D2404960006CD28 /* MyInformationCell.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		D653CA631D217581000E881A /* RESideMenu */ = {
@@ -1503,6 +1276,42 @@
 			path = Viewcontrollers;
 			sourceTree = "<group>";
 		};
+		D6C0C1361D24A170005B541F /* Set */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0C1371D24A170005B541F /* Controller */,
+				D6C0C13A1D24A170005B541F /* Model */,
+				D6C0C13C1D24A170005B541F /* View */,
+			);
+			path = Set;
+			sourceTree = "<group>";
+		};
+		D6C0C1371D24A170005B541F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0C1381D24A170005B541F /* SetViewController.h */,
+				D6C0C1391D24A170005B541F /* SetViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D6C0C13A1D24A170005B541F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0C13B1D24A170005B541F /* README.md */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6C0C13C1D24A170005B541F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0C13D1D24A170005B541F /* SetCell.h */,
+				D6C0C13E1D24A170005B541F /* SetCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D6C779E01D1FDADE00A07CFB /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -1634,7 +1443,6 @@
 				D604826A1D23FD8000CFA284 /* ListDetailViewController.xib in Resources */,
 				D6B284511D22BF70000D81EC /* BookHelpeViewCell.xib in Resources */,
 				D60E33F41D1CC4D0005CF58F /* Icon-Small@3x.png in Resources */,
-				D6399A8D1D2404960006CD28 /* DynamicColumnDetailViewController.xib in Resources */,
 				D6B284531D22CCA0000D81EC /* d_comment@3x.png in Resources */,
 				D60482361D23FA2200CFA284 /* BookCell.xib in Resources */,
 				D60482681D23FD8000CFA284 /* ListViewController.xib in Resources */,
@@ -1642,7 +1450,6 @@
 				D60E33F81D1CC4D0005CF58F /* icon01.png in Resources */,
 				D60E33F71D1CC4D0005CF58F /* iTunesArtwork@2x.png in Resources */,
 				D60E33FE1D1CC4D0005CF58F /* start01.png in Resources */,
-				D6399A8F1D2404960006CD28 /* DynamicHotDetailViewController.xib in Resources */,
 				D60E33681D1CC18C005CF58F /* Assets.xcassets in Resources */,
 				D6B1E4171D1E1F1E004EAEB1 /* f_ramble_icon@2x.png in Resources */,
 				D6B1E4211D1E35A7004EAEB1 /* rsm_icon_1@2x.png in Resources */,
@@ -1729,7 +1536,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6399A8B1D2404960006CD28 /* MyInformationViewController.m in Sources */,
 				D6B1E49F1D1EC512004EAEB1 /* MJRefreshStateHeader.m in Sources */,
 				D60482771D23FD8000CFA284 /* HotViewController.m in Sources */,
 				D6399A1D1D23FA170006CD28 /* ClassifyCell.m in Sources */,
@@ -1747,14 +1553,9 @@
 				D6C779E61D1FDB0D00A07CFB /* SearchViewController.m in Sources */,
 				D6399A371D23FA680006CD28 /* NewBookTableViewController.m in Sources */,
 				D653CA441D20D4C9000E881A /* ResultsViewCell.m in Sources */,
-<<<<<<< HEAD
-				D6399A851D2404960006CD28 /* DynamicColumnViewController.m in Sources */,
-=======
 				D604827A1D23FD8000CFA284 /* WEndViewController.m in Sources */,
 				D604827C1D23FD8000CFA284 /* WPotentialViewController.m in Sources */,
->>>>>>> bd63ed78dcbda7615d1739098f2cf9f772a0d7b1
 				D6B1E43C1D1E5B04004EAEB1 /* Game.m in Sources */,
-				D6399A911D2404960006CD28 /* Dynamic.m in Sources */,
 				D60E34071D1CC6BF005CF58F /* AppDelegate.m in Sources */,
 				D653CA711D21778A000E881A /* LeftViewController.m in Sources */,
 				D6399A201D23FA170006CD28 /* HeadReusableView.m in Sources */,
@@ -1763,15 +1564,11 @@
 				D60482711D23FD8000CFA284 /* TwoViewController.m in Sources */,
 				D6B1E4A31D1EC512004EAEB1 /* UIScrollView+MJExtension.m in Sources */,
 				D6399A3A1D23FA680006CD28 /* SingleList.m in Sources */,
-				D6399A921D2404960006CD28 /* DynamicHot.m in Sources */,
+				D6C0C1411D24A170005B541F /* SetCell.m in Sources */,
 				D6399A391D23FA680006CD28 /* ReputablyViewController.m in Sources */,
-				D6399A941D2404960006CD28 /* DynamicHotCell.m in Sources */,
-				D6399A891D2404960006CD28 /* HeadPortraitViewController.m in Sources */,
 				D6B284501D22BF70000D81EC /* BookHelpeViewCell.m in Sources */,
 				D6B1E4351D1E5938004EAEB1 /* README.md in Sources */,
 				D60482301D23FA2200CFA284 /* BookViewController.m in Sources */,
-				D6399A8A1D2404960006CD28 /* NickNameViewController.m in Sources */,
-				D6399A521D2403820006CD28 /* SetCell.m in Sources */,
 				D6B1E43F1D1E5EBE004EAEB1 /* GameViewController.m in Sources */,
 				D653CA6A1D217581000E881A /* RECommonFunctions.m in Sources */,
 				D6B1E4971D1EC512004EAEB1 /* MJRefreshAutoGifFooter.m in Sources */,
@@ -1781,18 +1578,15 @@
 				D69B34D41D235DE100BD3F0A /* BookHelpe.m in Sources */,
 				D6399A461D23FAFB0006CD28 /* BookStore.m in Sources */,
 				D60482351D23FA2200CFA284 /* BookCell.m in Sources */,
-				D6399A861D2404960006CD28 /* DynamicHotViewController.m in Sources */,
 				D637ACE71D23B31600BB5900 /* NetWorkRequestManager.m in Sources */,
+				D6C0C1401D24A170005B541F /* README.md in Sources */,
 				D6B1E4991D1EC512004EAEB1 /* MJRefreshAutoStateFooter.m in Sources */,
 				D6B1E40D1D1E119C004EAEB1 /* RunViewCell.m in Sources */,
-				D6399A881D2404960006CD28 /* DynamicViewController.m in Sources */,
 				D60482371D23FA2200CFA284 /* BookHeaderView.m in Sources */,
 				D6B1E4121D1E18DB004EAEB1 /* ComunityViewCell.m in Sources */,
-				D6399A831D2404960006CD28 /* ComprehensiveViewController.m in Sources */,
 				D6B2844C1D22BE44000D81EC /* BookHelpeViewController.m in Sources */,
 				D6399A141D23FA020006CD28 /* CommonModel.m in Sources */,
 				D6399A341D23FA680006CD28 /* ClassifyDetailViewController.m in Sources */,
-				D6399A871D2404960006CD28 /* DynamicMineViewController.m in Sources */,
 				D6B1E4A51D1EC512004EAEB1 /* UIView+MJExtension.m in Sources */,
 				D60482731D23FD8000CFA284 /* HotCell.m in Sources */,
 				D604826B1D23FD8000CFA284 /* OneDetailViewController.m in Sources */,
@@ -1803,14 +1597,10 @@
 				D60482781D23FD8000CFA284 /* PotentialViewController.m in Sources */,
 				D6B1E49A1D1EC512004EAEB1 /* MJRefreshBackGifFooter.m in Sources */,
 				D653CA481D20D68C000E881A /* Result.m in Sources */,
-				D6399A8E1D2404960006CD28 /* DynamicHotDetailViewController.m in Sources */,
 				D6399A0D1D23F7B80006CD28 /* NSString+URL.m in Sources */,
-				D6399A931D2404960006CD28 /* DynamicCell.m in Sources */,
 				D6B1E4961D1EC512004EAEB1 /* MJRefreshHeader.m in Sources */,
-				D6399A901D2404960006CD28 /* README.md in Sources */,
 				D60E33631D1CC18C005CF58F /* ViewController.m in Sources */,
 				D6B1E49D1D1EC512004EAEB1 /* MJRefreshGifHeader.m in Sources */,
-				D6399A951D2404960006CD28 /* DynamicMineCell.m in Sources */,
 				D6B1E4941D1EC512004EAEB1 /* MJRefreshComponent.m in Sources */,
 				D637ACDC1D23B0BD00BB5900 /* DetailViewController.m in Sources */,
 				D6399A441D23FAFB0006CD28 /* BookStoreViewController.m in Sources */,
@@ -1821,30 +1611,22 @@
 				D6399A1E1D23FA170006CD28 /* CommonCell.m in Sources */,
 				D6399A361D23FA680006CD28 /* BurglarViewController.m in Sources */,
 				D6B1E4981D1EC512004EAEB1 /* MJRefreshAutoNormalFooter.m in Sources */,
+				D6C0C13F1D24A170005B541F /* SetViewController.m in Sources */,
 				D6B1E4541D1EA688004EAEB1 /* ComicViewController.m in Sources */,
 				D637ACE81D23B31600BB5900 /* Tool.m in Sources */,
-				D6399A8C1D2404960006CD28 /* DynamicColumnDetailViewController.m in Sources */,
 				D604822F1D23FA2200CFA284 /* BookAllViewController.m in Sources */,
 				D60E335D1D1CC18C005CF58F /* main.m in Sources */,
-				D6399A841D2404960006CD28 /* README.md in Sources */,
 				D60482331D23FA2200CFA284 /* BookView.m in Sources */,
 				D6B1E4341D1E5938004EAEB1 /* README.md in Sources */,
 				D6399A381D23FA680006CD28 /* NSArray+log.m in Sources */,
 				D653CA6B1D217581000E881A /* RESideMenu.m in Sources */,
 				D6B1E4331D1E5938004EAEB1 /* README.md in Sources */,
-<<<<<<< HEAD
-				D6399A511D2403820006CD28 /* README.md in Sources */,
-				D6B1E44A1D1E7D6D004EAEB1 /* PlayViewController.m in Sources */,
-=======
 				D60482701D23FD8000CFA284 /* ThrViewController.m in Sources */,
 				D6B1E44A1D1E7D6D004EAEB1 /* PlayViewController.m in Sources */,
 				D60482791D23FD8000CFA284 /* RemainViewController.m in Sources */,
-				D6B284451D2256CC000D81EC /* SetViewController.m in Sources */,
->>>>>>> bd63ed78dcbda7615d1739098f2cf9f772a0d7b1
 				D6B1E49E1D1EC512004EAEB1 /* MJRefreshNormalHeader.m in Sources */,
 				D60482341D23FA2200CFA284 /* BookAllCell.m in Sources */,
 				D604822C1D23FA2200CFA284 /* BookOneViewController.m in Sources */,
-				D6399A501D2403820006CD28 /* SetViewController.m in Sources */,
 				D604822D1D23FA2200CFA284 /* BookThrViewController.m in Sources */,
 				D60482721D23FD8000CFA284 /* Hot.m in Sources */,
 				D60482691D23FD8000CFA284 /* ListDetailViewController.m in Sources */,
@@ -1853,7 +1635,6 @@
 				D604827B1D23FD8000CFA284 /* WHotViewController.m in Sources */,
 				D6B1E4931D1EC512004EAEB1 /* MJRefreshBackFooter.m in Sources */,
 				D6B284421D2256B4000D81EC /* LoginViewController.m in Sources */,
-				D6399A961D2404960006CD28 /* MyInformationCell.m in Sources */,
 				D65F49841D1D32A20023A740 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

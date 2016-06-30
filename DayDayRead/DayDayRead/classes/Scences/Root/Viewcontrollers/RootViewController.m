@@ -16,13 +16,7 @@
 #import "BookHelpeViewController.h"
 #import "ClassifyViewController.h"
 #import "BookAllViewController.h"
-<<<<<<< HEAD
-#import "DynamicViewController.h"
-#import "ComprehensiveViewController.h"
-
-=======
 #import "ListViewController.h"
->>>>>>> bd63ed78dcbda7615d1739098f2cf9f772a0d7b1
 #define kWith self.view.frame.size.width
 #define kHeight 50
 #define kSHeight self.view.frame.size.height
@@ -306,14 +300,8 @@ int isNum = 1;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (isNum == 2) {
-        if (indexPath.section == 0) {
-            [self.navigationController pushViewController:[[DynamicViewController alloc] init] animated:YES];
-        }
         if (indexPath.section == 1 && indexPath.row == 2) {
             [self.navigationController pushViewController:[[BookHelpeViewController alloc] init] animated:YES];
-        }
-        if (indexPath.section == 1 && indexPath.row == 0) {
-            [self.navigationController pushViewController:[[ComprehensiveViewController alloc] init] animated:YES];
         }
     }
     if (isNum == 3) {
