@@ -172,6 +172,26 @@
 		D6C0C13F1D24A170005B541F /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1391D24A170005B541F /* SetViewController.m */; };
 		D6C0C1401D24A170005B541F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C13B1D24A170005B541F /* README.md */; };
 		D6C0C1411D24A170005B541F /* SetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C13E1D24A170005B541F /* SetCell.m */; };
+		D6C0C16C1D24AAE7005B541F /* DynamicColumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1451D24AAE7005B541F /* DynamicColumnViewController.m */; };
+		D6C0C16D1D24AAE7005B541F /* DynamicHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1471D24AAE7005B541F /* DynamicHotViewController.m */; };
+		D6C0C16E1D24AAE7005B541F /* DynamicMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1491D24AAE7005B541F /* DynamicMineViewController.m */; };
+		D6C0C16F1D24AAE7005B541F /* DynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C14B1D24AAE7005B541F /* DynamicViewController.m */; };
+		D6C0C1701D24AAE7005B541F /* HeadPortraitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C14F1D24AAE7005B541F /* HeadPortraitViewController.m */; };
+		D6C0C1711D24AAE7005B541F /* NickNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1511D24AAE7005B541F /* NickNameViewController.m */; };
+		D6C0C1721D24AAE7005B541F /* MyInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1531D24AAE7005B541F /* MyInformationViewController.m */; };
+		D6C0C1731D24AAE7005B541F /* DynamicColumnDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1571D24AAE7005B541F /* DynamicColumnDetailViewController.m */; };
+		D6C0C1741D24AAE7005B541F /* DynamicColumnDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C0C1581D24AAE7005B541F /* DynamicColumnDetailViewController.xib */; };
+		D6C0C1751D24AAE7005B541F /* DynamicHotDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C15A1D24AAE7005B541F /* DynamicHotDetailViewController.m */; };
+		D6C0C1761D24AAE7005B541F /* DynamicHotDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C0C15B1D24AAE7005B541F /* DynamicHotDetailViewController.xib */; };
+		D6C0C1771D24AAE7005B541F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C15D1D24AAE7005B541F /* README.md */; };
+		D6C0C1781D24AAE7005B541F /* Dynamic.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1601D24AAE7005B541F /* Dynamic.m */; };
+		D6C0C1791D24AAE7005B541F /* DynamicHot.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1621D24AAE7005B541F /* DynamicHot.m */; };
+		D6C0C17A1D24AAE7005B541F /* DynamicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1651D24AAE7005B541F /* DynamicCell.m */; };
+		D6C0C17B1D24AAE7005B541F /* DynamicHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1671D24AAE7005B541F /* DynamicHotCell.m */; };
+		D6C0C17C1D24AAE7005B541F /* DynamicMineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1691D24AAE7005B541F /* DynamicMineCell.m */; };
+		D6C0C17D1D24AAE7005B541F /* MyInformationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C16B1D24AAE7005B541F /* MyInformationCell.m */; };
+		D6C0C1841D24AAF6005B541F /* ComprehensiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1811D24AAF6005B541F /* ComprehensiveViewController.m */; };
+		D6C0C1851D24AAF6005B541F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1831D24AAF6005B541F /* README.md */; };
 		D6C779DF1D1FCBB500A07CFB /* 1055.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C779DE1D1FCBB500A07CFB /* 1055.png */; };
 		D6C779E61D1FDB0D00A07CFB /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C779E51D1FDB0D00A07CFB /* SearchViewController.m */; };
 /* End PBXBuildFile section */
@@ -449,6 +469,42 @@
 		D6C0C13B1D24A170005B541F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D6C0C13D1D24A170005B541F /* SetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetCell.h; sourceTree = "<group>"; };
 		D6C0C13E1D24A170005B541F /* SetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetCell.m; sourceTree = "<group>"; };
+		D6C0C1441D24AAE7005B541F /* DynamicColumnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicColumnViewController.h; sourceTree = "<group>"; };
+		D6C0C1451D24AAE7005B541F /* DynamicColumnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicColumnViewController.m; sourceTree = "<group>"; };
+		D6C0C1461D24AAE7005B541F /* DynamicHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicHotViewController.h; sourceTree = "<group>"; };
+		D6C0C1471D24AAE7005B541F /* DynamicHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicHotViewController.m; sourceTree = "<group>"; };
+		D6C0C1481D24AAE7005B541F /* DynamicMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicMineViewController.h; sourceTree = "<group>"; };
+		D6C0C1491D24AAE7005B541F /* DynamicMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicMineViewController.m; sourceTree = "<group>"; };
+		D6C0C14A1D24AAE7005B541F /* DynamicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicViewController.h; sourceTree = "<group>"; };
+		D6C0C14B1D24AAE7005B541F /* DynamicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicViewController.m; sourceTree = "<group>"; };
+		D6C0C14E1D24AAE7005B541F /* HeadPortraitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadPortraitViewController.h; sourceTree = "<group>"; };
+		D6C0C14F1D24AAE7005B541F /* HeadPortraitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadPortraitViewController.m; sourceTree = "<group>"; };
+		D6C0C1501D24AAE7005B541F /* NickNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NickNameViewController.h; sourceTree = "<group>"; };
+		D6C0C1511D24AAE7005B541F /* NickNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NickNameViewController.m; sourceTree = "<group>"; };
+		D6C0C1521D24AAE7005B541F /* MyInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInformationViewController.h; sourceTree = "<group>"; };
+		D6C0C1531D24AAE7005B541F /* MyInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInformationViewController.m; sourceTree = "<group>"; };
+		D6C0C1561D24AAE7005B541F /* DynamicColumnDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicColumnDetailViewController.h; sourceTree = "<group>"; };
+		D6C0C1571D24AAE7005B541F /* DynamicColumnDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicColumnDetailViewController.m; sourceTree = "<group>"; };
+		D6C0C1581D24AAE7005B541F /* DynamicColumnDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicColumnDetailViewController.xib; sourceTree = "<group>"; };
+		D6C0C1591D24AAE7005B541F /* DynamicHotDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicHotDetailViewController.h; sourceTree = "<group>"; };
+		D6C0C15A1D24AAE7005B541F /* DynamicHotDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicHotDetailViewController.m; sourceTree = "<group>"; };
+		D6C0C15B1D24AAE7005B541F /* DynamicHotDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicHotDetailViewController.xib; sourceTree = "<group>"; };
+		D6C0C15D1D24AAE7005B541F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D6C0C15F1D24AAE7005B541F /* Dynamic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dynamic.h; sourceTree = "<group>"; };
+		D6C0C1601D24AAE7005B541F /* Dynamic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dynamic.m; sourceTree = "<group>"; };
+		D6C0C1611D24AAE7005B541F /* DynamicHot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicHot.h; sourceTree = "<group>"; };
+		D6C0C1621D24AAE7005B541F /* DynamicHot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicHot.m; sourceTree = "<group>"; };
+		D6C0C1641D24AAE7005B541F /* DynamicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicCell.h; sourceTree = "<group>"; };
+		D6C0C1651D24AAE7005B541F /* DynamicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicCell.m; sourceTree = "<group>"; };
+		D6C0C1661D24AAE7005B541F /* DynamicHotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicHotCell.h; sourceTree = "<group>"; };
+		D6C0C1671D24AAE7005B541F /* DynamicHotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicHotCell.m; sourceTree = "<group>"; };
+		D6C0C1681D24AAE7005B541F /* DynamicMineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicMineCell.h; sourceTree = "<group>"; };
+		D6C0C1691D24AAE7005B541F /* DynamicMineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicMineCell.m; sourceTree = "<group>"; };
+		D6C0C16A1D24AAE7005B541F /* MyInformationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInformationCell.h; sourceTree = "<group>"; };
+		D6C0C16B1D24AAE7005B541F /* MyInformationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInformationCell.m; sourceTree = "<group>"; };
+		D6C0C1801D24AAF6005B541F /* ComprehensiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComprehensiveViewController.h; sourceTree = "<group>"; };
+		D6C0C1811D24AAF6005B541F /* ComprehensiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComprehensiveViewController.m; sourceTree = "<group>"; };
+		D6C0C1831D24AAF6005B541F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D6C779DE1D1FCBB500A07CFB /* 1055.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1055.png; sourceTree = "<group>"; };
 		D6C779E41D1FDB0D00A07CFB /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		D6C779E51D1FDB0D00A07CFB /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
@@ -790,6 +846,8 @@
 		D60E34061D1CC6BF005CF58F /* Scences */ = {
 			isa = PBXGroup;
 			children = (
+				D6C0C17E1D24AAF6005B541F /* Comprehensive */,
+				D6C0C1421D24AAE7005B541F /* dynamic */,
 				D6C0C1361D24A170005B541F /* Set */,
 				D60482391D23FD8000CFA284 /* List */,
 				D6399A101D23F9C50006CD28 /* Classification */,
@@ -1312,6 +1370,136 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D6C0C1421D24AAE7005B541F /* dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0C1431D24AAE7005B541F /* Controller */,
+				D6C0C1541D24AAE7005B541F /* dynamicDetail */,
+				D6C0C15E1D24AAE7005B541F /* Model */,
+				D6C0C1631D24AAE7005B541F /* View */,
+			);
+			path = dynamic;
+			sourceTree = "<group>";
+		};
+		D6C0C1431D24AAE7005B541F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0C1441D24AAE7005B541F /* DynamicColumnViewController.h */,
+				D6C0C1451D24AAE7005B541F /* DynamicColumnViewController.m */,
+				D6C0C1461D24AAE7005B541F /* DynamicHotViewController.h */,
+				D6C0C1471D24AAE7005B541F /* DynamicHotViewController.m */,
+				D6C0C1481D24AAE7005B541F /* DynamicMineViewController.h */,
+				D6C0C1491D24AAE7005B541F /* DynamicMineViewController.m */,
+				D6C0C14A1D24AAE7005B541F /* DynamicViewController.h */,
+				D6C0C14B1D24AAE7005B541F /* DynamicViewController.m */,
+				D6C0C14C1D24AAE7005B541F /* MyInformationDetail */,
+				D6C0C1521D24AAE7005B541F /* MyInformationViewController.h */,
+				D6C0C1531D24AAE7005B541F /* MyInformationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D6C0C14C1D24AAE7005B541F /* MyInformationDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0C14D1D24AAE7005B541F /* Controller */,
+			);
+			path = MyInformationDetail;
+			sourceTree = "<group>";
+		};
+		D6C0C14D1D24AAE7005B541F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0C14E1D24AAE7005B541F /* HeadPortraitViewController.h */,
+				D6C0C14F1D24AAE7005B541F /* HeadPortraitViewController.m */,
+				D6C0C1501D24AAE7005B541F /* NickNameViewController.h */,
+				D6C0C1511D24AAE7005B541F /* NickNameViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D6C0C1541D24AAE7005B541F /* dynamicDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0C1551D24AAE7005B541F /* Controller */,
+				D6C0C15C1D24AAE7005B541F /* View */,
+			);
+			path = dynamicDetail;
+			sourceTree = "<group>";
+		};
+		D6C0C1551D24AAE7005B541F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0C1561D24AAE7005B541F /* DynamicColumnDetailViewController.h */,
+				D6C0C1571D24AAE7005B541F /* DynamicColumnDetailViewController.m */,
+				D6C0C1581D24AAE7005B541F /* DynamicColumnDetailViewController.xib */,
+				D6C0C1591D24AAE7005B541F /* DynamicHotDetailViewController.h */,
+				D6C0C15A1D24AAE7005B541F /* DynamicHotDetailViewController.m */,
+				D6C0C15B1D24AAE7005B541F /* DynamicHotDetailViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D6C0C15C1D24AAE7005B541F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0C15D1D24AAE7005B541F /* README.md */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6C0C15E1D24AAE7005B541F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0C15F1D24AAE7005B541F /* Dynamic.h */,
+				D6C0C1601D24AAE7005B541F /* Dynamic.m */,
+				D6C0C1611D24AAE7005B541F /* DynamicHot.h */,
+				D6C0C1621D24AAE7005B541F /* DynamicHot.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6C0C1631D24AAE7005B541F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0C1641D24AAE7005B541F /* DynamicCell.h */,
+				D6C0C1651D24AAE7005B541F /* DynamicCell.m */,
+				D6C0C1661D24AAE7005B541F /* DynamicHotCell.h */,
+				D6C0C1671D24AAE7005B541F /* DynamicHotCell.m */,
+				D6C0C1681D24AAE7005B541F /* DynamicMineCell.h */,
+				D6C0C1691D24AAE7005B541F /* DynamicMineCell.m */,
+				D6C0C16A1D24AAE7005B541F /* MyInformationCell.h */,
+				D6C0C16B1D24AAE7005B541F /* MyInformationCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6C0C17E1D24AAF6005B541F /* Comprehensive */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0C17F1D24AAF6005B541F /* Controller */,
+				D6C0C1821D24AAF6005B541F /* View */,
+			);
+			path = Comprehensive;
+			sourceTree = "<group>";
+		};
+		D6C0C17F1D24AAF6005B541F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0C1801D24AAF6005B541F /* ComprehensiveViewController.h */,
+				D6C0C1811D24AAF6005B541F /* ComprehensiveViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D6C0C1821D24AAF6005B541F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0C1831D24AAF6005B541F /* README.md */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D6C779E01D1FDADE00A07CFB /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -1425,6 +1613,7 @@
 				D60E33F11D1CC4D0005CF58F /* Icon-Small-50@2x.png in Resources */,
 				D6B1E42B1D1E35FE004EAEB1 /* rsm_icon_8@2x.png in Resources */,
 				D60E33ED1D1CC4D0005CF58F /* Icon-Small-40.png in Resources */,
+				D6C0C1761D24AAE7005B541F /* DynamicHotDetailViewController.xib in Resources */,
 				D6399A1F1D23FA170006CD28 /* CommonCell.xib in Resources */,
 				D60E33EB1D1CC4D0005CF58F /* Icon-76.png in Resources */,
 				D60E33FB1D1CC4D0005CF58F /* ip6@2x.png in Resources */,
@@ -1468,6 +1657,7 @@
 				D653CA451D20D4C9000E881A /* ResultsViewCell.xib in Resources */,
 				D60E33FC1D1CC4D0005CF58F /* ip6p@3x.png in Resources */,
 				D653CA4A1D210FFC000E881A /* Icon-Small-40@2x副本.png in Resources */,
+				D6C0C1741D24AAE7005B541F /* DynamicColumnDetailViewController.xib in Resources */,
 				D60E33EF1D1CC4D0005CF58F /* Icon-Small-40@3x.png in Resources */,
 				D60E33FD1D1CC4D0005CF58F /* ip@1x.png in Resources */,
 				D60E33E91D1CC4D0005CF58F /* Icon-72.png in Resources */,
@@ -1559,6 +1749,9 @@
 				D60E34071D1CC6BF005CF58F /* AppDelegate.m in Sources */,
 				D653CA711D21778A000E881A /* LeftViewController.m in Sources */,
 				D6399A201D23FA170006CD28 /* HeadReusableView.m in Sources */,
+				D6C0C1841D24AAF6005B541F /* ComprehensiveViewController.m in Sources */,
+				D6C0C1851D24AAF6005B541F /* README.md in Sources */,
+				D6C0C16E1D24AAE7005B541F /* DynamicMineViewController.m in Sources */,
 				D6B1E4A11D1EC512004EAEB1 /* MJRefreshConst.m in Sources */,
 				D60482381D23FA2200CFA284 /* SingletonBook.m in Sources */,
 				D60482711D23FD8000CFA284 /* TwoViewController.m in Sources */,
@@ -1572,18 +1765,25 @@
 				D6B1E43F1D1E5EBE004EAEB1 /* GameViewController.m in Sources */,
 				D653CA6A1D217581000E881A /* RECommonFunctions.m in Sources */,
 				D6B1E4971D1EC512004EAEB1 /* MJRefreshAutoGifFooter.m in Sources */,
+				D6C0C16D1D24AAE7005B541F /* DynamicHotViewController.m in Sources */,
+				D6C0C1711D24AAE7005B541F /* NickNameViewController.m in Sources */,
 				D604826E1D23FD8000CFA284 /* ThrDetailViewController.m in Sources */,
 				D653CA6C1D217581000E881A /* UIViewController+RESideMenu.m in Sources */,
 				D637ACEC1D23BC7200BB5900 /* DetailViewCell.m in Sources */,
+				D6C0C1771D24AAE7005B541F /* README.md in Sources */,
 				D69B34D41D235DE100BD3F0A /* BookHelpe.m in Sources */,
 				D6399A461D23FAFB0006CD28 /* BookStore.m in Sources */,
 				D60482351D23FA2200CFA284 /* BookCell.m in Sources */,
 				D637ACE71D23B31600BB5900 /* NetWorkRequestManager.m in Sources */,
+				D6C0C1781D24AAE7005B541F /* Dynamic.m in Sources */,
 				D6C0C1401D24A170005B541F /* README.md in Sources */,
+				D6C0C16F1D24AAE7005B541F /* DynamicViewController.m in Sources */,
 				D6B1E4991D1EC512004EAEB1 /* MJRefreshAutoStateFooter.m in Sources */,
 				D6B1E40D1D1E119C004EAEB1 /* RunViewCell.m in Sources */,
+				D6C0C1721D24AAE7005B541F /* MyInformationViewController.m in Sources */,
 				D60482371D23FA2200CFA284 /* BookHeaderView.m in Sources */,
 				D6B1E4121D1E18DB004EAEB1 /* ComunityViewCell.m in Sources */,
+				D6C0C16C1D24AAE7005B541F /* DynamicColumnViewController.m in Sources */,
 				D6B2844C1D22BE44000D81EC /* BookHelpeViewController.m in Sources */,
 				D6399A141D23FA020006CD28 /* CommonModel.m in Sources */,
 				D6399A341D23FA680006CD28 /* ClassifyDetailViewController.m in Sources */,
@@ -1595,23 +1795,29 @@
 				D6B1E4431D1E653B004EAEB1 /* GameViewCell.m in Sources */,
 				D60482751D23FD8000CFA284 /* SingletonList.m in Sources */,
 				D60482781D23FD8000CFA284 /* PotentialViewController.m in Sources */,
+				D6C0C17C1D24AAE7005B541F /* DynamicMineCell.m in Sources */,
+				D6C0C1701D24AAE7005B541F /* HeadPortraitViewController.m in Sources */,
 				D6B1E49A1D1EC512004EAEB1 /* MJRefreshBackGifFooter.m in Sources */,
 				D653CA481D20D68C000E881A /* Result.m in Sources */,
 				D6399A0D1D23F7B80006CD28 /* NSString+URL.m in Sources */,
 				D6B1E4961D1EC512004EAEB1 /* MJRefreshHeader.m in Sources */,
 				D60E33631D1CC18C005CF58F /* ViewController.m in Sources */,
+				D6C0C1731D24AAE7005B541F /* DynamicColumnDetailViewController.m in Sources */,
 				D6B1E49D1D1EC512004EAEB1 /* MJRefreshGifHeader.m in Sources */,
 				D6B1E4941D1EC512004EAEB1 /* MJRefreshComponent.m in Sources */,
 				D637ACDC1D23B0BD00BB5900 /* DetailViewController.m in Sources */,
+				D6C0C17B1D24AAE7005B541F /* DynamicHotCell.m in Sources */,
 				D6399A441D23FAFB0006CD28 /* BookStoreViewController.m in Sources */,
 				D604822E1D23FA2200CFA284 /* BookTwoViewController.m in Sources */,
 				D6B1E4471D1E6F70004EAEB1 /* CALayer+XibBorderColor.m in Sources */,
 				D60482311D23FA2200CFA284 /* Book.m in Sources */,
+				D6C0C1751D24AAE7005B541F /* DynamicHotDetailViewController.m in Sources */,
 				D6B1E4A21D1EC512004EAEB1 /* NSBundle+MJRefresh.m in Sources */,
 				D6399A1E1D23FA170006CD28 /* CommonCell.m in Sources */,
 				D6399A361D23FA680006CD28 /* BurglarViewController.m in Sources */,
 				D6B1E4981D1EC512004EAEB1 /* MJRefreshAutoNormalFooter.m in Sources */,
 				D6C0C13F1D24A170005B541F /* SetViewController.m in Sources */,
+				D6C0C1791D24AAE7005B541F /* DynamicHot.m in Sources */,
 				D6B1E4541D1EA688004EAEB1 /* ComicViewController.m in Sources */,
 				D637ACE81D23B31600BB5900 /* Tool.m in Sources */,
 				D604822F1D23FA2200CFA284 /* BookAllViewController.m in Sources */,
@@ -1624,9 +1830,11 @@
 				D60482701D23FD8000CFA284 /* ThrViewController.m in Sources */,
 				D6B1E44A1D1E7D6D004EAEB1 /* PlayViewController.m in Sources */,
 				D60482791D23FD8000CFA284 /* RemainViewController.m in Sources */,
+				D6C0C17D1D24AAE7005B541F /* MyInformationCell.m in Sources */,
 				D6B1E49E1D1EC512004EAEB1 /* MJRefreshNormalHeader.m in Sources */,
 				D60482341D23FA2200CFA284 /* BookAllCell.m in Sources */,
 				D604822C1D23FA2200CFA284 /* BookOneViewController.m in Sources */,
+				D6C0C17A1D24AAE7005B541F /* DynamicCell.m in Sources */,
 				D604822D1D23FA2200CFA284 /* BookThrViewController.m in Sources */,
 				D60482721D23FD8000CFA284 /* Hot.m in Sources */,
 				D60482691D23FD8000CFA284 /* ListDetailViewController.m in Sources */,
