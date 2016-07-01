@@ -10,6 +10,7 @@
                 <outlet property="contentLabel" destination="DZZ-r9-Mrw" id="wHM-DO-dvC"/>
                 <outlet property="nickNameLabel" destination="gcb-LY-HiZ" id="Na1-bz-ahN"/>
                 <outlet property="nickNameView" destination="V3T-dt-HXW" id="K8D-K9-iQc"/>
+                <outlet property="scrollew" destination="ijy-KE-NJZ" id="5FU-Bv-beM"/>
                 <outlet property="timeLabel" destination="w3h-Ae-hZc" id="PfL-pr-wMG"/>
                 <outlet property="titleLabel" destination="9yn-R1-Y4e" id="4XT-rq-5mg"/>
                 <outlet property="view" destination="bb8-de-MYK" id="aa1-tg-6M7"/>

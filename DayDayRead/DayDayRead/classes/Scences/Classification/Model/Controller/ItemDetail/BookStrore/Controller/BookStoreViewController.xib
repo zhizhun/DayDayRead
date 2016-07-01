@@ -77,11 +77,11 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOH-ca-UcM">
-                                    <rect key="frame" x="26" y="131" width="120" height="45"/>
+                                    <rect key="frame" x="26" y="131" width="130" height="45"/>
                                     <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="45" id="K1N-am-Yyd"/>
-                                        <constraint firstAttribute="width" constant="120" id="ryM-xz-KP1"/>
+                                        <constraint firstAttribute="width" constant="130" id="ryM-xz-KP1"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                     <state key="normal" title="+追更新"/>
@@ -90,7 +90,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2g6-hH-WeR">
-                                    <rect key="frame" x="176" y="131" width="395" height="45"/>
+                                    <rect key="frame" x="186" y="131" width="385" height="45"/>
                                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="45" id="bTR-yu-cqR"/>
@@ -182,7 +182,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44R-ps-4Iq">
-                                    <rect key="frame" x="107" y="275" width="80" height="30"/>
+                                    <rect key="frame" x="137" y="275" width="80" height="30"/>
                                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="80" id="tCB-N9-RGO"/>
@@ -191,16 +191,16 @@
                                     <state key="normal" title="热血"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3q-Mw-Ou2">
-                                    <rect key="frame" x="26" y="275" width="50" height="30"/>
+                                    <rect key="frame" x="26" y="275" width="80" height="30"/>
                                     <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="BoC-lg-hVl"/>
-                                        <constraint firstAttribute="width" constant="50" id="HYh-18-uCl"/>
+                                        <constraint firstAttribute="width" constant="80" id="HYh-18-uCl"/>
                                     </constraints>
                                     <state key="normal" title="玄幻"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAE-ch-T0z">
-                                    <rect key="frame" x="218" y="275" width="362" height="30"/>
+                                    <rect key="frame" x="248" y="275" width="332" height="30"/>
                                     <color key="backgroundColor" red="0.31451323489999999" green="1" blue="0.36185546940000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="bk2-KL-A0G"/>

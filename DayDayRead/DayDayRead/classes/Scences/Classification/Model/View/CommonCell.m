@@ -16,7 +16,7 @@
         _commonModel = nil;
         _commonModel = commonModel;
         self.titleLabel.text = _commonModel.title;
-        self.authorLabel.text = [NSString stringWithFormat:@"%@%@", _commonModel.author,@"   |"];
+        self.authorLabel.text = [NSString stringWithFormat:@"%@%@", _commonModel.author,@"  | "];
        ;
         
         
@@ -25,7 +25,7 @@
 
       
         NSInteger stri =_commonModel.latelyFollower;
-        self.latelyFollowerLabel.text = [NSString stringWithFormat:@"%ld%@",(long)stri,@" 人在追     |"];
+        self.latelyFollowerLabel.text = [NSString stringWithFormat:@"%ld%@",(long)stri,@" 人在追   |"];
        
 
         
@@ -41,12 +41,14 @@
             NSString *str1 = [NSString stringWithFormat:@"%@%@",addressStr,_commonModel.cover];
             [self.bookImageView sd_setImageWithURL:[NSURL URLWithString:str1]];
 
-        }else {
+        }else  if (range.location == NSNotFound){
             NSString *str1 = [ _commonModel.cover substringFromIndex:7];
   [self.bookImageView sd_setImageWithURL:[NSURL URLWithString:str1]];
             
+        }else        {
+            
+        self.bookImageView.image = [UIImage imageNamed:@"1.jpg"];
         }
-        
     }
     
 }

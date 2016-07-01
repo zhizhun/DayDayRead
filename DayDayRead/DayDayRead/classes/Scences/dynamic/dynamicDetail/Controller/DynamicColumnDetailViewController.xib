@@ -11,6 +11,7 @@
                 <outlet property="contentLabel" destination="wyN-bz-jK8" id="E32-qB-ZrT"/>
                 <outlet property="contentViewHeght" destination="ijI-Jq-DX1" id="KSu-99-k9j"/>
                 <outlet property="nickNameImageView" destination="vd4-nF-JXV" id="Dg3-iF-Sjx"/>
+                <outlet property="scrollView" destination="G66-LB-Ag9" id="Mgq-fj-f1V"/>
                 <outlet property="timeLabel" destination="AHs-YD-SXI" id="51i-kp-UHB"/>
                 <outlet property="titleLabel" destination="RIn-KG-ayD" id="vyw-eo-dXT"/>
                 <outlet property="view" destination="7Ov-yZ-HLb" id="vXm-ic-jVj"/>

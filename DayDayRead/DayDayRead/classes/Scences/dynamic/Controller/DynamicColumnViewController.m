@@ -11,10 +11,12 @@
 #import "DynamicCell.h"
 #import "NetWorkRequestManager.h"
 #import "DynamicColumnDetailViewController.h"
+#import "MJRefresh.h"
 
 @interface DynamicColumnViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)UITableView *tableView;
 @property (nonatomic,strong)NSMutableArray *dataArray;
+@property (nonatomic,assign) int flag;
 
 
 
@@ -27,7 +29,28 @@
     self.dataArray = [NSMutableArray array];
     [self initView];
     [self requestData];
+    [self downRefresh];
+    [self upRefresh];
     // Do any additional setup after loading the view.
+}
+- (void)downRefresh {
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        _flag = 0;
+        [self requestData];
+        [self.tableView.mj_header endRefreshing];
+        
+    }];
+    
+
+    
+}
+- (void)upRefresh {
+    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        [self requestData];
+        [self.tableView.mj_footer endRefreshing];
+    }];
+
+    
 }
 - (void)initView{
     self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];

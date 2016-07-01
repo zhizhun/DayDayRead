@@ -14,15 +14,16 @@
 #import "URL.h"
 #import "ClassifyDetailViewController.h"
 #import "SingleList.h"
-
 #import "NSString+URL.h"
 #import "BookStoreViewController.h"
+#import "MJRefresh.h"
 
 
 @interface HotTableViewController ()
 @property (nonatomic, strong)NSMutableArray *dataArray;
 @property (nonatomic, strong)NSString *dataStr;
 @property (nonatomic, strong)NSString *textStr;
+@property (nonatomic, assign)int flag;
 
 
 @end
@@ -32,7 +33,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-  
     
     SingleList *list = [SingleList shareInstance];
     self.dataStr = list.type;
@@ -46,6 +46,8 @@
     
   
     [self requestData];
+    [self downRefresh];
+    [self upRefresh];
   
     
     self.dataArray = [NSMutableArray array];
@@ -54,10 +56,28 @@
      [self.tableView registerNib:[UINib nibWithNibName:@"CommonCell" bundle:nil] forCellReuseIdentifier:@"cell"];
     
 }
+- (void)downRefresh {
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        _flag = 0;
+        [self requestData];
+        [self.tableView.mj_header endRefreshing];
+        
+    }];
+    
+}
+- (void)upRefresh {
+    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        [self requestData];
+        [self.tableView.mj_footer endRefreshing];
+    }];
+    
+}
 - (void)requestData {
     NSString *urlString = @"http://api.zhuishushenqi.com/book/by-categories?gender=";
-    NSString *urlStr = @"&minor=&start=0&limit=50&type=hot&major=";
-    NSString *str = [NSString stringWithFormat:@"%@%@%@%@",urlString,_textStr,urlStr,self.dataStr];
+    NSString *urlSt = @"&minor=&start=0&limit=20";
+    NSString *urlStr = [NSString stringWithFormat:urlSt,_flag];
+    NSString *typeStr = @"&type=hot&major=";
+    NSString *str = [NSString stringWithFormat:@"%@%@%@%@%@",urlString,_textStr,urlStr,typeStr,self.dataStr];
     NSString *encodedString = [str URLEncodedString];
 
     [NetWorkRequestManager requestType:GET urlString:encodedString prama:nil success:^(id data) {
@@ -78,6 +98,7 @@
         NSLog(@"%@",error);
         
     }];
+    _flag+=20;
     
 }
 

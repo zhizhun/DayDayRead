@@ -14,6 +14,7 @@
 #import "URL.h"
 #import "NSString+URL.h"
 #import "SingleList.h"
+#import "MJRefresh.h"
 
 #import "BookStoreViewController.h"
 
@@ -21,6 +22,7 @@
 @property (nonatomic, strong)NSMutableArray *dataArray;
 @property (nonatomic, strong)NSString *dataStr;
 @property (nonatomic, strong)NSString *textStr;
+@property (nonatomic, assign)int num;
 @end
 
 @implementation NewBookTableViewController
@@ -40,26 +42,46 @@
     
  
     [self requestData];
-   
-
-
+    [self downRefresh];
+    [self upRefresh];
     
-//    self.view.backgroundColor = [UIColor redColor];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.dataArray = [NSMutableArray array];
-    
+  
     //注册cell
     [self.tableView registerNib:[UINib nibWithNibName:@"CommonCell" bundle:nil] forCellReuseIdentifier:@"cell"];
 }
+
+
+
+
+- (void)downRefresh {
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            _num = 0;
+            [self requestData];
+            [self.tableView.mj_header endRefreshing];
+        });
+        
+    }];
+    
+}
+
+- (void)upRefresh {
+    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self requestData];
+            
+            [self.tableView.mj_footer endRefreshing];
+        });
+    }];
+    
+}
 - (void)requestData {
     NSString *urlString = @"http://api.zhuishushenqi.com/book/by-categories?gender=";
-    NSString *urlStr = @"&minor=&start=0&limit=50&type=new&major=";
-    NSString *str = [NSString stringWithFormat:@"%@%@%@%@",urlString,_textStr,urlStr,self.dataStr];
+    NSString *urlSt = @"&minor=&start=0&limit=20";
+    NSString *urlStr = [NSString stringWithFormat:urlSt,_num];
+    NSString *typeStr = @"&type=new&major=";
+    NSString *str = [NSString stringWithFormat:@"%@%@%@%@%@",urlString,_textStr,urlStr,typeStr,self.dataStr];
     NSString *encodedString = [str URLEncodedString];
     
     [NetWorkRequestManager requestType:GET urlString:encodedString prama:nil success:^(id data) {
@@ -80,7 +102,7 @@
         NSLog(@"%@",error);
         
     }];
-    
+    _num += 20;
 }
 
 

@@ -20,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentViewHeight;
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollew;
+
 @end
 
 @implementation DynamicHotDetailViewController
@@ -65,10 +67,27 @@
         NSString *timeStr1 = [timeStr substringToIndex:10];
         self.timeLabel.text =timeStr1;
 
-  
+    //计算详情高度
+    CGRect frame = _contentLabel.frame;
+    frame.size.height = [self calcuateTextHeightWithDynamicHot:_dynamicHot];
+    _contentLabel.frame = frame;
+    //给约束赋值
+    CGSize size = CGSizeMake(_scrollew.frame.size.width, _contentLabel.frame.size.height +360);
+    self.contentViewHeight.constant = size.height;
+
     
 
 }
+
+
+- (CGFloat)calcuateTextHeightWithDynamicHot:(DynamicHot*)dynamicHot {
+    CGSize size = CGSizeMake(_contentLabel.frame.size.width, 1000000);
+    NSDictionary *dic = @{NSFontAttributeName:[UIFont systemFontOfSize:18.0f]};
+    CGRect frame = [[_dynamicHot.tweet objectForKey:@"content"]boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:dic context:nil];
+    return frame.size.height;
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
