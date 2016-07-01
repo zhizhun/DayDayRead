@@ -14,8 +14,7 @@
 #import "NSString+URL.h"
 #import "SingleList.h"
 #import "MJRefresh.h"
-
-#import "BookStoreViewController.h"
+#import "BeforeReadViewController.h"
 
 @interface ReputablyViewController ()
 @property (nonatomic, strong)NSMutableArray *dataArray;
@@ -122,12 +121,11 @@
     return 150;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    BookStoreViewController * bookVC = [[BookStoreViewController alloc] init];
+    BeforeReadViewController * bookVC = [[BeforeReadViewController alloc] init];
+    CommonModel *model = self.dataArray[indexPath.row];
+    bookVC._id = model._id;
     
-    UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:bookVC];
-    naVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self.view.window.rootViewController presentViewController:naVC
-                                                      animated:YES completion:nil];
+    [self.navigationController pushViewController:bookVC animated:YES];
 }
 
 

@@ -15,8 +15,7 @@
 #import "NSString+URL.h"
 #import "SingleList.h"
 #import "MJRefresh.h"
-
-#import "BookStoreViewController.h"
+#import "BeforeReadViewController.h"
 
 @interface NewBookTableViewController ()
 @property (nonatomic, strong)NSMutableArray *dataArray;
@@ -96,7 +95,7 @@
         dispatch_async(dispatch_get_main_queue()
                        , ^{
                            [newVC.tableView reloadData];
-                           //                           NSLog(@"%@",self.dataArray);
+                          
                        });
     } fail:^(NSError *error) {
         NSLog(@"%@",error);
@@ -112,7 +111,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+#pragma mark - Table view datasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
@@ -135,12 +134,13 @@
     return 150;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    BookStoreViewController * bookVC = [[BookStoreViewController alloc] init];
+    BeforeReadViewController * bookVC = [[BeforeReadViewController alloc] init];
 
-    UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:bookVC];
-    naVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self.view.window.rootViewController presentViewController:naVC
-                                                      animated:YES completion:nil];
+    
+    CommonModel *model = self.dataArray[indexPath.row];
+    bookVC._id = model._id;
+    
+    [self.navigationController pushViewController:bookVC animated:YES];
 }
 
 

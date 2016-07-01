@@ -11,4 +11,5 @@
 
 @interface ComprehensiveDetailViewController : UIViewController
 @property (nonatomic,strong)Comprehensive *comprehensive;
+@property (nonatomic,strong)NSString *_id;
 @end

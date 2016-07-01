@@ -12,5 +12,13 @@
 
 @property (nonatomic, strong)NSString *_id;
 
-//@property (nonatomic,strong)NSString *
+@property (nonatomic, strong)NSDictionary *author;
+@property (nonatomic, strong)NSDictionary *replyTo;
+@property (nonatomic, strong)NSString *floor;
+
+@property (nonatomic, strong)NSString *created;
+@property (nonatomic, strong)NSString *content;
+
+
+
 @end
