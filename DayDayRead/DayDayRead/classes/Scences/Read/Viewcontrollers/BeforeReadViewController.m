@@ -142,7 +142,9 @@
 }
 //开始阅读
 - (IBAction)didBegainRead:(id)sender {
-    [self presentViewController:[[ReadingViewController alloc] init] animated:YES completion:nil];
+    ReadingViewController *readVC = [[ReadingViewController alloc] init];
+    readVC._id = self._id;
+    [self presentViewController:readVC animated:YES completion:nil];
 }
 //追加更新
 - (IBAction)didRunUpdate:(id)sender {
