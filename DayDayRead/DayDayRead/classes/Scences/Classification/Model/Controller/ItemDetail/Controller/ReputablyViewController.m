@@ -4,7 +4,7 @@
 //
 //  Created by lanou3g on 16/6/25.
 //  Copyright © 2016年 张明杰. All rights reserved.
-//
+//reputation
 
 #import "ReputablyViewController.h"
 #import "CommonCell.h"
@@ -13,6 +13,7 @@
 #import "URL.h"
 #import "NSString+URL.h"
 #import "SingleList.h"
+#import "MJRefresh.h"
 
 #import "BookStoreViewController.h"
 
@@ -20,6 +21,7 @@
 @property (nonatomic, strong)NSMutableArray *dataArray;
 @property (nonatomic, strong)NSString *dataStr;
 @property (nonatomic, strong)NSString *textStr;
+@property (nonatomic, assign)int tag;
 @end
 
 @implementation ReputablyViewController
@@ -38,25 +40,36 @@
     
    
     [self requestData];
+    [self downRefresh];
+    [self upRefresh];
  
-   
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.dataArray = [NSMutableArray array];
     
     //注册cell
     [self.tableView registerNib:[UINib nibWithNibName:@"CommonCell" bundle:nil] forCellReuseIdentifier:@"cell"];
 }
+- (void)downRefresh {
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        _tag = 0;
+        [self requestData];
+        [self.tableView.mj_header endRefreshing];
+    }];
+    
+}
+- (void)upRefresh {
+    self.tableView.mj_footer = [MJRefreshBackFooter footerWithRefreshingBlock:^{
+        [self requestData];
+        [self.tableView.mj_footer endRefreshing];
+    }];
+    
+}
 - (void)requestData {
     NSString *urlString = @"http://api.zhuishushenqi.com/book/by-categories?gender=";
-    NSString *urlStr = @"&minor=&start=0&limit=50&type=reputation&major=";
-    NSString *str = [NSString stringWithFormat:@"%@%@%@%@",urlString,_textStr,urlStr,self.dataStr];
+    NSString *urlSt = @"&minor=&start=0&limit=20";
+    NSString *urlStr = [NSString stringWithFormat:urlSt,_tag];
+    NSString *typeStr = @"&type=reputation&major=";
+    NSString *str = [NSString stringWithFormat:@"%@%@%@%@%@",urlString,_textStr,urlStr,typeStr,self.dataStr];
     NSString *encodedString = [str URLEncodedString];
-
     
     [NetWorkRequestManager requestType:GET urlString:encodedString prama:nil success:^(id data) {
         __weak typeof(ReputablyViewController)*reputablyVC = self;
@@ -70,13 +83,13 @@
         dispatch_async(dispatch_get_main_queue()
                        , ^{
                            [reputablyVC.tableView reloadData];
-                           //                           NSLog(@"%@",self.dataArray);
+                           
                        });
     } fail:^(NSError *error) {
         NSLog(@"%@",error);
         
     }];
-    
+    _tag +=20;
 }
 
 

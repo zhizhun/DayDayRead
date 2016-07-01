@@ -29,7 +29,7 @@
 @property (nonatomic, strong)UILabel *retweetedLabel;
 
 @end
-
+static int temp =0;
 @implementation DynamicCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -65,29 +65,29 @@
         make.height.mas_equalTo (50);
     }];
     self.nameLabel = [[UILabel alloc] init];
-   
-    self.nameLabel.font = [UIFont systemFontOfSize:13];
+    self.nameLabel.textColor = [UIColor brownColor];
+    self.nameLabel.font = [UIFont systemFontOfSize:14];
     [backView addSubview:self.nameLabel];
     [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(backView).offset(kSpace);
         make.left.equalTo (self.avatarImageView.mas_right).offset (kSpace);
-        make.width.mas_equalTo(100);
+        make.width.mas_equalTo(150);
         make.height.mas_equalTo (15);
         
     }];
     self.timeLabel = [[UILabel alloc] init];
     
-    self.timeLabel.font = [UIFont systemFontOfSize:13];
+    self.timeLabel.font = [UIFont systemFontOfSize:14];
     [backView addSubview:self.timeLabel];
     [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(backView).offset (kSpace);
-        make.left.equalTo(self.nameLabel.mas_right).offset(50);
+        make.left.equalTo(self.nameLabel.mas_right).offset(20);
         make.right.equalTo (backView).offset (-kSpace);
        
         make.height.mas_equalTo (15);
     }];
     self.titleLabl = [[UILabel alloc] init];
-    self.titleLabl.font = [UIFont systemFontOfSize:15];
+    self.titleLabl.font = [UIFont systemFontOfSize:16];
     
     
     [backView addSubview:self.titleLabl];
@@ -100,24 +100,28 @@
         
     }];
     self.contentLabel = [[UILabel alloc] init];
-    self.contentLabel.font = [UIFont systemFontOfSize:12];
+    self.contentLabel.font = [UIFont systemFontOfSize:13];
     self.contentLabel.numberOfLines = 4;
    
     [backView addSubview:self.contentLabel];
     [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.titleLabl.mas_bottom).offset(kSpace);
 
-        make.right.equalTo(backView).offset(-kSpace);
+        make.right.equalTo(backView).offset(-15);
         
         make.width.mas_equalTo (kWith);
         
     }];
     
     self.connentedLabel = [[UILabel alloc]init];
-    self.connentedLabel.backgroundColor = [UIColor brownColor];
+      self.connentedLabel.textAlignment = NSTextAlignmentCenter;
+    self.connentedLabel.layer.borderColor = [[UIColor grayColor]CGColor];
+    self.connentedLabel.layer.borderWidth = 0.6f;
+    self.connentedLabel.layer.cornerRadius =10.0;
+    self.connentedLabel.layer.masksToBounds = YES;
   
     [backView addSubview:self.connentedLabel];
-   ;
+  
     [self.connentedLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.contentLabel.mas_bottom).offset(kSpace);
         make.left.equalTo (backView).offset (60);
@@ -125,7 +129,12 @@
         make.height.mas_equalTo (20);
     }];
     self.retweetedLabel = [[UILabel alloc]init];
-    self.retweetedLabel.backgroundColor = [UIColor brownColor];
+    self.retweetedLabel.textAlignment = NSTextAlignmentCenter;
+    self.retweetedLabel.layer.borderColor = [[UIColor grayColor]CGColor];
+    self.retweetedLabel.layer.borderWidth = 0.6f;
+    self.retweetedLabel.layer.cornerRadius =10.0;
+    
+    self.connentedLabel.layer.masksToBounds = YES;;
     [backView addSubview:self.retweetedLabel];
     
     [self.retweetedLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -153,12 +162,51 @@
         self.titleLabl.text = title;
         NSString *content = [dynamic.refTweet objectForKey:@"content"];
         self.contentLabel.text = content;
-//
-    NSString *timeStr = [dynamic.refTweet  objectForKey:@"created"];
+
+    
+    NSString *str = [dynamic.refTweet  objectForKey:@"created"];
+    NSString *strUrl = [str stringByReplacingOccurrencesOfString:@"T" withString:@" "];
+    NSString *strUrl1 = [strUrl stringByReplacingOccurrencesOfString:@"Z" withString:@" "];
     
     
-    NSString *timeStr1 = [timeStr substringToIndex:10];
-    self.timeLabel.text =timeStr1;
+    //把字符串转为NSdate
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss.SSS"];
+    NSDate *timeDate = [dateFormatter dateFromString:strUrl1];
+    
+    //得到与当前时间差
+    NSTimeInterval  timeInterval = [timeDate timeIntervalSinceNow];
+    timeInterval = -timeInterval;
+    //标准时间和北京时间差8个小时
+    timeInterval = timeInterval - 8*60*60;
+    
+    NSString *result;
+    if (timeInterval < 60) {
+        result = [NSString stringWithFormat:@"刚刚"];
+    }
+    else if((temp = timeInterval/60) <60){
+        result = [NSString stringWithFormat:@"%d分钟前",temp];
+    }
+    
+    else if((temp = temp/60) <24){
+        result = [NSString stringWithFormat:@"%d小时前",temp];
+    }
+    
+    else if((temp = temp/24) <30){
+        result = [NSString stringWithFormat:@"%d天前",temp];
+    }
+    
+    else if((temp = temp/30) <12){
+        result = [NSString stringWithFormat:@"%d月前",temp];
+    }
+    else{
+        temp = temp/12;
+        result = [NSString stringWithFormat:@"%d年前",temp];
+    }
+ 
+    
+    
+    self.timeLabel.text =result;
     
     NSString *Str1 = [dynamic.refTweet  objectForKey:@"commented"];
     self.connentedLabel .text =[NSString stringWithFormat:@"%@%@",@"✍",Str1];

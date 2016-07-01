@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentViewHeght;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -50,19 +51,31 @@
     NSString *nickname = [_dynamic.from objectForKey:@"nickname"];
     NSString *lv = [_dynamic.from objectForKey:@"lv"];
     self.NickNameLabel.text = [NSString stringWithFormat:@"%@%@%@",nickname,@" Lv.",lv];
-    //        NSDictionary *tweet = [NSDictionary dictionary];
+    
     NSString *title = [_dynamic.refTweet objectForKey:@"title"];
     self.titleLabel.text = title;
     NSString *content = [_dynamic.refTweet objectForKey:@"content"];
     self.contentLabel.text = content;
-    //
+  
     NSString *timeStr = [_dynamic.refTweet  objectForKey:@"created"];
-    
     
     NSString *timeStr1 = [timeStr substringToIndex:10];
     self.timeLabel.text =timeStr1;
+//计算详情高度
+    CGRect frame = _contentLabel.frame;
+    frame.size.height = [self calcuateTextHeightWithDynamic:_dynamic];
+    _contentLabel.frame = frame;
+    //给约束赋值
+    CGSize size = CGSizeMake(_scrollView.frame.size.width, _contentLabel.frame.size.height +360);
+    self.contentViewHeght.constant = size.height;
+}
+#pragma mark -- 计算文本高度
 
-    
+- (CGFloat)calcuateTextHeightWithDynamic:(Dynamic*)dyanmic {
+    CGSize size = CGSizeMake(_contentLabel.frame.size.width, 1000000);
+    NSDictionary *dic = @{NSFontAttributeName:[UIFont systemFontOfSize:18.0f]};
+    CGRect frame = [[_dynamic.refTweet objectForKey:@"content"]boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:dic context:nil];
+    return frame.size.height;
     
 }
 

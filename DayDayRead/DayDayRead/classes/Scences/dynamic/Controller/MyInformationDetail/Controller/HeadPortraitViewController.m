@@ -19,6 +19,10 @@
     // Do any additional setup after loading the view.
     
     self.title = @"修改昵称";
+    self.navigationController.navigationBar.translucent = NO;
+    self.navigationController.navigationBar.barTintColor = [UIColor redColor];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     [self initView];
 }
 

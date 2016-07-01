@@ -13,7 +13,20 @@
 #import "URL.h"
 #import "NSString+URL.h"
 #import "SingleList.h"
+#import "MJRefresh.h"
 
+
+//屏幕的SIZE
+#define kScreenSize [UIScreen mainScreen].bounds.size
+
+//箭头按钮的宽度
+#define kArrowButtonW 30.0
+
+//TabBar 的高度
+#define kListTabBarH  kArrowButtonW
+
+//导航栏的Y
+#define kNavY 64.0
 #import "BookStoreViewController.h"
 
 @interface BurglarViewController ()
@@ -21,7 +34,7 @@
 @property (nonatomic, strong)NSString *dataStr;
 @property (nonatomic, strong)NSString *textStr;
 @end
-
+static int num = 0;
 @implementation BurglarViewController
 
 - (void)viewDidLoad {
@@ -38,27 +51,47 @@
     
    
     [self requestData];
-
-    
+    [self downRefresh];
+    [self upRefresh];
    
-    
-    
-    
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.dataArray = [NSMutableArray array];
+     self.tableView.frame = CGRectMake(0, 0, kScreenSize.width, kScreenSize.height - kNavY - kArrowButtonW);
     
     //注册cell
     [self.tableView registerNib:[UINib nibWithNibName:@"CommonCell" bundle:nil] forCellReuseIdentifier:@"cell"];
 }
+
+
+
+
+- (void)downRefresh {
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            num = 0;
+            [self requestData];
+            [self.tableView.mj_header endRefreshing];
+        });
+        
+    }];
+   
+}
+
+- (void)upRefresh {
+    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self requestData];
+            
+            [self.tableView.mj_footer endRefreshing];
+          });
+    }];
+    
+}
 - (void)requestData {
     NSString *urlString = @"http://api.zhuishushenqi.com/book/by-categories?gender=";
-    NSString *urlStr = @"&minor=&start=0&limit=50&type=over&major=";
-    NSString *str = [NSString stringWithFormat:@"%@%@%@%@",urlString,_textStr,urlStr,self.dataStr];
+    NSString *urlSt = @"&minor=&start=0&limit=20";
+    NSString *urlStr = [NSString stringWithFormat:urlSt,num];
+    NSString *typeStr = @"&type=over&major=";
+    NSString *str = [NSString stringWithFormat:@"%@%@%@%@%@",urlString,_textStr,urlStr,typeStr,self.dataStr];
     NSString *encodedString = [str URLEncodedString];
     
     
@@ -80,6 +113,7 @@
         NSLog(@"%@",error);
         
     }];
+    num += 20;
     
 }
 
