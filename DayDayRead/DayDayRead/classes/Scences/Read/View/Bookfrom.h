@@ -1,0 +1,13 @@
+//
+//  Bookfrom.h
+//  DayDayRead
+//
+//  Created by 王志准 on 16/7/1.
+//  Copyright © 2016年 王志准. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface Bookfrom : NSObject
+
+@end
