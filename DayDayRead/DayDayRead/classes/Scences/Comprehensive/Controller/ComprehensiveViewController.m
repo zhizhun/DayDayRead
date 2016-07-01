@@ -125,6 +125,7 @@
     Comprehensive *comprehensive = [self.dataArray objectAtIndex:indexPath.row];
     detailVC.comprehensive = comprehensive;
     
+    detailVC._id =comprehensive._id;
     [self.navigationController pushViewController:detailVC animated:YES];
 }
 

@@ -14,6 +14,7 @@
 #import "NSString+URL.h"
 #import "SingleList.h"
 #import "MJRefresh.h"
+#import "BeforeReadViewController.h"
 
 
 //屏幕的SIZE
@@ -27,7 +28,7 @@
 
 //导航栏的Y
 #define kNavY 64.0
-#import "BookStoreViewController.h"
+
 
 @interface BurglarViewController ()
 @property (nonatomic, strong)NSMutableArray *dataArray;
@@ -147,12 +148,11 @@ static int num = 0;
     return 150;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    BookStoreViewController * bookVC = [[BookStoreViewController alloc] init];
+    BeforeReadViewController * bookVC = [[BeforeReadViewController alloc] init];
+    CommonModel *model = self.dataArray[indexPath.row];
+    bookVC._id = model._id;
     
-    UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:bookVC];
-    naVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self.view.window.rootViewController presentViewController:naVC
-                                                      animated:YES completion:nil];
+    [self.navigationController pushViewController:bookVC animated:YES];
 }
 
 

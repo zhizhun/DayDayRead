@@ -15,8 +15,8 @@
 #import "ClassifyDetailViewController.h"
 #import "SingleList.h"
 #import "NSString+URL.h"
-#import "BookStoreViewController.h"
 #import "MJRefresh.h"
+#import "BeforeReadViewController.h"
 
 
 @interface HotTableViewController ()
@@ -138,13 +138,15 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
    
-    BookStoreViewController * bookVC = [[BookStoreViewController alloc] init];
-    UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:bookVC];
-    CommonModel *commonModel = self.dataArray[indexPath.row];
-      bookVC. commonModel =commonModel;
-     naVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self.view.window.rootViewController presentViewController:naVC
-                                                     animated:YES completion:nil];
+    BeforeReadViewController * bookVC = [[BeforeReadViewController alloc] init];
+    
+   
+    CommonModel *model = self.dataArray[indexPath.row];
+    bookVC._id = model._id;
+   
+    
+    
+    [self.navigationController pushViewController:bookVC animated:YES];
 }
 
 

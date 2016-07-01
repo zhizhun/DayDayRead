@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class ComprehensiveDetail;
 @interface ComprehensiveDetailCell : UITableViewCell
-
+@property (nonatomic,strong)ComprehensiveDetail *comprehensiveDetail;
 @end
