@@ -127,9 +127,9 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11111" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uv8-Yp-Zyv">
-                                    <rect key="frame" x="43" y="206" width="36" height="20"/>
+                                    <rect key="frame" x="43" y="206" width="50" height="20"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="36" id="7HZ-Lw-euu"/>
+                                        <constraint firstAttribute="width" constant="50" id="7HZ-Lw-euu"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -154,7 +154,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="70.91%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iz4-5u-be7">
-                                    <rect key="frame" x="129" y="206" width="68" height="20"/>
+                                    <rect key="frame" x="143" y="206" width="68" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="68" id="zeR-zD-KZk"/>
                                     </constraints>
@@ -163,7 +163,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33333" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emw-eC-huJ">
-                                    <rect key="frame" x="222" y="206" width="80" height="20"/>
+                                    <rect key="frame" x="236" y="206" width="80" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="80" id="Kwq-eo-jZf"/>
                                     </constraints>

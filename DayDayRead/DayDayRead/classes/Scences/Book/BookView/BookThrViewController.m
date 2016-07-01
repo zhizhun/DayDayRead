@@ -14,14 +14,19 @@
 #import "SingletonBook.h"
 #import <NinaBaseView.h>
 #import <UIParameter.h>
+#import "BeforeReadViewController.h"
+#import "MJRefresh.h"
 @interface BookThrViewController ()
 @property (nonatomic, strong) NSMutableArray *allBookArray;
 
 @property (nonatomic, strong) NSString *string;
 
 
+
+
 @end
 
+static int num = 0;
 @implementation BookThrViewController
 
 - (NSMutableArray *)allBookArray {
@@ -37,9 +42,32 @@
     [self requestData];
     [self.tableView registerNib:[UINib nibWithNibName:@"BookCell" bundle:nil] forCellReuseIdentifier:@"cell"];
     
-    
+    //下拉刷新
+    [self downRefresh];
+    //上拉刷新
+    [self upRefresh];
 }
-- (void)viewDidAppear:(BOOL)animated{
+
+- (void)downRefresh{
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            num = 0;
+            [self requestData];
+            //结束刷新
+            [self.tableView.mj_header endRefreshing];
+        });
+    }];
+}
+
+- (void)upRefresh{
+    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self requestData];
+            //结束刷新
+            [self.tableView.mj_footer endRefreshing];
+        });
+    }];
+}- (void)viewDidAppear:(BOOL)animated{
     [self requestData];
     
 }
@@ -52,7 +80,7 @@
     self.string = [SingletonBook shareHandle].str;
     
     __weak typeof(self)weakSelf = self;
-    NSString *strr = BOOK_ALL_NEW_URL;
+    NSString *strr = [NSString stringWithFormat:@"http://api.zhuishushenqi.com/book-list?sort=created&duration=all&start=%d", num];
     NSString *strAll = [NSString string];
     if ([self.string isEqualToString:@"全部书单"]) {
         
@@ -84,7 +112,7 @@
     } fail:^(NSError *error) {
         NSLog(@"数据请求失败");
     }];
-    
+    num += 20;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -118,5 +146,11 @@
     return 120;
 }
 
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    BeforeReadViewController *beforeVC = [[BeforeReadViewController alloc] init];
+    Book *book = self.allBookArray[indexPath.row];
+    beforeVC._id = book._id;
+    [self.navigationController pushViewController:beforeVC animated:YES];
+}
 @end

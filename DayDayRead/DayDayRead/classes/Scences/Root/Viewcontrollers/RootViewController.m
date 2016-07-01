@@ -19,6 +19,7 @@
 #import "ListViewController.h"
 #import "DynamicViewController.h"
 #import "ComprehensiveViewController.h"
+#import "ReViewController.h"
 #define kWith self.view.frame.size.width
 #define kHeight 50
 #define kSHeight self.view.frame.size.height
@@ -305,6 +306,9 @@ int isNum = 1;
         if (indexPath.section == 0) {
             [self.navigationController pushViewController:[[DynamicViewController alloc] init] animated:YES];
 
+        }
+        if (indexPath.section == 1 && indexPath.row == 1) {
+            [self.navigationController pushViewController:[[ReViewController alloc] init] animated:YES];
         }
         if (indexPath.section == 1 && indexPath.row == 2) {
             [self.navigationController pushViewController:[[BookHelpeViewController alloc] init] animated:YES];
