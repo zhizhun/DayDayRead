@@ -12,9 +12,11 @@
 #import <UIImageView+WebCache.h>
 #import "Tool.h"
 #import "DB_COLOR.h"
+#import "ReadingViewController.h"
 
 @interface BeforeReadViewController ()
 @property (weak, nonatomic) IBOutlet UIScrollView *myScrollView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *authorWidth;
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentViewHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *leiLabel;
@@ -41,7 +43,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    http://api.zhuishushenqi.com/book/520da5d2dd2dfa6926000fc0/
+    self.title = @"书籍详情";
     //请求数据
     [self loadData];
 }
@@ -66,17 +68,16 @@
         [_myImageView sd_setImageWithURL:[NSURL URLWithString:[_detail.cover substringFromIndex:7]]];
     }
     _titleLabel.text = _detail.title;
-    CGRect frame = _authorLabel.frame;
-    frame.size.width = [Tool textWidthWithText:_detail.author font:[UIFont systemFontOfSize:12]];
-    _authorLabel.frame = frame;
+
+    _authorWidth.constant = [Tool textWidthWithText:_detail.author font:[UIFont systemFontOfSize:13]];
     _authorLabel.text = _detail.author;
-    CGRect framn = _numLabel.frame;
-    framn.origin.x = CGRectGetMaxX(_authorLabel.frame);
-    _numLabel.frame = framn;
+
+    _numLabel.frame = CGRectMake(CGRectGetMinX(_authorLabel.frame)+_authorWidth.constant, _authorLabel.frame.origin.y, 150, 15);
+    _numLabel.text = [NSString stringWithFormat:@" | %@ | %d万字",_detail.minorCate,[_detail.wordCount intValue]/10000];
     if ([_detail.minorCate isEqualToString:@""]) {
         _numLabel.text = [NSString stringWithFormat:@" | %@ | %d万字",_detail.majorCate,[_detail.wordCount intValue]/10000];
-    }else{
-        _numLabel.text = [NSString stringWithFormat:@" | %@ | %d万字",_detail.minorCate,[_detail.wordCount intValue]/10000];
+    }else if([_detail.majorCate isEqualToString:@""]){
+        _numLabel.text = [NSString stringWithFormat:@" | %@ | %d万字",_detail.cat,[_detail.wordCount intValue]/10000];
     }
     if (!_detail.isSerial) {
         _timeLabel.text = @"已完结";
@@ -138,6 +139,14 @@
     self.contentLabelHeight.constant = conHeight;
     self.contentLabel.text = _detail.longIntro;
     self.contentViewHeight.constant = self.leiView.frame.origin.y+self.leiLabel.constant+35+conHeight;
+}
+//开始阅读
+- (IBAction)didBegainRead:(id)sender {
+    [self presentViewController:[[ReadingViewController alloc] init] animated:YES completion:nil];
+}
+//追加更新
+- (IBAction)didRunUpdate:(id)sender {
+    
 }
 
 - (void)didReceiveMemoryWarning {
