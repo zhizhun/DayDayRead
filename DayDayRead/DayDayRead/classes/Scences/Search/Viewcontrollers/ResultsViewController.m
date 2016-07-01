@@ -11,6 +11,7 @@
 #import "Result.h"
 #import "NetWorkRequestManager.h"
 #import "URL.h"
+#import "BeforeReadViewController.h"
 @interface ResultsViewController ()
 
 @property (nonatomic,strong)NSMutableArray *resultArray;
@@ -79,6 +80,12 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 80;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    BeforeReadViewController *beroreVC = [[BeforeReadViewController alloc] init];
+    Result *result = self.resultArray[indexPath.row];
+    beroreVC._id = result._id;
+    [self.navigationController pushViewController:beroreVC animated:YES];
 }
 /*
 // Override to support conditional editing of the table view.

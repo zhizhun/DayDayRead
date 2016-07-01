@@ -9,12 +9,15 @@
 #ifndef URL_h
 #define URL_h
 
+//游戏列表接口：
 #define GAME_LIST_URL @"http://api.zhuishushenqi.com/game/h5?platform=ios&start=0&limit=30"
-
+//动画列表接口：
 #define COMIC_LIST_URL @"http://mhjk.1391.com/comic/bigbooklist"
+//大家都在搜接口
 #define SEARCH_LIST_URL @"http://api.zhuishushenqi.com/book/hot-word"
+//搜索基地址
 #define QUERY_LIST_URL @"http://api.zhuishushenqi.com/book/fuzzy-search?query="
-
+//书籍基地址
 #define B00K_ROOT @"http://api.zhuishushenqi.com"
 
 // 排行榜男：

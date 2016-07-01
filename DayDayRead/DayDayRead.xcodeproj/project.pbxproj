@@ -192,6 +192,11 @@
 		D6C0C17D1D24AAE7005B541F /* MyInformationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C16B1D24AAE7005B541F /* MyInformationCell.m */; };
 		D6C0C1841D24AAF6005B541F /* ComprehensiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1811D24AAF6005B541F /* ComprehensiveViewController.m */; };
 		D6C0C1851D24AAF6005B541F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1831D24AAF6005B541F /* README.md */; };
+		D6C45BD21D24C7E500EE90CF /* BeforeReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C45BD01D24C7E500EE90CF /* BeforeReadViewController.m */; };
+		D6C45BD31D24C7E500EE90CF /* BeforeReadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C45BD11D24C7E500EE90CF /* BeforeReadViewController.xib */; };
+		D6C45BD51D24CAFA00EE90CF /* bd_cancel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C45BD41D24CAFA00EE90CF /* bd_cancel@3x.png */; };
+		D6C45BD71D24CBA900EE90CF /* bd_add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C45BD61D24CBA900EE90CF /* bd_add@3x.png */; };
+		D6C45BDA1D2509FF00EE90CF /* bookDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C45BD91D2509FF00EE90CF /* bookDetail.m */; };
 		D6C779DF1D1FCBB500A07CFB /* 1055.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C779DE1D1FCBB500A07CFB /* 1055.png */; };
 		D6C779E61D1FDB0D00A07CFB /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C779E51D1FDB0D00A07CFB /* SearchViewController.m */; };
 /* End PBXBuildFile section */
@@ -505,6 +510,13 @@
 		D6C0C1801D24AAF6005B541F /* ComprehensiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComprehensiveViewController.h; sourceTree = "<group>"; };
 		D6C0C1811D24AAF6005B541F /* ComprehensiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComprehensiveViewController.m; sourceTree = "<group>"; };
 		D6C0C1831D24AAF6005B541F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D6C45BCF1D24C7E500EE90CF /* BeforeReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeforeReadViewController.h; sourceTree = "<group>"; };
+		D6C45BD01D24C7E500EE90CF /* BeforeReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeforeReadViewController.m; sourceTree = "<group>"; };
+		D6C45BD11D24C7E500EE90CF /* BeforeReadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeforeReadViewController.xib; sourceTree = "<group>"; };
+		D6C45BD41D24CAFA00EE90CF /* bd_cancel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bd_cancel@3x.png"; sourceTree = "<group>"; };
+		D6C45BD61D24CBA900EE90CF /* bd_add@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bd_add@3x.png"; sourceTree = "<group>"; };
+		D6C45BD81D2509FF00EE90CF /* bookDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bookDetail.h; sourceTree = "<group>"; };
+		D6C45BD91D2509FF00EE90CF /* bookDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bookDetail.m; sourceTree = "<group>"; };
 		D6C779DE1D1FCBB500A07CFB /* 1055.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1055.png; sourceTree = "<group>"; };
 		D6C779E41D1FDB0D00A07CFB /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		D6C779E51D1FDB0D00A07CFB /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
@@ -742,6 +754,8 @@
 		D60E33CD1D1CC4D0005CF58F /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				D6C45BD61D24CBA900EE90CF /* bd_add@3x.png */,
+				D6C45BD41D24CAFA00EE90CF /* bd_cancel@3x.png */,
 				D6B284541D22CD13000D81EC /* f_like_icon@3x.png */,
 				D6B284521D22CCA0000D81EC /* d_comment@3x.png */,
 				D6B284381D222691000D81EC /* hsm_icon_3@3x.png */,
@@ -1061,6 +1075,8 @@
 			isa = PBXGroup;
 			children = (
 				D6B1E42E1D1E5938004EAEB1 /* README.md */,
+				D6C45BD81D2509FF00EE90CF /* bookDetail.h */,
+				D6C45BD91D2509FF00EE90CF /* bookDetail.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1077,6 +1093,9 @@
 			isa = PBXGroup;
 			children = (
 				D6B1E4321D1E5938004EAEB1 /* README.md */,
+				D6C45BCF1D24C7E500EE90CF /* BeforeReadViewController.h */,
+				D6C45BD01D24C7E500EE90CF /* BeforeReadViewController.m */,
+				D6C45BD11D24C7E500EE90CF /* BeforeReadViewController.xib */,
 			);
 			path = Viewcontrollers;
 			sourceTree = "<group>";
@@ -1609,6 +1628,7 @@
 				D60E33EA1D1CC4D0005CF58F /* Icon-72@2x.png in Resources */,
 				D6B1E4191D1E1F75004EAEB1 /* forum_public_review_icon@2x.png in Resources */,
 				D60E33EC1D1CC4D0005CF58F /* Icon-76@2x.png in Resources */,
+				D6C45BD51D24CAFA00EE90CF /* bd_cancel@3x.png in Resources */,
 				D6B1E4231D1E35B1004EAEB1 /* rsm_icon_2@2x.png in Resources */,
 				D60E33F11D1CC4D0005CF58F /* Icon-Small-50@2x.png in Resources */,
 				D6B1E42B1D1E35FE004EAEB1 /* rsm_icon_8@2x.png in Resources */,
@@ -1627,6 +1647,7 @@
 				D60482741D23FD8000CFA284 /* HotCell.xib in Resources */,
 				D6399A451D23FAFB0006CD28 /* BookStoreViewController.xib in Resources */,
 				D6B1E4A01D1EC512004EAEB1 /* MJRefresh.bundle in Resources */,
+				D6C45BD31D24C7E500EE90CF /* BeforeReadViewController.xib in Resources */,
 				D6B1E4621D1EA9F4004EAEB1 /* bd_add_count@2x.png in Resources */,
 				D604826F1D23FD8000CFA284 /* ThrDetailViewController.xib in Resources */,
 				D604826A1D23FD8000CFA284 /* ListDetailViewController.xib in Resources */,
@@ -1660,6 +1681,7 @@
 				D6C0C1741D24AAE7005B541F /* DynamicColumnDetailViewController.xib in Resources */,
 				D60E33EF1D1CC4D0005CF58F /* Icon-Small-40@3x.png in Resources */,
 				D60E33FD1D1CC4D0005CF58F /* ip@1x.png in Resources */,
+				D6C45BD71D24CBA900EE90CF /* bd_add@3x.png in Resources */,
 				D60E33E91D1CC4D0005CF58F /* Icon-72.png in Resources */,
 				D60482321D23FA2200CFA284 /* book.png in Resources */,
 				D6B284371D22266A000D81EC /* hsm_icon_1@3x.png in Resources */,
@@ -1771,6 +1793,7 @@
 				D653CA6C1D217581000E881A /* UIViewController+RESideMenu.m in Sources */,
 				D637ACEC1D23BC7200BB5900 /* DetailViewCell.m in Sources */,
 				D6C0C1771D24AAE7005B541F /* README.md in Sources */,
+				D6C45BDA1D2509FF00EE90CF /* bookDetail.m in Sources */,
 				D69B34D41D235DE100BD3F0A /* BookHelpe.m in Sources */,
 				D6399A461D23FAFB0006CD28 /* BookStore.m in Sources */,
 				D60482351D23FA2200CFA284 /* BookCell.m in Sources */,
@@ -1792,6 +1815,7 @@
 				D604826B1D23FD8000CFA284 /* OneDetailViewController.m in Sources */,
 				D653CA3D1D20D486000E881A /* ResultsViewController.m in Sources */,
 				D6B1E4921D1EC512004EAEB1 /* MJRefreshAutoFooter.m in Sources */,
+				D6C45BD21D24C7E500EE90CF /* BeforeReadViewController.m in Sources */,
 				D6B1E4431D1E653B004EAEB1 /* GameViewCell.m in Sources */,
 				D60482751D23FD8000CFA284 /* SingletonList.m in Sources */,
 				D60482781D23FD8000CFA284 /* PotentialViewController.m in Sources */,
