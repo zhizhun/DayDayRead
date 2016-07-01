@@ -15,7 +15,7 @@
 #import <NinaBaseView.h>
 #import <UIParameter.h>
 #import "SingletonList.h"
-#import "OneDetailViewController.h"
+#import "BeforeReadViewController.h"
 @interface OneViewController ()
 
 @property (nonatomic, strong) NSMutableArray *allHotArray;
@@ -105,15 +105,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    OneDetailViewController *allVC = [[OneDetailViewController alloc] init];
-    Hot *hot = self.allHotArray[indexPath.row];
-    allVC.hot = hot;
-    //UINavigationController  *navVc = [[UINavigationController alloc] initWithRootViewController:allVC];
-    //navVc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-
-    //[self.view.window.rootViewController presentViewController:navVc animated:YES completion:nil];
-    //[navVc.navigationController pushViewController:navVc animated:YES];
-    [self.navigationController pushViewController:allVC animated:YES];
+    BeforeReadViewController *beforeVC = [[BeforeReadViewController alloc] init];
+    Hot *book = self.allHotArray[indexPath.row];
+    beforeVC._id = book._id;
+    [self.navigationController pushViewController:beforeVC animated:YES];
     
 }
 

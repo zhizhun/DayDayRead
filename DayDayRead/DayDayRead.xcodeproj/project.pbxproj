@@ -22,14 +22,7 @@
 		D60482371D23FA2200CFA284 /* BookHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482291D23FA2200CFA284 /* BookHeaderView.m */; };
 		D60482381D23FA2200CFA284 /* SingletonBook.m in Sources */ = {isa = PBXBuildFile; fileRef = D604822B1D23FA2200CFA284 /* SingletonBook.m */; };
 		D60482671D23FD8000CFA284 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D604823C1D23FD8000CFA284 /* ListViewController.m */; };
-		D60482681D23FD8000CFA284 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D604823D1D23FD8000CFA284 /* ListViewController.xib */; };
-		D60482691D23FD8000CFA284 /* ListDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482401D23FD8000CFA284 /* ListDetailViewController.m */; };
-		D604826A1D23FD8000CFA284 /* ListDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60482411D23FD8000CFA284 /* ListDetailViewController.xib */; };
-		D604826B1D23FD8000CFA284 /* OneDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482431D23FD8000CFA284 /* OneDetailViewController.m */; };
-		D604826C1D23FD8000CFA284 /* OneDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60482441D23FD8000CFA284 /* OneDetailViewController.xib */; };
 		D604826D1D23FD8000CFA284 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482461D23FD8000CFA284 /* OneViewController.m */; };
-		D604826E1D23FD8000CFA284 /* ThrDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482481D23FD8000CFA284 /* ThrDetailViewController.m */; };
-		D604826F1D23FD8000CFA284 /* ThrDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60482491D23FD8000CFA284 /* ThrDetailViewController.xib */; };
 		D60482701D23FD8000CFA284 /* ThrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D604824B1D23FD8000CFA284 /* ThrViewController.m */; };
 		D60482711D23FD8000CFA284 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D604824D1D23FD8000CFA284 /* TwoViewController.m */; };
 		D60482721D23FD8000CFA284 /* Hot.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482501D23FD8000CFA284 /* Hot.m */; };
@@ -253,18 +246,8 @@
 		D604822B1D23FA2200CFA284 /* SingletonBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonBook.m; sourceTree = "<group>"; };
 		D604823B1D23FD8000CFA284 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		D604823C1D23FD8000CFA284 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
-		D604823D1D23FD8000CFA284 /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
-		D604823F1D23FD8000CFA284 /* ListDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListDetailViewController.h; sourceTree = "<group>"; };
-		D60482401D23FD8000CFA284 /* ListDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListDetailViewController.m; sourceTree = "<group>"; };
-		D60482411D23FD8000CFA284 /* ListDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListDetailViewController.xib; sourceTree = "<group>"; };
-		D60482421D23FD8000CFA284 /* OneDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneDetailViewController.h; sourceTree = "<group>"; };
-		D60482431D23FD8000CFA284 /* OneDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneDetailViewController.m; sourceTree = "<group>"; };
-		D60482441D23FD8000CFA284 /* OneDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneDetailViewController.xib; sourceTree = "<group>"; };
 		D60482451D23FD8000CFA284 /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
 		D60482461D23FD8000CFA284 /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
-		D60482471D23FD8000CFA284 /* ThrDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThrDetailViewController.h; sourceTree = "<group>"; };
-		D60482481D23FD8000CFA284 /* ThrDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThrDetailViewController.m; sourceTree = "<group>"; };
-		D60482491D23FD8000CFA284 /* ThrDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThrDetailViewController.xib; sourceTree = "<group>"; };
 		D604824A1D23FD8000CFA284 /* ThrViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThrViewController.h; sourceTree = "<group>"; };
 		D604824B1D23FD8000CFA284 /* ThrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThrViewController.m; sourceTree = "<group>"; };
 		D604824C1D23FD8000CFA284 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
@@ -692,7 +675,6 @@
 			children = (
 				D604823B1D23FD8000CFA284 /* ListViewController.h */,
 				D604823C1D23FD8000CFA284 /* ListViewController.m */,
-				D604823D1D23FD8000CFA284 /* ListViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -700,17 +682,8 @@
 		D604823E1D23FD8000CFA284 /* ListView */ = {
 			isa = PBXGroup;
 			children = (
-				D604823F1D23FD8000CFA284 /* ListDetailViewController.h */,
-				D60482401D23FD8000CFA284 /* ListDetailViewController.m */,
-				D60482411D23FD8000CFA284 /* ListDetailViewController.xib */,
-				D60482421D23FD8000CFA284 /* OneDetailViewController.h */,
-				D60482431D23FD8000CFA284 /* OneDetailViewController.m */,
-				D60482441D23FD8000CFA284 /* OneDetailViewController.xib */,
 				D60482451D23FD8000CFA284 /* OneViewController.h */,
 				D60482461D23FD8000CFA284 /* OneViewController.m */,
-				D60482471D23FD8000CFA284 /* ThrDetailViewController.h */,
-				D60482481D23FD8000CFA284 /* ThrDetailViewController.m */,
-				D60482491D23FD8000CFA284 /* ThrDetailViewController.xib */,
 				D604824A1D23FD8000CFA284 /* ThrViewController.h */,
 				D604824B1D23FD8000CFA284 /* ThrViewController.m */,
 				D604824C1D23FD8000CFA284 /* TwoViewController.h */,
@@ -1756,7 +1729,6 @@
 				D6B1E4131D1E18DB004EAEB1 /* ComunityViewCell.xib in Resources */,
 				D637ACED1D23BC7200BB5900 /* DetailViewCell.xib in Resources */,
 				D6B284391D222691000D81EC /* hsm_icon_3@3x.png in Resources */,
-				D604826C1D23FD8000CFA284 /* OneDetailViewController.xib in Resources */,
 				D60E33F51D1CC4D0005CF58F /* Icon.png in Resources */,
 				D6B1E45C1D1EA816004EAEB1 /* ComicViewCell.xib in Resources */,
 				D60E33EA1D1CC4D0005CF58F /* Icon-72@2x.png in Resources */,
@@ -1786,13 +1758,10 @@
 				D6B1E4A01D1EC512004EAEB1 /* MJRefresh.bundle in Resources */,
 				D6C45BD31D24C7E500EE90CF /* BeforeReadViewController.xib in Resources */,
 				D6B1E4621D1EA9F4004EAEB1 /* bd_add_count@2x.png in Resources */,
-				D604826F1D23FD8000CFA284 /* ThrDetailViewController.xib in Resources */,
-				D604826A1D23FD8000CFA284 /* ListDetailViewController.xib in Resources */,
 				D6B284511D22BF70000D81EC /* BookHelpeViewCell.xib in Resources */,
 				D60E33F41D1CC4D0005CF58F /* Icon-Small@3x.png in Resources */,
 				D6B284531D22CCA0000D81EC /* d_comment@3x.png in Resources */,
 				D60482361D23FA2200CFA284 /* BookCell.xib in Resources */,
-				D60482681D23FD8000CFA284 /* ListViewController.xib in Resources */,
 				D6B284351D221CE4000D81EC /* hsm_default_avatar@3x.png in Resources */,
 				D60E33F81D1CC4D0005CF58F /* icon01.png in Resources */,
 				D60E33F71D1CC4D0005CF58F /* iTunesArtwork@2x.png in Resources */,
@@ -1938,7 +1907,6 @@
 				D6B1E4971D1EC512004EAEB1 /* MJRefreshAutoGifFooter.m in Sources */,
 				D6C0C16D1D24AAE7005B541F /* DynamicHotViewController.m in Sources */,
 				D6C0C1711D24AAE7005B541F /* NickNameViewController.m in Sources */,
-				D604826E1D23FD8000CFA284 /* ThrDetailViewController.m in Sources */,
 				D653CA6C1D217581000E881A /* UIViewController+RESideMenu.m in Sources */,
 				D637ACEC1D23BC7200BB5900 /* DetailViewCell.m in Sources */,
 				D6C0C1771D24AAE7005B541F /* README.md in Sources */,
@@ -1961,7 +1929,6 @@
 				D6399A341D23FA680006CD28 /* ClassifyDetailViewController.m in Sources */,
 				D6B1E4A51D1EC512004EAEB1 /* UIView+MJExtension.m in Sources */,
 				D60482731D23FD8000CFA284 /* HotCell.m in Sources */,
-				D604826B1D23FD8000CFA284 /* OneDetailViewController.m in Sources */,
 				D653CA3D1D20D486000E881A /* ResultsViewController.m in Sources */,
 				D6B1E4921D1EC512004EAEB1 /* MJRefreshAutoFooter.m in Sources */,
 				D6C45BD21D24C7E500EE90CF /* BeforeReadViewController.m in Sources */,
@@ -2015,7 +1982,6 @@
 				D6C0C17A1D24AAE7005B541F /* DynamicCell.m in Sources */,
 				D604822D1D23FA2200CFA284 /* BookThrViewController.m in Sources */,
 				D60482721D23FD8000CFA284 /* Hot.m in Sources */,
-				D60482691D23FD8000CFA284 /* ListDetailViewController.m in Sources */,
 				D6B1E4A41D1EC512004EAEB1 /* UIScrollView+MJRefresh.m in Sources */,
 				D6C0C1DE1D25128A005B541F /* Comprehensive.m in Sources */,
 				D6B1E45B1D1EA816004EAEB1 /* ComicViewCell.m in Sources */,
