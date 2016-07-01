@@ -42,11 +42,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"书籍详情";
     // Do any additional setup after loading the view from its nib.
     self.title = @"书籍详情";
     //请求数据
     [self loadData];
+    
 }
+
 - (void)loadData{
     NSString *str = [NSString stringWithFormat:@"http://api.zhuishushenqi.com/book/%@/",__id];
     __weak typeof (self)weakSelf = self;
