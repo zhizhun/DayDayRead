@@ -100,7 +100,7 @@
                 <constraint firstItem="ijy-KE-NJZ" firstAttribute="leading" secondItem="bb8-de-MYK" secondAttribute="leading" id="dXk-uh-2NO"/>
                 <constraint firstAttribute="trailing" secondItem="ijy-KE-NJZ" secondAttribute="trailing" id="nFV-NN-lrg"/>
             </constraints>
-            <point key="canvasLocation" x="342" y="393"/>
+            <point key="canvasLocation" x="27" y="445"/>
         </view>
     </objects>
     <resources>
