@@ -14,7 +14,7 @@
 #import <NinaPagerView.h>
 #import <NinaBaseView.h>
 #import <UIParameter.h>
-
+#import "MJRefresh.h"
 #import "SingletonList.h"
 #import "BeforeReadViewController.h"
 @interface ThrViewController ()
@@ -51,11 +51,34 @@
     self.strOne = list.array[2];
     
     
-    [self requestDataWith];
-    
-    
+    [self requestData];
+    //下拉刷新
+    [self downRefresh];
+    //上拉刷新
+    [self upRefresh];
 }
-- (void)requestDataWith {
+
+- (void)downRefresh{
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            [self requestData];
+            //结束刷新
+            [self.tableView.mj_header endRefreshing];
+        });
+    }];
+}
+
+- (void)upRefresh{
+    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self requestData];
+            //结束刷新
+            [self.tableView.mj_footer endRefreshing];
+        });
+    }];
+}
+- (void)requestData {
     
     __weak typeof(self)weakSelf = self;
     
