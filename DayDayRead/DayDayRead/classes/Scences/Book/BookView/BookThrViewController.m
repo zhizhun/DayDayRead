@@ -39,36 +39,13 @@ static int num = 0;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
     [self requestData];
     [self.tableView registerNib:[UINib nibWithNibName:@"BookCell" bundle:nil] forCellReuseIdentifier:@"cell"];
-    
-    //下拉刷新
-    [self downRefresh];
-    //上拉刷新
-    [self upRefresh];
+   
 }
-
-- (void)downRefresh{
-    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        dispatch_async(dispatch_get_main_queue(), ^{
-            num = 0;
-            [self requestData];
-            //结束刷新
-            [self.tableView.mj_header endRefreshing];
-        });
-    }];
-}
-
-- (void)upRefresh{
-    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self requestData];
-            //结束刷新
-            [self.tableView.mj_footer endRefreshing];
-        });
-    }];
-}- (void)viewDidAppear:(BOOL)animated{
-    [self requestData];
+- (void)viewDidAppear:(BOOL)animated{
+   // [self requestData];
     
 }
 
@@ -80,7 +57,8 @@ static int num = 0;
     self.string = [SingletonBook shareHandle].str;
     
     __weak typeof(self)weakSelf = self;
-    NSString *strr = [NSString stringWithFormat:@"http://api.zhuishushenqi.com/book-list?sort=created&duration=all&start=%d", num];
+    
+    NSString *strr = [NSString stringWithFormat:@"http://api.zhuishushenqi.com/book-list?duration=all&sort=collectorCount&start=%d&limit=20&", num];
     NSString *strAll = [NSString string];
     if ([self.string isEqualToString:@"全部书单"]) {
         
@@ -108,7 +86,7 @@ static int num = 0;
         dispatch_async(dispatch_get_main_queue(), ^{
             [weakSelf.tableView reloadData];
         });
-
+        
     } fail:^(NSError *error) {
         NSLog(@"数据请求失败");
     }];
@@ -151,6 +129,10 @@ static int num = 0;
     BeforeReadViewController *beforeVC = [[BeforeReadViewController alloc] init];
     Book *book = self.allBookArray[indexPath.row];
     beforeVC._id = book._id;
+    NSLog(@"%@---",book._id);
     [self.navigationController pushViewController:beforeVC animated:YES];
+    
+    
 }
+
 @end

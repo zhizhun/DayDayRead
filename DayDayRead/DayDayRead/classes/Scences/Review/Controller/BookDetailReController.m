@@ -16,6 +16,7 @@
 #import "BookReViewDTCell.h"
 #import "Tool.h"
 #import "MJRefresh.h"
+#import "BeforeReadViewController.h"
 @interface BookDetailReController ()
 
 @property (nonatomic, strong) NSMutableArray *allArray;
@@ -158,6 +159,13 @@ static int num = 0;
         
         BookReviewHeader *header = self.dictArray[indexPath.row];
         headerCell.header = header;
+        
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+        button.frame = CGRectMake(self.view.frame.size.width-70, 20, 60, 30);
+        [button setImage:[UIImage imageNamed:@"forum_book_entry@3x"] forState:UIControlStateNormal];
+        button.tintColor = [UIColor grayColor];
+        [button addTarget:self action:@selector(nextAction) forControlEvents:UIControlEventTouchUpInside];
+        [headerCell addSubview:button];
         return headerCell;
         
     }
@@ -168,17 +176,26 @@ static int num = 0;
     return cell;
 }
 
+- (void)nextAction {
+    
+    BookReviewOne *one = self.dictArray[0];
+    BeforeReadViewController *beforeVC = [[BeforeReadViewController alloc] init];
+    beforeVC._id = one._id;
+    NSLog(@"-----%@", one._id);
+    [self.navigationController pushViewController:beforeVC animated:YES];
+    
+}
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (indexPath.section == 0) {
         
-        BookReviewHeader *header = self.dictArray[0];
+        BookReviewHeader *header = self.dictArray[indexPath.row];
        
         
-        CGFloat contentH = [Tool calculateTextHeightWithMovie:header.content LabelWidth:self.view.frame.size.width-70 font:17.0];
+        CGFloat contentH = [Tool calculateTextHeightWithMovie:header.content LabelWidth:self.view.frame.size.width-70 font:16.0];
             CGFloat titleH = [Tool calculateTextHeightWithMovie:header.title LabelWidth:self.view.frame.size.width-70 font:20.0];
             CGFloat authorH = [Tool calculateTextHeightWithMovie:[header.author objectForKey:@"nickname"] LabelWidth:self.view.frame.size.width-70 font:17.0];
-        return contentH+authorH+titleH+50;
+        return contentH+authorH+titleH+165;
         
     }
     
