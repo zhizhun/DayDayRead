@@ -15,7 +15,7 @@
 #import <NinaBaseView.h>
 #import <NinaPagerView.h>
 #import <UIParameter.h>
-#import "BeforeReadViewController.h"
+#import "BookDetailModelViewController.h"
 #import "MJRefresh.h"
 @interface BookOneViewController ()
 
@@ -38,34 +38,12 @@ static int num = 0;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self requestData];
+    //[self requestData];
     [self.tableView registerNib:[UINib nibWithNibName:@"BookCell" bundle:nil] forCellReuseIdentifier:@"cell"];
-    //下拉刷新
-    [self downRefresh];
-    //上拉刷新
-    [self upRefresh];
+   
 }
 
-- (void)downRefresh{
-    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        dispatch_async(dispatch_get_main_queue(), ^{
-            num = 0;
-            [self requestData];
-            //结束刷新
-            [self.tableView.mj_header endRefreshing];
-        });
-    }];
-}
 
-- (void)upRefresh{
-    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self requestData];
-            //结束刷新
-            [self.tableView.mj_footer endRefreshing];
-        });
-    }];
-}
 - (void)viewDidAppear:(BOOL)animated{
     [self requestData];
     
@@ -80,7 +58,8 @@ static int num = 0;
     
     __weak typeof(self)weakSelf = self;
    
-    NSString *strr = [NSString stringWithFormat:@"http://api.zhuishushenqi.com/book-list?sort=collectorCount&duration=last-seven-days&start=%d", num];
+    NSString *strr = [NSString stringWithFormat:@"http://api.zhuishushenqi.com/book-list?duration=last-seven-days&sort=collectorCount&start=%d&limit=20&", num];
+  
     NSString *strAll = [NSString string];
     if ([self.string isEqualToString:@"全部书单"]) {
         
@@ -148,7 +127,7 @@ static int num = 0;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    BeforeReadViewController *beforeVC = [[BeforeReadViewController alloc] init];
+    BookDetailModelViewController *beforeVC = [[BookDetailModelViewController alloc] init];
     Book *book = self.allBookArray[indexPath.row];
     beforeVC._id = book._id;
     NSLog(@"%@---",book._id);

@@ -104,6 +104,24 @@
 		D69B34D41D235DE100BD3F0A /* BookHelpe.m in Sources */ = {isa = PBXBuildFile; fileRef = D69B34D31D235DE100BD3F0A /* BookHelpe.m */; };
 		D6AB211B1D275265006234EF /* forum_book_entry@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6AB21191D275265006234EF /* forum_book_entry@2x.png */; };
 		D6AB211C1D275265006234EF /* forum_book_entry@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6AB211A1D275265006234EF /* forum_book_entry@3x.png */; };
+		D6AB21581D27B3F6006234EF /* BookDetailReController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB21551D27B3F6006234EF /* BookDetailReController.m */; };
+		D6AB21591D27B3F6006234EF /* ReViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB21571D27B3F6006234EF /* ReViewController.m */; };
+		D6AB21601D27B401006234EF /* BookReviewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB215B1D27B401006234EF /* BookReviewHeader.m */; };
+		D6AB21611D27B401006234EF /* BookReviewOne.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB215D1D27B401006234EF /* BookReviewOne.m */; };
+		D6AB21621D27B401006234EF /* BookReviewThr.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB215F1D27B401006234EF /* BookReviewThr.m */; };
+		D6AB216C1D27B410006234EF /* BookReViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB21641D27B410006234EF /* BookReViewCell.m */; };
+		D6AB216D1D27B410006234EF /* BookReViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6AB21651D27B410006234EF /* BookReViewCell.xib */; };
+		D6AB216E1D27B410006234EF /* BookReViewDTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB21671D27B410006234EF /* BookReViewDTCell.m */; };
+		D6AB216F1D27B410006234EF /* BookReViewDTCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6AB21681D27B410006234EF /* BookReViewDTCell.xib */; };
+		D6AB21701D27B410006234EF /* ReViewHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB216A1D27B410006234EF /* ReViewHeaderCell.m */; };
+		D6AB21711D27B410006234EF /* ReViewHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6AB216B1D27B410006234EF /* ReViewHeaderCell.xib */; };
+		D6AB21781D27B4CE006234EF /* BookDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB21771D27B4CE006234EF /* BookDetailModel.m */; };
+		D6AB217C1D27B4F4006234EF /* BookDetailModelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB217A1D27B4F4006234EF /* BookDetailModelCell.m */; };
+		D6AB217D1D27B4F4006234EF /* BookDetailModelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6AB217B1D27B4F4006234EF /* BookDetailModelCell.xib */; };
+		D6AB21811D27B514006234EF /* BookHeaderModelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB217F1D27B514006234EF /* BookHeaderModelCell.m */; };
+		D6AB21821D27B514006234EF /* BookHeaderModelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6AB21801D27B514006234EF /* BookHeaderModelCell.xib */; };
+		D6AB21851D27B58A006234EF /* BookHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB21841D27B58A006234EF /* BookHeaderModel.m */; };
+		D6AB21881D27C7F8006234EF /* BookDetailModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB21871D27C7F8006234EF /* BookDetailModelViewController.m */; };
 		D6ADD7B01D266F68008DB637 /* ReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6ADD7AE1D266F68008DB637 /* ReadingViewController.m */; };
 		D6ADD7B11D266F68008DB637 /* ReadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6ADD7AF1D266F68008DB637 /* ReadingViewController.xib */; };
 		D6B1E40D1D1E119C004EAEB1 /* RunViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B1E40B1D1E119C004EAEB1 /* RunViewCell.m */; };
@@ -202,17 +220,6 @@
 		D6C45BDA1D2509FF00EE90CF /* bookDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C45BD91D2509FF00EE90CF /* bookDetail.m */; };
 		D6C779DF1D1FCBB500A07CFB /* 1055.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C779DE1D1FCBB500A07CFB /* 1055.png */; };
 		D6C779E61D1FDB0D00A07CFB /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C779E51D1FDB0D00A07CFB /* SearchViewController.m */; };
-		D6C784501D269AAE00421069 /* BookDetailReController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C7843C1D269AAE00421069 /* BookDetailReController.m */; };
-		D6C784511D269AAE00421069 /* ReViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C7843E1D269AAE00421069 /* ReViewController.m */; };
-		D6C784521D269AAE00421069 /* BookReviewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C784411D269AAE00421069 /* BookReviewHeader.m */; };
-		D6C784531D269AAE00421069 /* BookReviewOne.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C784431D269AAE00421069 /* BookReviewOne.m */; };
-		D6C784541D269AAE00421069 /* BookReviewThr.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C784451D269AAE00421069 /* BookReviewThr.m */; };
-		D6C784551D269AAE00421069 /* BookReViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C784481D269AAE00421069 /* BookReViewCell.m */; };
-		D6C784561D269AAE00421069 /* BookReViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C784491D269AAE00421069 /* BookReViewCell.xib */; };
-		D6C784571D269AAE00421069 /* BookReViewDTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C7844B1D269AAE00421069 /* BookReViewDTCell.m */; };
-		D6C784581D269AAE00421069 /* BookReViewDTCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C7844C1D269AAE00421069 /* BookReViewDTCell.xib */; };
-		D6C784591D269AAE00421069 /* ReViewHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C7844E1D269AAE00421069 /* ReViewHeaderCell.m */; };
-		D6C7845A1D269AAE00421069 /* ReViewHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C7844F1D269AAE00421069 /* ReViewHeaderCell.xib */; };
 		D6C7846C1D26B34100421069 /* bd_retention_ratio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C7845C1D26B34100421069 /* bd_retention_ratio@2x.png */; };
 		D6C7846D1D26B34100421069 /* bd_retention_ratio@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C7845D1D26B34100421069 /* bd_retention_ratio@3x.png */; };
 		D6C7846E1D26B34100421069 /* bd_star_filled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C7845E1D26B34100421069 /* bd_star_filled@2x.png */; };
@@ -404,6 +411,37 @@
 		D69B34D31D235DE100BD3F0A /* BookHelpe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookHelpe.m; sourceTree = "<group>"; };
 		D6AB21191D275265006234EF /* forum_book_entry@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forum_book_entry@2x.png"; sourceTree = "<group>"; };
 		D6AB211A1D275265006234EF /* forum_book_entry@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forum_book_entry@3x.png"; sourceTree = "<group>"; };
+		D6AB21541D27B3F6006234EF /* BookDetailReController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailReController.h; sourceTree = "<group>"; };
+		D6AB21551D27B3F6006234EF /* BookDetailReController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailReController.m; sourceTree = "<group>"; };
+		D6AB21561D27B3F6006234EF /* ReViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReViewController.h; sourceTree = "<group>"; };
+		D6AB21571D27B3F6006234EF /* ReViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReViewController.m; sourceTree = "<group>"; };
+		D6AB215A1D27B401006234EF /* BookReviewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookReviewHeader.h; sourceTree = "<group>"; };
+		D6AB215B1D27B401006234EF /* BookReviewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookReviewHeader.m; sourceTree = "<group>"; };
+		D6AB215C1D27B401006234EF /* BookReviewOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookReviewOne.h; sourceTree = "<group>"; };
+		D6AB215D1D27B401006234EF /* BookReviewOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookReviewOne.m; sourceTree = "<group>"; };
+		D6AB215E1D27B401006234EF /* BookReviewThr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookReviewThr.h; sourceTree = "<group>"; };
+		D6AB215F1D27B401006234EF /* BookReviewThr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookReviewThr.m; sourceTree = "<group>"; };
+		D6AB21631D27B410006234EF /* BookReViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookReViewCell.h; sourceTree = "<group>"; };
+		D6AB21641D27B410006234EF /* BookReViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookReViewCell.m; sourceTree = "<group>"; };
+		D6AB21651D27B410006234EF /* BookReViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookReViewCell.xib; sourceTree = "<group>"; };
+		D6AB21661D27B410006234EF /* BookReViewDTCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookReViewDTCell.h; sourceTree = "<group>"; };
+		D6AB21671D27B410006234EF /* BookReViewDTCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookReViewDTCell.m; sourceTree = "<group>"; };
+		D6AB21681D27B410006234EF /* BookReViewDTCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookReViewDTCell.xib; sourceTree = "<group>"; };
+		D6AB21691D27B410006234EF /* ReViewHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReViewHeaderCell.h; sourceTree = "<group>"; };
+		D6AB216A1D27B410006234EF /* ReViewHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReViewHeaderCell.m; sourceTree = "<group>"; };
+		D6AB216B1D27B410006234EF /* ReViewHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReViewHeaderCell.xib; sourceTree = "<group>"; };
+		D6AB21761D27B4CE006234EF /* BookDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailModel.h; sourceTree = "<group>"; };
+		D6AB21771D27B4CE006234EF /* BookDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailModel.m; sourceTree = "<group>"; };
+		D6AB21791D27B4F4006234EF /* BookDetailModelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailModelCell.h; sourceTree = "<group>"; };
+		D6AB217A1D27B4F4006234EF /* BookDetailModelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailModelCell.m; sourceTree = "<group>"; };
+		D6AB217B1D27B4F4006234EF /* BookDetailModelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookDetailModelCell.xib; sourceTree = "<group>"; };
+		D6AB217E1D27B514006234EF /* BookHeaderModelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookHeaderModelCell.h; sourceTree = "<group>"; };
+		D6AB217F1D27B514006234EF /* BookHeaderModelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookHeaderModelCell.m; sourceTree = "<group>"; };
+		D6AB21801D27B514006234EF /* BookHeaderModelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookHeaderModelCell.xib; sourceTree = "<group>"; };
+		D6AB21831D27B58A006234EF /* BookHeaderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookHeaderModel.h; sourceTree = "<group>"; };
+		D6AB21841D27B58A006234EF /* BookHeaderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookHeaderModel.m; sourceTree = "<group>"; };
+		D6AB21861D27C7F8006234EF /* BookDetailModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailModelViewController.h; sourceTree = "<group>"; };
+		D6AB21871D27C7F8006234EF /* BookDetailModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailModelViewController.m; sourceTree = "<group>"; };
 		D6ADD7AD1D266F68008DB637 /* ReadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadingViewController.h; sourceTree = "<group>"; };
 		D6ADD7AE1D266F68008DB637 /* ReadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingViewController.m; sourceTree = "<group>"; };
 		D6ADD7AF1D266F68008DB637 /* ReadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadingViewController.xib; sourceTree = "<group>"; };
@@ -562,25 +600,6 @@
 		D6C779DE1D1FCBB500A07CFB /* 1055.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1055.png; sourceTree = "<group>"; };
 		D6C779E41D1FDB0D00A07CFB /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		D6C779E51D1FDB0D00A07CFB /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
-		D6C7843B1D269AAE00421069 /* BookDetailReController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailReController.h; sourceTree = "<group>"; };
-		D6C7843C1D269AAE00421069 /* BookDetailReController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailReController.m; sourceTree = "<group>"; };
-		D6C7843D1D269AAE00421069 /* ReViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReViewController.h; sourceTree = "<group>"; };
-		D6C7843E1D269AAE00421069 /* ReViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReViewController.m; sourceTree = "<group>"; };
-		D6C784401D269AAE00421069 /* BookReviewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookReviewHeader.h; sourceTree = "<group>"; };
-		D6C784411D269AAE00421069 /* BookReviewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookReviewHeader.m; sourceTree = "<group>"; };
-		D6C784421D269AAE00421069 /* BookReviewOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookReviewOne.h; sourceTree = "<group>"; };
-		D6C784431D269AAE00421069 /* BookReviewOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookReviewOne.m; sourceTree = "<group>"; };
-		D6C784441D269AAE00421069 /* BookReviewThr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookReviewThr.h; sourceTree = "<group>"; };
-		D6C784451D269AAE00421069 /* BookReviewThr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookReviewThr.m; sourceTree = "<group>"; };
-		D6C784471D269AAE00421069 /* BookReViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookReViewCell.h; sourceTree = "<group>"; };
-		D6C784481D269AAE00421069 /* BookReViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookReViewCell.m; sourceTree = "<group>"; };
-		D6C784491D269AAE00421069 /* BookReViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookReViewCell.xib; sourceTree = "<group>"; };
-		D6C7844A1D269AAE00421069 /* BookReViewDTCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookReViewDTCell.h; sourceTree = "<group>"; };
-		D6C7844B1D269AAE00421069 /* BookReViewDTCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookReViewDTCell.m; sourceTree = "<group>"; };
-		D6C7844C1D269AAE00421069 /* BookReViewDTCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookReViewDTCell.xib; sourceTree = "<group>"; };
-		D6C7844D1D269AAE00421069 /* ReViewHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReViewHeaderCell.h; sourceTree = "<group>"; };
-		D6C7844E1D269AAE00421069 /* ReViewHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReViewHeaderCell.m; sourceTree = "<group>"; };
-		D6C7844F1D269AAE00421069 /* ReViewHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReViewHeaderCell.xib; sourceTree = "<group>"; };
 		D6C7845C1D26B34100421069 /* bd_retention_ratio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bd_retention_ratio@2x.png"; sourceTree = "<group>"; };
 		D6C7845D1D26B34100421069 /* bd_retention_ratio@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bd_retention_ratio@3x.png"; sourceTree = "<group>"; };
 		D6C7845E1D26B34100421069 /* bd_star_filled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bd_star_filled@2x.png"; sourceTree = "<group>"; };
@@ -643,6 +662,7 @@
 		D604820F1D23FA2200CFA284 /* Book */ = {
 			isa = PBXGroup;
 			children = (
+				D6AB21721D27B49B006234EF /* BookDetail */,
 				D60482101D23FA2200CFA284 /* BookView */,
 				D60482171D23FA2200CFA284 /* Controller */,
 				D604821C1D23FA2200CFA284 /* Model */,
@@ -656,10 +676,10 @@
 			children = (
 				D60482111D23FA2200CFA284 /* BookOneViewController.h */,
 				D60482121D23FA2200CFA284 /* BookOneViewController.m */,
-				D60482131D23FA2200CFA284 /* BookThrViewController.h */,
-				D60482141D23FA2200CFA284 /* BookThrViewController.m */,
 				D60482151D23FA2200CFA284 /* BookTwoViewController.h */,
 				D60482161D23FA2200CFA284 /* BookTwoViewController.m */,
+				D60482131D23FA2200CFA284 /* BookThrViewController.h */,
+				D60482141D23FA2200CFA284 /* BookThrViewController.m */,
 			);
 			path = BookView;
 			sourceTree = "<group>";
@@ -1108,6 +1128,89 @@
 				D65F49821D1D32A20023A740 /* RootViewController.m */,
 			);
 			path = Viewcontrollers;
+			sourceTree = "<group>";
+		};
+		D6AB21511D27B2A8006234EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6AB21541D27B3F6006234EF /* BookDetailReController.h */,
+				D6AB21551D27B3F6006234EF /* BookDetailReController.m */,
+				D6AB21561D27B3F6006234EF /* ReViewController.h */,
+				D6AB21571D27B3F6006234EF /* ReViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D6AB21521D27B2A8006234EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6AB215A1D27B401006234EF /* BookReviewHeader.h */,
+				D6AB215B1D27B401006234EF /* BookReviewHeader.m */,
+				D6AB215C1D27B401006234EF /* BookReviewOne.h */,
+				D6AB215D1D27B401006234EF /* BookReviewOne.m */,
+				D6AB215E1D27B401006234EF /* BookReviewThr.h */,
+				D6AB215F1D27B401006234EF /* BookReviewThr.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6AB21531D27B2A8006234EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6AB21631D27B410006234EF /* BookReViewCell.h */,
+				D6AB21641D27B410006234EF /* BookReViewCell.m */,
+				D6AB21651D27B410006234EF /* BookReViewCell.xib */,
+				D6AB21661D27B410006234EF /* BookReViewDTCell.h */,
+				D6AB21671D27B410006234EF /* BookReViewDTCell.m */,
+				D6AB21681D27B410006234EF /* BookReViewDTCell.xib */,
+				D6AB21691D27B410006234EF /* ReViewHeaderCell.h */,
+				D6AB216A1D27B410006234EF /* ReViewHeaderCell.m */,
+				D6AB216B1D27B410006234EF /* ReViewHeaderCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6AB21721D27B49B006234EF /* BookDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D6AB21731D27B49B006234EF /* Controller */,
+				D6AB21741D27B49B006234EF /* Model */,
+				D6AB21751D27B49B006234EF /* View */,
+			);
+			path = BookDetail;
+			sourceTree = "<group>";
+		};
+		D6AB21731D27B49B006234EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6AB21861D27C7F8006234EF /* BookDetailModelViewController.h */,
+				D6AB21871D27C7F8006234EF /* BookDetailModelViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D6AB21741D27B49B006234EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6AB21831D27B58A006234EF /* BookHeaderModel.h */,
+				D6AB21841D27B58A006234EF /* BookHeaderModel.m */,
+				D6AB21761D27B4CE006234EF /* BookDetailModel.h */,
+				D6AB21771D27B4CE006234EF /* BookDetailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6AB21751D27B49B006234EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6AB217E1D27B514006234EF /* BookHeaderModelCell.h */,
+				D6AB217F1D27B514006234EF /* BookHeaderModelCell.m */,
+				D6AB21801D27B514006234EF /* BookHeaderModelCell.xib */,
+				D6AB21791D27B4F4006234EF /* BookDetailModelCell.h */,
+				D6AB217A1D27B4F4006234EF /* BookDetailModelCell.m */,
+				D6AB217B1D27B4F4006234EF /* BookDetailModelCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D6B1E42C1D1E5938004EAEB1 /* Read */ = {
@@ -1635,51 +1738,11 @@
 		D6C784391D269AAE00421069 /* Review */ = {
 			isa = PBXGroup;
 			children = (
-				D6C7843A1D269AAE00421069 /* Controller */,
-				D6C7843F1D269AAE00421069 /* Model */,
-				D6C784461D269AAE00421069 /* View */,
+				D6AB21511D27B2A8006234EF /* Controller */,
+				D6AB21521D27B2A8006234EF /* Model */,
+				D6AB21531D27B2A8006234EF /* View */,
 			);
 			path = Review;
-			sourceTree = "<group>";
-		};
-		D6C7843A1D269AAE00421069 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D6C7843B1D269AAE00421069 /* BookDetailReController.h */,
-				D6C7843C1D269AAE00421069 /* BookDetailReController.m */,
-				D6C7843D1D269AAE00421069 /* ReViewController.h */,
-				D6C7843E1D269AAE00421069 /* ReViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		D6C7843F1D269AAE00421069 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D6C784401D269AAE00421069 /* BookReviewHeader.h */,
-				D6C784411D269AAE00421069 /* BookReviewHeader.m */,
-				D6C784421D269AAE00421069 /* BookReviewOne.h */,
-				D6C784431D269AAE00421069 /* BookReviewOne.m */,
-				D6C784441D269AAE00421069 /* BookReviewThr.h */,
-				D6C784451D269AAE00421069 /* BookReviewThr.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D6C784461D269AAE00421069 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D6C784471D269AAE00421069 /* BookReViewCell.h */,
-				D6C784481D269AAE00421069 /* BookReViewCell.m */,
-				D6C784491D269AAE00421069 /* BookReViewCell.xib */,
-				D6C7844A1D269AAE00421069 /* BookReViewDTCell.h */,
-				D6C7844B1D269AAE00421069 /* BookReViewDTCell.m */,
-				D6C7844C1D269AAE00421069 /* BookReViewDTCell.xib */,
-				D6C7844D1D269AAE00421069 /* ReViewHeaderCell.h */,
-				D6C7844E1D269AAE00421069 /* ReViewHeaderCell.m */,
-				D6C7844F1D269AAE00421069 /* ReViewHeaderCell.xib */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		D6C7845B1D26B34100421069 /* pictures */ = {
@@ -1783,6 +1846,7 @@
 				D6B1E45C1D1EA816004EAEB1 /* ComicViewCell.xib in Resources */,
 				D6C7846E1D26B34100421069 /* bd_star_filled@2x.png in Resources */,
 				D60E33EA1D1CC4D0005CF58F /* Icon-72@2x.png in Resources */,
+				D6AB21711D27B410006234EF /* ReViewHeaderCell.xib in Resources */,
 				D6C7846D1D26B34100421069 /* bd_retention_ratio@3x.png in Resources */,
 				D6C7847F1D26B61200421069 /* n_icon@3x.png in Resources */,
 				D6C784861D26B6A800421069 /* rsm_icon_2@2x.png in Resources */,
@@ -1815,9 +1879,9 @@
 				D60E33F21D1CC4D0005CF58F /* Icon-Small.png in Resources */,
 				D6B1E4441D1E653B004EAEB1 /* GameViewCell.xib in Resources */,
 				D653CA4C1D216248000E881A /* nav_menu_icon@2x.png in Resources */,
+				D6AB217D1D27B4F4006234EF /* BookDetailModelCell.xib in Resources */,
 				D6C784821D26B62300421069 /* ranking_other@2x.png in Resources */,
 				D6C784771D26B34100421069 /* exp_paiming@3x.png in Resources */,
-				D6C784561D269AAE00421069 /* BookReViewCell.xib in Resources */,
 				D60482741D23FD8000CFA284 /* HotCell.xib in Resources */,
 				D6B1E4A01D1EC512004EAEB1 /* MJRefresh.bundle in Resources */,
 				D6C45BD31D24C7E500EE90CF /* BeforeReadViewController.xib in Resources */,
@@ -1841,7 +1905,6 @@
 				D6C0C1EA1D254950005B541F /* ComprehensiveDetailViewController.xib in Resources */,
 				D6B1E4271D1E35CC004EAEB1 /* rsm_icon_4@2x.png in Resources */,
 				D60E33FA1D1CC4D0005CF58F /* ip5@2x.png in Resources */,
-				D6C7845A1D269AAE00421069 /* ReViewHeaderCell.xib in Resources */,
 				D60E33661D1CC18C005CF58F /* Main.storyboard in Resources */,
 				D6C7847A1D26B34100421069 /* zuire@2x.png in Resources */,
 				D6C0C1E51D2540C6005B541F /* ComprehensiveCell.xib in Resources */,
@@ -1853,7 +1916,9 @@
 				D65F497B1D1D1DB80023A740 /* 257.png in Resources */,
 				D60E33E71D1CC4D0005CF58F /* Icon-60@2x.png in Resources */,
 				D60E33F61D1CC4D0005CF58F /* Icon@2x.png in Resources */,
+				D6AB216D1D27B410006234EF /* BookReViewCell.xib in Resources */,
 				D60E33F31D1CC4D0005CF58F /* Icon-Small@2x.png in Resources */,
+				D6AB216F1D27B410006234EF /* BookReViewDTCell.xib in Resources */,
 				D653CA451D20D4C9000E881A /* ResultsViewCell.xib in Resources */,
 				D60E33FC1D1CC4D0005CF58F /* ip6p@3x.png in Resources */,
 				D653CA4A1D210FFC000E881A /* Icon-Small-40@2x副本.png in Resources */,
@@ -1866,9 +1931,9 @@
 				D6C784751D26B34100421069 /* exchange_tixian@3x.png in Resources */,
 				D60482321D23FA2200CFA284 /* book.png in Resources */,
 				D6B284371D22266A000D81EC /* hsm_icon_1@3x.png in Resources */,
-				D6C784581D269AAE00421069 /* BookReViewDTCell.xib in Resources */,
 				D6C7848A1D26B6D900421069 /* userCenter_rate@2x.png in Resources */,
 				D6B1E41B1D1E1F9D004EAEB1 /* forum_public_help_icon@2x.png in Resources */,
+				D6AB21821D27B514006234EF /* BookHeaderModelCell.xib in Resources */,
 				D6B284551D22CD13000D81EC /* f_like_icon@3x.png in Resources */,
 				D6B1E40E1D1E119C004EAEB1 /* RunViewCell.xib in Resources */,
 				D6C7848B1D26B6D900421069 /* userCenter_rate@3x.png in Resources */,
@@ -1937,7 +2002,6 @@
 				D6B1E49F1D1EC512004EAEB1 /* MJRefreshStateHeader.m in Sources */,
 				D60482771D23FD8000CFA284 /* HotViewController.m in Sources */,
 				D6399A1D1D23FA170006CD28 /* ClassifyCell.m in Sources */,
-				D6C784551D269AAE00421069 /* BookReViewCell.m in Sources */,
 				D6399A351D23FA680006CD28 /* ClassifyViewController.m in Sources */,
 				D6B1E49B1D1EC512004EAEB1 /* MJRefreshBackNormalFooter.m in Sources */,
 				D60482671D23FD8000CFA284 /* ListViewController.m in Sources */,
@@ -1955,7 +2019,6 @@
 				D604827A1D23FD8000CFA284 /* WEndViewController.m in Sources */,
 				D604827C1D23FD8000CFA284 /* WPotentialViewController.m in Sources */,
 				D6B1E43C1D1E5B04004EAEB1 /* Game.m in Sources */,
-				D6C784531D269AAE00421069 /* BookReviewOne.m in Sources */,
 				D60E34071D1CC6BF005CF58F /* AppDelegate.m in Sources */,
 				D653CA711D21778A000E881A /* LeftViewController.m in Sources */,
 				D6399A201D23FA170006CD28 /* HeadReusableView.m in Sources */,
@@ -1969,22 +2032,28 @@
 				D6399A3A1D23FA680006CD28 /* SingleList.m in Sources */,
 				D6C0C1411D24A170005B541F /* SetCell.m in Sources */,
 				D6399A391D23FA680006CD28 /* ReputablyViewController.m in Sources */,
+				D6AB216E1D27B410006234EF /* BookReViewDTCell.m in Sources */,
+				D6AB21851D27B58A006234EF /* BookHeaderModel.m in Sources */,
 				D6B284501D22BF70000D81EC /* BookHelpeViewCell.m in Sources */,
-				D6C784511D269AAE00421069 /* ReViewController.m in Sources */,
 				D6B1E4351D1E5938004EAEB1 /* README.md in Sources */,
-				D6C784571D269AAE00421069 /* BookReViewDTCell.m in Sources */,
+				D6AB21781D27B4CE006234EF /* BookDetailModel.m in Sources */,
+				D6AB21581D27B3F6006234EF /* BookDetailReController.m in Sources */,
 				D60482301D23FA2200CFA284 /* BookViewController.m in Sources */,
 				D6C0C1ED1D254A93005B541F /* ComprehensiveDetail.m in Sources */,
 				D6B1E43F1D1E5EBE004EAEB1 /* GameViewController.m in Sources */,
-				D6C784501D269AAE00421069 /* BookDetailReController.m in Sources */,
 				D653CA6A1D217581000E881A /* RECommonFunctions.m in Sources */,
+				D6AB21611D27B401006234EF /* BookReviewOne.m in Sources */,
 				D6B1E4971D1EC512004EAEB1 /* MJRefreshAutoGifFooter.m in Sources */,
+				D6AB21621D27B401006234EF /* BookReviewThr.m in Sources */,
 				D6C0C16D1D24AAE7005B541F /* DynamicHotViewController.m in Sources */,
+				D6AB21591D27B3F6006234EF /* ReViewController.m in Sources */,
 				D6C0C1711D24AAE7005B541F /* NickNameViewController.m in Sources */,
+				D6AB21811D27B514006234EF /* BookHeaderModelCell.m in Sources */,
 				D653CA6C1D217581000E881A /* UIViewController+RESideMenu.m in Sources */,
 				D637ACEC1D23BC7200BB5900 /* DetailViewCell.m in Sources */,
 				D6C0C1771D24AAE7005B541F /* README.md in Sources */,
 				D6C45BDA1D2509FF00EE90CF /* bookDetail.m in Sources */,
+				D6AB217C1D27B4F4006234EF /* BookDetailModelCell.m in Sources */,
 				D69B34D41D235DE100BD3F0A /* BookHelpe.m in Sources */,
 				D60482351D23FA2200CFA284 /* BookCell.m in Sources */,
 				D637ACE71D23B31600BB5900 /* NetWorkRequestManager.m in Sources */,
@@ -1992,8 +2061,10 @@
 				D6C0C1401D24A170005B541F /* README.md in Sources */,
 				D6C0C16F1D24AAE7005B541F /* DynamicViewController.m in Sources */,
 				D6B1E4991D1EC512004EAEB1 /* MJRefreshAutoStateFooter.m in Sources */,
+				D6AB216C1D27B410006234EF /* BookReViewCell.m in Sources */,
 				D6B1E40D1D1E119C004EAEB1 /* RunViewCell.m in Sources */,
 				D6C0C1721D24AAE7005B541F /* MyInformationViewController.m in Sources */,
+				D6AB21701D27B410006234EF /* ReViewHeaderCell.m in Sources */,
 				D60482371D23FA2200CFA284 /* BookHeaderView.m in Sources */,
 				D6B1E4121D1E18DB004EAEB1 /* ComunityViewCell.m in Sources */,
 				D6C0C16C1D24AAE7005B541F /* DynamicColumnViewController.m in Sources */,
@@ -2003,6 +2074,7 @@
 				D6B1E4A51D1EC512004EAEB1 /* UIView+MJExtension.m in Sources */,
 				D60482731D23FD8000CFA284 /* HotCell.m in Sources */,
 				D653CA3D1D20D486000E881A /* ResultsViewController.m in Sources */,
+				D6AB21601D27B401006234EF /* BookReviewHeader.m in Sources */,
 				D6B1E4921D1EC512004EAEB1 /* MJRefreshAutoFooter.m in Sources */,
 				D6C45BD21D24C7E500EE90CF /* BeforeReadViewController.m in Sources */,
 				D6B1E4431D1E653B004EAEB1 /* GameViewCell.m in Sources */,
@@ -2020,7 +2092,6 @@
 				D6B1E49D1D1EC512004EAEB1 /* MJRefreshGifHeader.m in Sources */,
 				D6B1E4941D1EC512004EAEB1 /* MJRefreshComponent.m in Sources */,
 				D637ACDC1D23B0BD00BB5900 /* DetailViewController.m in Sources */,
-				D6C784541D269AAE00421069 /* BookReviewThr.m in Sources */,
 				D6C0C17B1D24AAE7005B541F /* DynamicHotCell.m in Sources */,
 				D604822E1D23FA2200CFA284 /* BookTwoViewController.m in Sources */,
 				D6B1E4471D1E6F70004EAEB1 /* CALayer+XibBorderColor.m in Sources */,
@@ -2030,7 +2101,6 @@
 				D6399A1E1D23FA170006CD28 /* CommonCell.m in Sources */,
 				D6399A361D23FA680006CD28 /* BurglarViewController.m in Sources */,
 				D6B1E4981D1EC512004EAEB1 /* MJRefreshAutoNormalFooter.m in Sources */,
-				D6C784521D269AAE00421069 /* BookReviewHeader.m in Sources */,
 				D6ADD7B01D266F68008DB637 /* ReadingViewController.m in Sources */,
 				D6C0C13F1D24A170005B541F /* SetViewController.m in Sources */,
 				D6C0C1791D24AAE7005B541F /* DynamicHot.m in Sources */,
@@ -2042,6 +2112,7 @@
 				D6B1E4341D1E5938004EAEB1 /* README.md in Sources */,
 				D6399A381D23FA680006CD28 /* NSArray+log.m in Sources */,
 				D653CA6B1D217581000E881A /* RESideMenu.m in Sources */,
+				D6AB21881D27C7F8006234EF /* BookDetailModelViewController.m in Sources */,
 				D6B1E4331D1E5938004EAEB1 /* README.md in Sources */,
 				D60482701D23FD8000CFA284 /* ThrViewController.m in Sources */,
 				D6B1E44A1D1E7D6D004EAEB1 /* PlayViewController.m in Sources */,
@@ -2049,7 +2120,6 @@
 				D6C0C17D1D24AAE7005B541F /* MyInformationCell.m in Sources */,
 				D6B1E49E1D1EC512004EAEB1 /* MJRefreshNormalHeader.m in Sources */,
 				D60482341D23FA2200CFA284 /* BookAllCell.m in Sources */,
-				D6C784591D269AAE00421069 /* ReViewHeaderCell.m in Sources */,
 				D604822C1D23FA2200CFA284 /* BookOneViewController.m in Sources */,
 				D6C0C17A1D24AAE7005B541F /* DynamicCell.m in Sources */,
 				D604822D1D23FA2200CFA284 /* BookThrViewController.m in Sources */,
