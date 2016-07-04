@@ -10,4 +10,6 @@
 
 @interface ReadingViewController : UIViewController
 
+@property (nonatomic,copy)NSString *_id;
+
 @end

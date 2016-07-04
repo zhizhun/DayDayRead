@@ -89,6 +89,10 @@
 		D6399A391D23FA680006CD28 /* ReputablyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A2F1D23FA680006CD28 /* ReputablyViewController.m */; };
 		D6399A3A1D23FA680006CD28 /* SingleList.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A311D23FA680006CD28 /* SingleList.m */; };
 		D6399A3B1D23FA680006CD28 /* HotTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6399A331D23FA680006CD28 /* HotTableViewController.m */; };
+		D652207B1D27FB4400B94801 /* night_mode@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D652207A1D27FB4400B94801 /* night_mode@3x.png */; };
+		D652207D1D28098100B94801 /* directory@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D652207C1D28098100B94801 /* directory@3x.png */; };
+		D652207F1D280BC700B94801 /* preview_btn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D652207E1D280BC700B94801 /* preview_btn@3x.png */; };
+		D65220811D280BFE00B94801 /* reading_setting@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D65220801D280BFE00B94801 /* reading_setting@3x.png */; };
 		D653CA3D1D20D486000E881A /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D653CA3C1D20D486000E881A /* ResultsViewController.m */; };
 		D653CA441D20D4C9000E881A /* ResultsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D653CA421D20D4C9000E881A /* ResultsViewCell.m */; };
 		D653CA451D20D4C9000E881A /* ResultsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D653CA431D20D4C9000E881A /* ResultsViewCell.xib */; };
@@ -124,6 +128,9 @@
 		D6AB21881D27C7F8006234EF /* BookDetailModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB21871D27C7F8006234EF /* BookDetailModelViewController.m */; };
 		D6ADD7B01D266F68008DB637 /* ReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6ADD7AE1D266F68008DB637 /* ReadingViewController.m */; };
 		D6ADD7B11D266F68008DB637 /* ReadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6ADD7AF1D266F68008DB637 /* ReadingViewController.xib */; };
+		D6ADD7B51D267055008DB637 /* ReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6ADD7B31D267055008DB637 /* ReadingViewController.m */; };
+		D6ADD7B61D267055008DB637 /* ReadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6ADD7B41D267055008DB637 /* ReadingViewController.xib */; };
+		D6ADD7B91D267695008DB637 /* Bookfrom.m in Sources */ = {isa = PBXBuildFile; fileRef = D6ADD7B81D267695008DB637 /* Bookfrom.m */; };
 		D6B1E40D1D1E119C004EAEB1 /* RunViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B1E40B1D1E119C004EAEB1 /* RunViewCell.m */; };
 		D6B1E40E1D1E119C004EAEB1 /* RunViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B1E40C1D1E119C004EAEB1 /* RunViewCell.xib */; };
 		D6B1E4121D1E18DB004EAEB1 /* ComunityViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B1E4101D1E18DB004EAEB1 /* ComunityViewCell.m */; };
@@ -379,6 +386,10 @@
 		D6399A311D23FA680006CD28 /* SingleList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleList.m; sourceTree = "<group>"; };
 		D6399A321D23FA680006CD28 /* HotTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotTableViewController.h; path = ../HotTableViewController.h; sourceTree = "<group>"; };
 		D6399A331D23FA680006CD28 /* HotTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotTableViewController.m; path = ../HotTableViewController.m; sourceTree = "<group>"; };
+		D652207A1D27FB4400B94801 /* night_mode@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "night_mode@3x.png"; sourceTree = "<group>"; };
+		D652207C1D28098100B94801 /* directory@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "directory@3x.png"; sourceTree = "<group>"; };
+		D652207E1D280BC700B94801 /* preview_btn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "preview_btn@3x.png"; sourceTree = "<group>"; };
+		D65220801D280BFE00B94801 /* reading_setting@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reading_setting@3x.png"; sourceTree = "<group>"; };
 		D653CA371D20B43C000E881A /* DB_COLOR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DB_COLOR.h; sourceTree = "<group>"; };
 		D653CA3B1D20D486000E881A /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
 		D653CA3C1D20D486000E881A /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
@@ -442,9 +453,13 @@
 		D6AB21841D27B58A006234EF /* BookHeaderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookHeaderModel.m; sourceTree = "<group>"; };
 		D6AB21861D27C7F8006234EF /* BookDetailModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailModelViewController.h; sourceTree = "<group>"; };
 		D6AB21871D27C7F8006234EF /* BookDetailModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailModelViewController.m; sourceTree = "<group>"; };
-		D6ADD7AD1D266F68008DB637 /* ReadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadingViewController.h; sourceTree = "<group>"; };
 		D6ADD7AE1D266F68008DB637 /* ReadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingViewController.m; sourceTree = "<group>"; };
 		D6ADD7AF1D266F68008DB637 /* ReadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadingViewController.xib; sourceTree = "<group>"; };
+		D6ADD7B21D267055008DB637 /* ReadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadingViewController.h; sourceTree = "<group>"; };
+		D6ADD7B31D267055008DB637 /* ReadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingViewController.m; sourceTree = "<group>"; };
+		D6ADD7B41D267055008DB637 /* ReadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadingViewController.xib; sourceTree = "<group>"; };
+		D6ADD7B71D267695008DB637 /* Bookfrom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bookfrom.h; sourceTree = "<group>"; };
+		D6ADD7B81D267695008DB637 /* Bookfrom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bookfrom.m; sourceTree = "<group>"; };
 		D6B1E40A1D1E119C004EAEB1 /* RunViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunViewCell.h; sourceTree = "<group>"; };
 		D6B1E40B1D1E119C004EAEB1 /* RunViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunViewCell.m; sourceTree = "<group>"; };
 		D6B1E40C1D1E119C004EAEB1 /* RunViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RunViewCell.xib; sourceTree = "<group>"; };
@@ -849,6 +864,10 @@
 		D60E33CD1D1CC4D0005CF58F /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				D65220801D280BFE00B94801 /* reading_setting@3x.png */,
+				D652207E1D280BC700B94801 /* preview_btn@3x.png */,
+				D652207C1D28098100B94801 /* directory@3x.png */,
+				D652207A1D27FB4400B94801 /* night_mode@3x.png */,
 				D6C45BD61D24CBA900EE90CF /* bd_add@3x.png */,
 				D6C45BD41D24CAFA00EE90CF /* bd_cancel@3x.png */,
 				D6B284541D22CD13000D81EC /* f_like_icon@3x.png */,
@@ -970,7 +989,6 @@
 				D6C779E01D1FDADE00A07CFB /* Search */,
 				D6B1E44E1D1EA582004EAEB1 /* Comic */,
 				D6B1E4361D1E5ACF004EAEB1 /* Games */,
-				D6B1E42C1D1E5938004EAEB1 /* Read */,
 				D65F496F1D1D110D0023A740 /* Root */,
 			);
 			path = Scences;
@@ -1077,6 +1095,7 @@
 		D653CA6D1D21775D000E881A /* Left */ = {
 			isa = PBXGroup;
 			children = (
+				D6B1E42C1D1E5938004EAEB1 /* Read */,
 				D653CA6E1D21775D000E881A /* Viewcontrollers */,
 			);
 			path = Left;
@@ -1220,7 +1239,8 @@
 				D6B1E42F1D1E5938004EAEB1 /* View */,
 				D6B1E4311D1E5938004EAEB1 /* Viewcontrollers */,
 			);
-			path = Read;
+			name = Read;
+			path = ../Read;
 			sourceTree = "<group>";
 		};
 		D6B1E42D1D1E5938004EAEB1 /* Models */ = {
@@ -1237,6 +1257,8 @@
 			isa = PBXGroup;
 			children = (
 				D6B1E4301D1E5938004EAEB1 /* README.md */,
+				D6ADD7B71D267695008DB637 /* Bookfrom.h */,
+				D6ADD7B81D267695008DB637 /* Bookfrom.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1247,10 +1269,10 @@
 				D6B1E4321D1E5938004EAEB1 /* README.md */,
 				D6C45BCF1D24C7E500EE90CF /* BeforeReadViewController.h */,
 				D6C45BD01D24C7E500EE90CF /* BeforeReadViewController.m */,
-				D6ADD7AD1D266F68008DB637 /* ReadingViewController.h */,
-				D6ADD7AE1D266F68008DB637 /* ReadingViewController.m */,
-				D6ADD7AF1D266F68008DB637 /* ReadingViewController.xib */,
 				D6C45BD11D24C7E500EE90CF /* BeforeReadViewController.xib */,
+				D6ADD7B21D267055008DB637 /* ReadingViewController.h */,
+				D6ADD7B31D267055008DB637 /* ReadingViewController.m */,
+				D6ADD7B41D267055008DB637 /* ReadingViewController.xib */,
 			);
 			path = Viewcontrollers;
 			sourceTree = "<group>";
@@ -1855,8 +1877,10 @@
 				D6C45BD51D24CAFA00EE90CF /* bd_cancel@3x.png in Resources */,
 				D6B1E4231D1E35B1004EAEB1 /* rsm_icon_2@2x.png in Resources */,
 				D60E33F11D1CC4D0005CF58F /* Icon-Small-50@2x.png in Resources */,
+				D652207D1D28098100B94801 /* directory@3x.png in Resources */,
 				D6B1E42B1D1E35FE004EAEB1 /* rsm_icon_8@2x.png in Resources */,
 				D60E33ED1D1CC4D0005CF58F /* Icon-Small-40.png in Resources */,
+				D652207F1D280BC700B94801 /* preview_btn@3x.png in Resources */,
 				D6C0C1761D24AAE7005B541F /* DynamicHotDetailViewController.xib in Resources */,
 				D6399A1F1D23FA170006CD28 /* CommonCell.xib in Resources */,
 				D6C784781D26B34100421069 /* f_girl_icon@2x.png in Resources */,
@@ -1865,6 +1889,7 @@
 				D6C7846C1D26B34100421069 /* bd_retention_ratio@2x.png in Resources */,
 				D60E33FB1D1CC4D0005CF58F /* ip6@2x.png in Resources */,
 				D60E336B1D1CC18C005CF58F /* LaunchScreen.storyboard in Resources */,
+				D6ADD7B61D267055008DB637 /* ReadingViewController.xib in Resources */,
 				D6C784871D26B6A800421069 /* rsm_icon_2@3x.png in Resources */,
 				D6C7846F1D26B34100421069 /* bd_star_filled@3x.png in Resources */,
 				D6ADD7B11D266F68008DB637 /* ReadingViewController.xib in Resources */,
@@ -1875,6 +1900,7 @@
 				D6BD1D041D2562F60083AD40 /* TTZS.jpg in Resources */,
 				D6C7847E1D26B61200421069 /* n_icon@2x.png in Resources */,
 				D60E33E81D1CC4D0005CF58F /* Icon-60@3x.png in Resources */,
+				D65220811D280BFE00B94801 /* reading_setting@3x.png in Resources */,
 				D6C784731D26B34100421069 /* d_followed@3x.png in Resources */,
 				D60E33F21D1CC4D0005CF58F /* Icon-Small.png in Resources */,
 				D6B1E4441D1E653B004EAEB1 /* GameViewCell.xib in Resources */,
@@ -1898,6 +1924,7 @@
 				D60E33F71D1CC4D0005CF58F /* iTunesArtwork@2x.png in Resources */,
 				D60E33FE1D1CC4D0005CF58F /* start01.png in Resources */,
 				D60E33681D1CC18C005CF58F /* Assets.xcassets in Resources */,
+				D652207B1D27FB4400B94801 /* night_mode@3x.png in Resources */,
 				D6B1E4171D1E1F1E004EAEB1 /* f_ramble_icon@2x.png in Resources */,
 				D6B1E4211D1E35A7004EAEB1 /* rsm_icon_1@2x.png in Resources */,
 				D6C779DF1D1FCBB500A07CFB /* 1055.png in Resources */,
@@ -2002,6 +2029,7 @@
 				D6B1E49F1D1EC512004EAEB1 /* MJRefreshStateHeader.m in Sources */,
 				D60482771D23FD8000CFA284 /* HotViewController.m in Sources */,
 				D6399A1D1D23FA170006CD28 /* ClassifyCell.m in Sources */,
+				D6ADD7B91D267695008DB637 /* Bookfrom.m in Sources */,
 				D6399A351D23FA680006CD28 /* ClassifyViewController.m in Sources */,
 				D6B1E49B1D1EC512004EAEB1 /* MJRefreshBackNormalFooter.m in Sources */,
 				D60482671D23FD8000CFA284 /* ListViewController.m in Sources */,
@@ -2101,6 +2129,7 @@
 				D6399A1E1D23FA170006CD28 /* CommonCell.m in Sources */,
 				D6399A361D23FA680006CD28 /* BurglarViewController.m in Sources */,
 				D6B1E4981D1EC512004EAEB1 /* MJRefreshAutoNormalFooter.m in Sources */,
+				D6ADD7B51D267055008DB637 /* ReadingViewController.m in Sources */,
 				D6ADD7B01D266F68008DB637 /* ReadingViewController.m in Sources */,
 				D6C0C13F1D24A170005B541F /* SetViewController.m in Sources */,
 				D6C0C1791D24AAE7005B541F /* DynamicHot.m in Sources */,
@@ -2248,10 +2277,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DayDayRead/classes/Marco/PrefixHeader.pch";
 				INFOPLIST_FILE = DayDayRead/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -2263,7 +2293,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dayday.readbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3b2b768f-ab71-4c65-9f9e-fc22ac132c6e";
+				PROVISIONING_PROFILE = "fea9c478-d582-4a84-920b-03caf1c8241b";
 			};
 			name = Debug;
 		};
@@ -2274,10 +2304,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wei Yang (F2N9DLANA4)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DayDayRead/classes/Marco/PrefixHeader.pch";
 				INFOPLIST_FILE = DayDayRead/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -2289,7 +2320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dayday.readbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3b2b768f-ab71-4c65-9f9e-fc22ac132c6e";
+				PROVISIONING_PROFILE = "fea9c478-d582-4a84-920b-03caf1c8241b";
 			};
 			name = Release;
 		};

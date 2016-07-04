@@ -54,7 +54,7 @@
 
 - (void)requestData {
     
-    NSString *url = [NSString stringWithFormat:@"http://api.zhuishushenqi.com/book-list/%@", __id];
+    NSString *url = [NSString stringWithFormat:@"http://api.zhuishushenqi.com/book-list/%@", self._id];
     [NetWorkRequestManager requestType:GET urlString:url prama:nil success:^(id data) {
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
         NSDictionary *dict = [dic objectForKey:@"bookList"];
