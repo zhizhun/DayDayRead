@@ -147,7 +147,8 @@
 - (IBAction)didBegainRead:(id)sender {
     ReadingViewController *readVC = [[ReadingViewController alloc] init];
     readVC._id = self._id;
-    [self presentViewController:readVC animated:YES completion:nil];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:readVC];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 //追加更新
 - (IBAction)didRunUpdate:(id)sender {

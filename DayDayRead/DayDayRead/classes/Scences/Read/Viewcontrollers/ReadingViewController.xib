@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReadingViewController">
             <connections>
+                <outlet property="bottomView" destination="FT8-Rd-xeH" id="DR4-0v-GPE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,8 +15,72 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NNC-F7-UWS">
+                    <rect key="frame" x="101" y="111" width="118" height="337"/>
+                    <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="ap2-2b-aTo" appends="YES" id="FaK-59-TZX"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FT8-Rd-xeH">
+                    <rect key="frame" x="0.0" y="517" width="320" height="51"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I16-aj-2el">
+                            <rect key="frame" x="79" y="6" width="60" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="29" minY="0.0" maxX="0.0" maxY="21"/>
+                            <state key="normal" title="目录" image="directory.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opb-xd-TxY">
+                            <rect key="frame" x="2" y="6" width="60" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="29" minY="0.0" maxX="0.0" maxY="21"/>
+                            <state key="normal" title="夜间" image="night_mode.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcy-fg-oeR">
+                            <rect key="frame" x="160" y="6" width="60" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="29" minY="0.0" maxX="0.0" maxY="21"/>
+                            <state key="normal" title="缓存" image="preview_btn.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3c-ct-HjD">
+                            <rect key="frame" x="242" y="6" width="60" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="29" minY="0.0" maxX="0.0" maxY="21"/>
+                            <state key="normal" title="设置" image="reading_setting.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
             <point key="canvasLocation" x="527" y="458"/>
         </view>
+        <tapGestureRecognizer id="ap2-2b-aTo">
+            <connections>
+                <action selector="didTapAction:" destination="-1" id="LEF-1M-fjk"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
+    <resources>
+        <image name="directory.png" width="23" height="18"/>
+        <image name="night_mode.png" width="23" height="18"/>
+        <image name="preview_btn.png" width="23" height="18"/>
+        <image name="reading_setting.png" width="23" height="18"/>
+    </resources>
 </document>

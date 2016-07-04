@@ -12,6 +12,8 @@
 
 @interface ComprehensiveDetailCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *nicknameImageView;
+@property (weak, nonatomic) IBOutlet UILabel *floorLabel;
+
 @property (weak, nonatomic) IBOutlet UILabel *nicknameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *contntLabel;
@@ -25,7 +27,7 @@
     NSString *str = [comprehensiveDetail.author objectForKey:@"avatar"];
     NSString *avatar = [NSString stringWithFormat:@"%@%@",@"http://api.zhuishushenqi.com",str];
     [self.nicknameImageView sd_setImageWithURL:[NSURL URLWithString:avatar]];
-  
+    self.floorLabel.text = [NSString stringWithFormat:@"%@楼",comprehensiveDetail.floor];
     self.nicknameLabel.text = [comprehensiveDetail.author objectForKey:@"nickname"];
     self.contntLabel.text = comprehensiveDetail.content;
     NSString *timeStr = [comprehensiveDetail.created stringByReplacingOccurrencesOfString:@"T" withString:@" "];

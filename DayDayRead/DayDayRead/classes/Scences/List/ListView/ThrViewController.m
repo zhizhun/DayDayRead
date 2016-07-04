@@ -14,8 +14,9 @@
 #import <NinaPagerView.h>
 #import <NinaBaseView.h>
 #import <UIParameter.h>
-#import "ListDetailViewController.h"
+
 #import "SingletonList.h"
+#import "BeforeReadViewController.h"
 @interface ThrViewController ()
 
 @property (nonatomic, strong) NSMutableArray *allHotArray;
@@ -105,10 +106,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    ListDetailViewController *allVC = [[ListDetailViewController alloc] init];
-    Hot *hot = self.allHotArray[indexPath.row];
-    allVC.hot = hot;
-    [self.navigationController pushViewController:allVC animated:YES];
+    BeforeReadViewController *beforeVC = [[BeforeReadViewController alloc] init];
+    Hot *book = self.allHotArray[indexPath.row];
+    beforeVC._id = book._id;
+    [self.navigationController pushViewController:beforeVC animated:YES];
 }
 
 /*
