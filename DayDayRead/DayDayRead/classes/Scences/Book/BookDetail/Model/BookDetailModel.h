@@ -10,7 +10,7 @@
 
 @interface BookDetailModel : NSObject
 
-@property (nonatomic, strong) NSNumber *_id;
+@property (nonatomic, copy) NSString* _id;
 @property (nonatomic, strong) NSString *author;
 @property (nonatomic, strong) NSString *cover;
 @property (nonatomic, strong) NSString *title;
@@ -19,7 +19,7 @@
 @property (nonatomic, strong) NSString *site;
 @property (nonatomic, assign) NSInteger *retentionRatio;
 @property (nonatomic, strong) NSString *wordCount;
-@property (nonatomic, strong) NSString *bonned;
+@property (nonatomic, strong) NSString *banned;
 
 
 
