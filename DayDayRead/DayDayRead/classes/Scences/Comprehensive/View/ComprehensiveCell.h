@@ -11,4 +11,6 @@
 @class Comprehensive;
 @interface ComprehensiveCell : UITableViewCell
 @property (nonatomic,strong)Comprehensive *comprehensive;
+
+
 @end

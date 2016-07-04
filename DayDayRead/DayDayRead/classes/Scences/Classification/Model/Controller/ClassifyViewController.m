@@ -35,14 +35,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"分类";
+   
+    [self initView];
+    [self initLayout];
+    
+   
+   
+}
+
+- (void)viewWillAppear:(BOOL)animated {
     //布局视图
     [self initView];
     [self initLayout];
     
-  
-   
-   
 }
+
 
 
 - (void)initView {
@@ -144,6 +151,15 @@
 
     
 }
+
+- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds
+{
+    return YES;
+}
+
+
+
+
 
 
 - (void)didReceiveMemoryWarning {

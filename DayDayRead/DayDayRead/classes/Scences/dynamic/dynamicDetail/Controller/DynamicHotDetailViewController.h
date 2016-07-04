@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "DynamicHot.h"
+#import "DynamicDetail.h"
 
 @interface DynamicHotDetailViewController : UIViewController
 @property (nonatomic, strong)DynamicHot *dynamicHot;
+@property (nonatomic,strong)DynamicDetail*dynamicDetail;
 @end

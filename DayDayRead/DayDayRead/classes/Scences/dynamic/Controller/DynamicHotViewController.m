@@ -88,10 +88,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     DynamicHotDetailViewController *dynamicHotDetailVC = [[DynamicHotDetailViewController alloc] init];
     
-    UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:dynamicHotDetailVC];
+    
     DynamicHot *dynamicHot = self.dataArray[indexPath.row];
     dynamicHotDetailVC.dynamicHot = dynamicHot;
-    [self.view.window.rootViewController presentViewController:naVC animated:(YES) completion:nil];
+    [self.navigationController pushViewController:dynamicHotDetailVC animated:YES];
 }
 
 /*

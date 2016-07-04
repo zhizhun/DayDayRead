@@ -7,16 +7,14 @@
 //
 
 #import "ComprehensiveDetailCell.h"
-#include "ComprehensiveDetail.h"
+#import "ComprehensiveDetail.h"
 #import  <UIImageView+WebCache.h>
 
 @interface ComprehensiveDetailCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *nicknameImageView;
 @property (weak, nonatomic) IBOutlet UILabel *floorLabel;
-
 @property (weak, nonatomic) IBOutlet UILabel *nicknameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *contntLabel;
 @property (weak, nonatomic) IBOutlet UILabel *replyToLabel;
 @property (nonatomic, assign)int temp;
 
@@ -29,7 +27,7 @@
     [self.nicknameImageView sd_setImageWithURL:[NSURL URLWithString:avatar]];
     self.floorLabel.text = [NSString stringWithFormat:@"%@楼",comprehensiveDetail.floor];
     self.nicknameLabel.text = [comprehensiveDetail.author objectForKey:@"nickname"];
-    self.contntLabel.text = comprehensiveDetail.content;
+    self.contentLabel.text = comprehensiveDetail.content;
     NSString *timeStr = [comprehensiveDetail.created stringByReplacingOccurrencesOfString:@"T" withString:@" "];
     NSString *timeStr1 = [timeStr stringByReplacingOccurrencesOfString:@"Z" withString:@" "];
     //把字符串转为NSdata
