@@ -37,13 +37,13 @@
     
     self.listArray = [NSMutableArray array];
     [self.listArray addObjectsFromArray:@[
-                                          @{@"nameImage":@"person@2x",
+                                          @{@"nameImage":@"rsm_icon_2@2x",
                                             @"name":@"追书最热榜Top100"},
-                                          @{@"nameImage":@"person@2x",
+                                          @{@"nameImage":@"n_icon@2x",
                                             @"name":@"读者留存率Top100"},
-                                          @{@"nameImage":@"person@2x",
+                                          @{@"nameImage":@"userCenter_rate@2x",
                                             @"name":@"追书完结榜Top100"},
-                                          @{@"nameImage":@"person@2x",
+                                          @{@"nameImage":@"exchange_tixian@3x",
                                             @"name":@"本周潜力榜"}
                                           ]];
     
