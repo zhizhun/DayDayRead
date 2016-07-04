@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface DynamicHot : NSObject
-//
+
 @property (nonatomic,strong)NSDictionary *user;
 
 @property (nonatomic, strong)NSDictionary *tweet;
+@property (nonatomic, strong)NSString *_id;
 @end

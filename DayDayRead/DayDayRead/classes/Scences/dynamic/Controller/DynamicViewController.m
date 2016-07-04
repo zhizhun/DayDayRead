@@ -30,6 +30,7 @@
     
     NinaPagerView *ninaPageView = [[NinaPagerView alloc] initWithNinaPagerStyle:NinaPagerStyleBottomLine WithTitles:titleArray WithVCs:vcsArray WithColorArrays:colorArray];
     [self.view addSubview:ninaPageView];
+    ninaPageView.pushEnabled = YES;
 }
 
 - (void)didReceiveMemoryWarning {

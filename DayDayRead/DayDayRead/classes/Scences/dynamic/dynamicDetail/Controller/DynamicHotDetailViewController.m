@@ -8,19 +8,21 @@
 
 #import "DynamicHotDetailViewController.h"
 #import "DynamicCell.h"
+#import "ComprehensiveDetail.h"
+#import "ComprehensiveDetailCell.h"
+#import "DynamicDetailCell.h"
+#import "NetWorkRequestManager.h"
+#import "MJRefresh.h"
 #import <UIImageView+WebCache.h>
+#import "Tool.h"
 
 
-@interface DynamicHotDetailViewController ()
 
-@property (weak, nonatomic) IBOutlet UIImageView *nickNameView;
-
-@property (weak, nonatomic) IBOutlet UILabel *nickNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentViewHeight;
-@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollew;
+@interface DynamicHotDetailViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *DydetailTableView;
+@property (nonatomic,strong)NSMutableArray *allArray;
+@property (nonatomic,strong)NSMutableArray *dataArray;
+@property (nonatomic,assign)int flag;
 
 @end
 
@@ -30,64 +32,145 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"动态";
+    self.allArray = [NSMutableArray array];
+    self.dataArray = [NSMutableArray array];
+    self.DydetailTableView.delegate = self;
+    self.DydetailTableView.dataSource = self;
+    [self.DydetailTableView registerNib:[UINib nibWithNibName:@"DynamicDetailCell" bundle:nil] forCellReuseIdentifier:@"pp"];
+    [self.DydetailTableView registerNib:[UINib nibWithNibName:@"ComprehensiveDetailCell" bundle:nil] forCellReuseIdentifier:@"qq"];
     [self initLayout];
-    [self initView];
-}
-- (void)initView{
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonItemClicked)];
-    
-}
-- (void)leftBarButtonItemClicked {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self requestData];
+    [self downRefresh];
+    [self upRefresh];
+
+   
 }
 
+
+- (void)downRefresh {
+    self.DydetailTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        _flag =0;
+        [self requestData];
+        
+        [self.DydetailTableView.mj_header endRefreshing];
+        
+    }];
+    
+}
+- (void)upRefresh {
+    
+    self.DydetailTableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        [self requestData];
+        
+        [self.DydetailTableView.mj_footer endRefreshing];
+    }];
+    
+}
 
 - (void)initLayout {
-    NSString *imageStr = [_dynamicHot.user objectForKey:@"avatar"];
-
-        NSString *urlStr= @"http://statics.zhuishushenqi.com/";
-        NSString *imageViewStr = [NSString stringWithFormat:@"%@%@",urlStr,imageStr];
-    [self.nickNameView sd_setImageWithURL:[NSURL URLWithString:imageViewStr]];
-//        NSLog(@"%@",imageViewStr);
+    
+    //    NSDictionary *post = [_dynamic.refTweet objectForKey:@"post"];
+    //
+    NSString *_id =[_dynamicHot.tweet objectForKey:@"_id"];
+    
+    //    NSString *_id = _dynamicDetail._id;
+    NSString *URLStr = [NSString stringWithFormat:@"http://api.zhuishushenqi.com/user/twitter/%@?start=0&limit=20",_id ];
+    [NetWorkRequestManager requestType:GET urlString:URLStr prama:nil success:^(id data) {
+        ;
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+        
+        DynamicDetail *dynamicDetail= [ DynamicDetail new];
+        [dynamicDetail setValuesForKeysWithDictionary:dict];
+        [self.allArray addObject:dynamicDetail];
+        
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.DydetailTableView reloadData ];
+            
+        });
+        
+    } fail:^(NSError *error) {
+        
+        
+    }];
+    
+    
+}
+- (void)requestData {
+    
    
-
-        NSString *nickname = [_dynamicHot.user objectForKey:@"nickname"];
-        NSString *lv = [_dynamicHot.user objectForKey:@"lv"];
-        self.nickNameLabel.text = [NSString stringWithFormat:@"%@%@%@",nickname,@" Lv.",lv];
-
-        NSString *title = [_dynamicHot.tweet objectForKey:@"title"];
-        self.titleLabel.text = title;
- 
-        NSString *content = [_dynamicHot.tweet  objectForKey:@"content"];
-        self.contentLabel.text = content;
-        
-        NSString *timeStr = [_dynamicHot.tweet  objectForKey:@"created"];
-        
-        
-        NSString *timeStr1 = [timeStr substringToIndex:10];
-        self.timeLabel.text =timeStr1;
-
-    //计算详情高度
-    CGRect frame = _contentLabel.frame;
-    frame.size.height = [self calcuateTextHeightWithDynamicHot:_dynamicHot];
-    _contentLabel.frame = frame;
-    //给约束赋值
-    CGSize size = CGSizeMake(_scrollew.frame.size.width, _contentLabel.frame.size.height +360);
-    self.contentViewHeight.constant = size.height;
-
+    NSString *_id =[_dynamicHot.tweet objectForKey:@"_id"];
+    NSString *urlStr1 =[NSString stringWithFormat: @"http://api.zhuishushenqi.com/user/twitter/%@/comments?start=0&limit=20",_id];
+    NSString *urlStr = [NSString stringWithFormat:urlStr1,_flag];
     
-
-}
-
-
-- (CGFloat)calcuateTextHeightWithDynamicHot:(DynamicHot*)dynamicHot {
-    CGSize size = CGSizeMake(_contentLabel.frame.size.width, 1000000);
-    NSDictionary *dic = @{NSFontAttributeName:[UIFont systemFontOfSize:18.0f]};
-    CGRect frame = [[_dynamicHot.tweet objectForKey:@"content"]boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:dic context:nil];
-    return frame.size.height;
+    
+    
+    [NetWorkRequestManager requestType:GET urlString:urlStr prama:nil success:^(id data) {
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+        NSArray *array = [dict objectForKey:@"comments"];
+        for (NSDictionary *dic in array) {
+            ComprehensiveDetail *model = [ComprehensiveDetail new];
+            [model setValuesForKeysWithDictionary:dic];
+            [self.dataArray addObject:model];
+            
+            
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.DydetailTableView reloadData];
+        });
+    } fail:^(NSError *error) {
+        
+    }];
+    _flag +=20;
     
 }
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (section == 0) {
+        return self.allArray.count;
+    }
+    return self.dataArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (indexPath.section == 0) {
+        DynamicDetailCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pp" forIndexPath:indexPath];
+        DynamicDetail *dynamicDetail = self.allArray[indexPath.row];
+        cell.dynamicDetail = dynamicDetail;
+        return cell;
+        
+        
+    }
+    
+    ComprehensiveDetailCell *cell = [tableView dequeueReusableCellWithIdentifier:@"qq" forIndexPath:indexPath];
+    ComprehensiveDetail *comprehensiveDetail = self.dataArray[indexPath.row];
+    cell.comprehensiveDetail = comprehensiveDetail;
+    
+    
+    return cell;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 0) {
+        DynamicDetail *dynamicDetail = self.allArray[0];
+        CGFloat height1 = [Tool calculateTextHeightWithMovie:[dynamicDetail.user objectForKey:@"nickname"] LabelWidth:self.view.frame.size.width-70 font:13.0];
+        CGFloat height2 = [Tool calculateTextHeightWithMovie:dynamicDetail.created LabelWidth:self.view.frame.size.width-70 font:13.0];
+        CGFloat height3 = [Tool calculateTextHeightWithMovie:[dynamicDetail.tweet objectForKey:@"title"] LabelWidth:self.view.frame.size.width-70 font:13.0];
+        CGFloat height4 = [Tool calculateTextHeightWithMovie:[dynamicDetail.tweet objectForKey:@"content"] LabelWidth:self.view.frame.size.width-70 font:13.0];
+        
+        return 800+height1+height2+height3+height4;
+        
+    }
+    
+    ComprehensiveDetail *comprehensiveDetail = self.dataArray[indexPath.row];
+    CGFloat height = [Tool calculateTextHeightWithMovie:comprehensiveDetail.content LabelWidth:self.view.frame.size.width-70 font:13.0];
+    return 80+height;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

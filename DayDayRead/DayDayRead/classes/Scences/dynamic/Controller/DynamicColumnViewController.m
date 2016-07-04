@@ -12,6 +12,7 @@
 #import "NetWorkRequestManager.h"
 #import "DynamicColumnDetailViewController.h"
 #import "MJRefresh.h"
+#import "Tool.h"
 
 @interface DynamicColumnViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)UITableView *tableView;
@@ -26,6 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.dataArray = [NSMutableArray array];
     [self initView];
     [self requestData];
@@ -107,18 +109,20 @@
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 160;
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 200;
 }
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     DynamicColumnDetailViewController *dynamicDetailVC = [[DynamicColumnDetailViewController alloc] init];
     
-    UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:dynamicDetailVC];
+    
 
     Dynamic *dynamic = self.dataArray[indexPath.row];
     dynamicDetailVC.dynamic = dynamic;
-    [self.view.window.rootViewController presentViewController:naVC animated:(YES) completion:nil];
+    
+    [self.navigationController pushViewController:dynamicDetailVC animated:YES];
 
    }
 

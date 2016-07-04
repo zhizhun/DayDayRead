@@ -13,6 +13,7 @@
 #import "NetWorkRequestManager.h"
 #import "MJRefresh.h"
 #import "ComprehensiveDetailViewController.h"
+#import "Tool.h"
 
 @interface ComprehensiveViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong)UITableView *tableView;
@@ -109,9 +110,10 @@
     
     return cell;
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 80;
-    
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    Comprehensive *comprehensive = self.dataArray[indexPath.row];
+    CGFloat height = [Tool calculateTextHeightWithMovie:comprehensive.title LabelWidth:self.view.frame.size.width-70 font:13.0];
+    return 75+height;
 }
 
 - (void)didReceiveMemoryWarning {

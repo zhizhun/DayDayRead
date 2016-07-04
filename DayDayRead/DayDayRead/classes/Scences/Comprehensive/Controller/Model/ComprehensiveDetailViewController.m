@@ -32,7 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"综合讨论区";
+    self.title = @"综合讨论";
     [self initView];
     [self downRefresh];
     [self upRefresh];
@@ -42,6 +42,10 @@
     self.CotableView.dataSource = self;
     [self.CotableView registerNib:[UINib nibWithNibName:@"ComprehensiveDetailCell" bundle:nil] forCellReuseIdentifier:@"qq"];
     [self requestData];
+    
+
+
+    
 }
 
 - (void)downRefresh {
@@ -157,12 +161,11 @@
     
     return cell;
 }
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    return 90;
-//}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-   ComprehensiveDetail *comprehensiveDetail = self.dataArray[indexPath.row];    CGFloat height = [Tool calculateTextHeightWithMovie:comprehensiveDetail.content LabelWidth:self.view.frame.size.width-70 font:13.0];
-    return 65+height;
+   ComprehensiveDetail *comprehensiveDetail = self.dataArray[indexPath.row];
+    CGFloat height = [Tool calculateTextHeightWithMovie:comprehensiveDetail.content LabelWidth:self.view.frame.size.width-70 font:13.0];
+    return 80+height;
 }
 
 

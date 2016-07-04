@@ -10,4 +10,6 @@
 @class ComprehensiveDetail;
 @interface ComprehensiveDetailCell : UITableViewCell
 @property (nonatomic,strong)ComprehensiveDetail *comprehensiveDetail;
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+
 @end
