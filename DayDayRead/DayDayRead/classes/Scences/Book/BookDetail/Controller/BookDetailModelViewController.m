@@ -14,6 +14,7 @@
 #import "NetWorkRequestManager.h"
 #import "Tool.h"
 #import "BeforeReadViewController.h"
+//#import "ShareFundationViewController.h"
 @interface BookDetailModelViewController ()
 @property (nonatomic, strong) NSMutableArray *allHeader;
 
@@ -126,6 +127,14 @@
         BookHeaderModelCell *headerCell = [tableView dequeueReusableCellWithIdentifier:@"header" forIndexPath:indexPath];
         BookHeaderModel *header = self.allHeader[indexPath.row];
         headerCell.header = header;
+        
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+        button.frame = CGRectMake(self.view.frame.size.width-70, 20, 60, 30);
+        [button setImage:[UIImage imageNamed:@"forum_book_entry@3x"] forState:UIControlStateNormal];
+        button.tintColor = [UIColor grayColor];
+        [button addTarget:self action:@selector(nextAction) forControlEvents:UIControlEventTouchUpInside];
+        [headerCell addSubview:button];
+        
         return headerCell;
     } else {
         BookDetailModelCell *detailCell = [tableView dequeueReusableCellWithIdentifier:@"detail" forIndexPath:indexPath];
@@ -133,6 +142,17 @@
         detailCell.detail = detail;
         return detailCell;
     }
+}
+
+
+// 分享
+- (void)nextAction {
+    
+    BookHeaderModel *model = self.allHeader[0];
+    
+    //ShareFundationViewController *share = [[ShareFundationViewController alloc] init];
+    //[share shareFundationTitleString:model.title contentString:model.desc urlString:[model.author objectForKey:@"avatar"]];
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -153,11 +173,15 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    BeforeReadViewController *beforVC = [[BeforeReadViewController alloc] init];
-    BookDetailModel *model = self.allDetail[indexPath.row];
-    beforVC._id = model._id;
-    NSLog(@"----%@___", model._id);
-    [self.navigationController pushViewController:beforVC animated:YES];
+    
+    if (indexPath.section != 0) {
+        
+        BeforeReadViewController *beforVC = [[BeforeReadViewController alloc] init];
+        BookDetailModel *model = self.allDetail[indexPath.row];
+        beforVC._id = (NSString *)model._id;
+        NSLog(@"----%@___", model._id);
+        [self.navigationController pushViewController:beforVC animated:YES];
+    }
     
 }
 /*
