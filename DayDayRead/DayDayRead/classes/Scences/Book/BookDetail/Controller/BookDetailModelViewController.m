@@ -53,48 +53,73 @@
 }
 
 - (void)requestData {
-    
-    NSString *url = [NSString stringWithFormat:@"http://api.zhuishushenqi.com/book-list/%@", self._id];
-    [NetWorkRequestManager requestType:GET urlString:url prama:nil success:^(id data) {
-        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-        NSDictionary *dict = [dic objectForKey:@"bookList"];
-        BookHeaderModel *model = [[BookHeaderModel alloc] init];
-        [model setValuesForKeysWithDictionary:dict];
-        [self.allHeader addObject:model];
-       
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.tableView reloadData];
-        });
-    } fail:^(NSError *error) {
-        NSLog(@"数据解析失败");
+    //1.使用urlSession
+    NSURLSession *session = [NSURLSession sharedSession];
+    //2.准备url
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://api.zhuishushenqi.com/book-list/%@", __id]];
+    //3.设置request对象
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setValue:@"YouShaQi/2.25.0 (iPod touch; iOS 9.1; Scale/2.00) Paros/3.2.13" forHTTPHeaderField:@"User-Agent"];
+    //链接并发送请求
+    NSURLSessionTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (data && !error) {
+            NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+            NSDictionary *dict = [dic objectForKey:@"bookList"];
+            BookHeaderModel *model = [[BookHeaderModel alloc] init];
+            [model setValuesForKeysWithDictionary:dict];
+            [self.allHeader addObject:model];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.tableView reloadData];
+            });
+        }else{
+            if (!data) {
+                NSLog(@"请求数据为空");
+            }
+            
+        }
     }];
+    [task resume];
+
 }
 
 - (void)requestDataOne {
-    
-    NSString *url = [NSString stringWithFormat:@"http://api.zhuishushenqi.com/book-list/%@", __id];
-    [NetWorkRequestManager requestType:GET urlString:url prama:nil success:^(id data) {
-        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-        NSDictionary *dict = [dic objectForKey:@"bookList"];
-       
-        NSArray *array = [dict objectForKey:@"books"];
-        
-        for (NSDictionary *dictionary in array) {
+    //1.使用urlSession
+    NSURLSession *session = [NSURLSession sharedSession];
+    //2.准备url
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://api.zhuishushenqi.com/book-list/%@", __id]];
+    //3.设置request对象
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setValue:@"YouShaQi/2.25.0 (iPod touch; iOS 9.1; Scale/2.00) Paros/3.2.13" forHTTPHeaderField:@"User-Agent"];
+    //链接并发送请求
+    NSURLSessionTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (data && !error) {
+            NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+            NSDictionary *dict = [dic objectForKey:@"bookList"];
             
-            NSDictionary *dict1 = dictionary[@"book"];
+            NSArray *array = [dict objectForKey:@"books"];
             
-            BookDetailModel *detail = [[BookDetailModel alloc] init];
-            [detail setValuesForKeysWithDictionary:dict1];
-            [self.allDetail addObject:detail];
+            for (NSDictionary *dictionary in array) {
+                
+                NSDictionary *dict1 = dictionary[@"book"];
+                
+                BookDetailModel *detail = [[BookDetailModel alloc] init];
+                [detail setValuesForKeysWithDictionary:dict1];
+                [self.allDetail addObject:detail];
+            }
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.tableView reloadData];
+            });
+        }else{
+            if (!data) {
+                NSLog(@"请求数据为空");
+            }
             
         }
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.tableView reloadData];
-        });
-    } fail:^(NSError *error) {
-        NSLog(@"数据解析失败");
     }];
+    [task resume];
 
+    
 }
 
 - (void)didReceiveMemoryWarning {
