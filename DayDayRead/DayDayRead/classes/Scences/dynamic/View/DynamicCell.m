@@ -87,6 +87,7 @@ static int temp =0;
         make.height.mas_equalTo (15);
     }];
     self.titleLabl = [[UILabel alloc] init];
+    self.titleLabl.numberOfLines = 2;
     self.titleLabl.font = [UIFont systemFontOfSize:16];
     
     
@@ -96,12 +97,12 @@ static int temp =0;
         make.left.equalTo(self.avatarImageView.mas_right).offset(kSpace);
         make.right.equalTo(backView).offset(-kSpace);
 
-         make.height.mas_equalTo (20);
+
         
     }];
     self.contentLabel = [[UILabel alloc] init];
     self.contentLabel.font = [UIFont systemFontOfSize:13];
-    self.contentLabel.numberOfLines = 4;
+    self.contentLabel.numberOfLines = 5;
    
     [backView addSubview:self.contentLabel];
     [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -125,7 +126,8 @@ static int temp =0;
     [self.connentedLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.contentLabel.mas_bottom).offset(kSpace);
         make.left.equalTo (backView).offset (60);
-        make.width.mas_equalTo (60);
+//        make.bottom.equalTo(backView).offset(10);
+        make.width.mas_equalTo (70);
         make.height.mas_equalTo (20);
     }];
     self.retweetedLabel = [[UILabel alloc]init];
@@ -140,6 +142,7 @@ static int temp =0;
     [self.retweetedLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.contentLabel.mas_bottom).offset(kSpace);
         make.left.equalTo (self.connentedLabel.mas_right).offset (100);
+//         make.bottom.equalTo(backView).offset(10);
         make.width.mas_equalTo (60);
         make.height.mas_equalTo (20);
     }];
@@ -148,7 +151,8 @@ static int temp =0;
 }
 - (void)setDynamic:(Dynamic *)dynamic {
 
-        
+    
+    
         NSString *imageStr = [dynamic.from objectForKey:@"avatar"];
         NSString *urlStr= @"http://statics.zhuishushenqi.com/";
         NSString *imageViewStr = [NSString stringWithFormat:@"%@%@",urlStr,imageStr];
@@ -157,7 +161,7 @@ static int temp =0;
         NSString *nickname = [dynamic.from objectForKey:@"nickname"];
         NSString *lv = [dynamic.from objectForKey:@"lv"];
         self.nameLabel.text = [NSString stringWithFormat:@"%@%@%@",nickname,@" Lv.",lv];
-//        NSDictionary *tweet = [NSDictionary dictionary];
+
         NSString *title = [dynamic.refTweet objectForKey:@"title"];
         self.titleLabl.text = title;
         NSString *content = [dynamic.refTweet objectForKey:@"content"];
@@ -214,8 +218,19 @@ static int temp =0;
     
     self.retweetedLabel .text =[NSString stringWithFormat:@"%@%@",@"✎",Str2];
     
-        
-    //}
+    
+    if (dynamic.from.count == 0  ) {
+ 
+        self.timeLabel.text = @"刚刚";
+        self.retweetedLabel.text = @"90";
+         self.nameLabel.text = @"miss Lv.9";
+        self.titleLabl.text = @"感谢一路有你，让我们携手开启新未来！";
+       self.retweetedLabel .text =[NSString stringWithFormat:@"%@%s",@"✎","6"];
+        self.contentLabel.text = @"注:本贴只是个人所见，如有补充，请勿过激。\n\n童年的回忆——一路成长的网络文学\n\n网络文学从最开始伴随着互联网的兴起，也是一步步发展壮大。早期，网络小说还只是一部分人的尝试，而这批先驱者所写的小说………就个人看法，这批先驱者所在的那时，网络小说是质量最高的时段。\n\n把时间往后拨五年，网吧开始大量出现，电子产品也开始大量出现，网络小说进入了一个高速发展时期。而此时，也出现问题……盗版网站的大量出现，";
+         self.connentedLabel .text =[NSString stringWithFormat:@"%@%s",@"✍","8"];
+        self.avatarImageView.image = [UIImage imageNamed:@"1.jpg"];
+    }
+  
 }
 
 - (void)awakeFromNib {

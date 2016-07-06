@@ -39,15 +39,12 @@
             NSString *addressStr = @"http://statics.zhuishushenqi.com";
             
             NSString *str1 = [NSString stringWithFormat:@"%@%@",addressStr,_commonModel.cover];
-            [self.bookImageView sd_setImageWithURL:[NSURL URLWithString:str1]];
+            [self.bookImageView sd_setImageWithURL:[NSURL URLWithString:str1] placeholderImage:[UIImage imageNamed:@"1.jpg"]];
 
         }else  if (range.location == NSNotFound){
             NSString *str1 = [ _commonModel.cover substringFromIndex:7];
-  [self.bookImageView sd_setImageWithURL:[NSURL URLWithString:str1]];
+  [self.bookImageView sd_setImageWithURL:[NSURL URLWithString:str1] placeholderImage:[UIImage imageNamed:@"1.jpg"]];
             
-        }else        {
-            
-        self.bookImageView.image = [UIImage imageNamed:@"1.jpg"];
         }
     }
     

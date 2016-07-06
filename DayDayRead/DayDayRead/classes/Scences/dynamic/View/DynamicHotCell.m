@@ -15,6 +15,8 @@
 #define kSpace 10
 #define kWith [UIScreen mainScreen].bounds.size.width - self.avatarImageView.frame.size.width-kSpace*3
 @interface DynamicHotCell ()
+
+
 //头像
 @property (nonatomic,strong)UIImageView *avatarImageView;
 //名称

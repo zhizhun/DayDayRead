@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface Dynamic : NSObject
-
-
+@property (nonatomic, strong)NSArray *timeline;
+@property (nonatomic, strong)NSDictionary *tweet;
 //包含 title  content commented retweeted created
 //包含avatar  nickname lv
 @property (nonatomic,strong)NSDictionary *from;

@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DynamicDetail.h"
 #import "Dynamic.h"
 
 @interface DynamicColumnDetailViewController : UIViewController
 @property (nonatomic,strong)Dynamic *dynamic;
+@property (nonatomic,strong)DynamicDetail*dynamicDetail;
 @end
