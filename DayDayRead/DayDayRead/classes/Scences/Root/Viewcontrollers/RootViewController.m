@@ -103,7 +103,7 @@ int isNum = 1;
     
     self.bookDetails = [[BookReadManager shareBookReadManager] selectAllBooks];
     [self.runTableView reloadData];
-    NSLog(@"-----======++++%@", self.bookDetails);
+    
 }
 
 - (void)downRefresh{
