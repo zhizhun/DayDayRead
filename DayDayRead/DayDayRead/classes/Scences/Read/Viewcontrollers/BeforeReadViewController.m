@@ -13,7 +13,9 @@
 #import "Tool.h"
 #import "DB_COLOR.h"
 #import "ReadingViewController.h"
-
+#import "BookReadManager.h"
+#import "UserFileHandle.h"
+#import "LoginViewController.h"
 @interface BeforeReadViewController ()
 @property (weak, nonatomic) IBOutlet UIScrollView *myScrollView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *authorWidth;
@@ -38,6 +40,9 @@
 
 @end
 
+#define kIsHadUserLogin ([UserFileHandle selectUserInfo].isLogin)
+#define kIsHadCollected ([[BookReadManager shareBookReadManager] isFavorateBookWithID:_detail._id])
+
 @implementation BeforeReadViewController
 
 - (void)viewDidLoad {
@@ -48,7 +53,41 @@
     //请求数据
     [self loadData];
     
+    
+    
+   
+    
 }
+
+//追加更新
+
+- (IBAction)didRunUpdate:(UIButton *)sender {
+    
+    // 判断是否登录
+    if (kIsHadUserLogin == YES) {
+        // 判断是否收藏过
+        if (kIsHadCollected == YES) {
+            // 如果已经收藏过, 取消收藏
+            [[BookReadManager shareBookReadManager] deleteBook:_detail];
+            [sender setTitle:@"+ 追更新" forState:UIControlStateNormal];
+            sender.backgroundColor = [UIColor redColor];
+        } else {
+            // 如果没有收藏过, 收藏
+            [[BookReadManager shareBookReadManager] insertNewBook:_detail];
+            sender.backgroundColor = [UIColor grayColor];
+            [sender setTitle:@"- 追更新" forState:UIControlStateNormal];
+        }
+    } else {
+        // 如果没有登录, 点击弹出登录界面
+        LoginViewController *loginVC = [[LoginViewController alloc] init];
+        // 模态登录界面
+        [self.navigationController pushViewController:loginVC animated:YES];
+    }
+
+
+}
+
+
 
 - (void)loadData{
     NSString *str = [NSString stringWithFormat:@"http://api.zhuishushenqi.com/book/%@/",__id];
@@ -66,7 +105,7 @@
     }];
 }
 //刷新UI
-- (void)updateUI{
+- (void)updateUI {
     if (_detail.cover.length > 7) {
         [_myImageView sd_setImageWithURL:[NSURL URLWithString:[_detail.cover substringFromIndex:7]]];
     }
@@ -149,10 +188,6 @@
     readVC._id = self._id;
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:readVC];
     [self presentViewController:nav animated:YES completion:nil];
-}
-//追加更新
-- (IBAction)didRunUpdate:(id)sender {
-    
 }
 
 - (void)didReceiveMemoryWarning {

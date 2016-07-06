@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface bookDetail : NSObject
+@interface bookDetail : NSObject<NSCoding>
 
 @property (nonatomic,copy)NSString *_id;
 @property (nonatomic,copy)NSString *author;
@@ -33,5 +33,8 @@
 @property (nonatomic,strong)NSNumber *wordCount;
 //最新更新时间
 @property (nonatomic,copy)NSString *updated;
+
+@property (nonatomic, assign) BOOL isFavorite;
+
 
 @end

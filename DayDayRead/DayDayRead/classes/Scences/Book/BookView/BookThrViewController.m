@@ -45,7 +45,7 @@ static int num = 0;
    
 }
 - (void)viewDidAppear:(BOOL)animated{
-   // [self requestData];
+    //[self requestData];
     
 }
 

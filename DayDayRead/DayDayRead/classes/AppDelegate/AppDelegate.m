@@ -10,8 +10,8 @@
 #import "RootViewController.h"
 #import "LeftViewController.h"
 #import <UMSocial.h>
-#import <UMSocialWechatHandler.h>
-#import <UMSocialQQHandler.h>
+
+
 #import <UMSocialSinaSSOHandler.h>
 @interface AppDelegate ()
 
@@ -25,13 +25,10 @@
     
     //设置友盟社会化组件appkey
     [UMSocialData setAppKey:@"5779dec1e0f55a109d0006eb"];
-    //设置微信AppId、appSecret，分享url
-    [UMSocialWechatHandler setWXAppId:@"wxd930ea5d5a258f4f" appSecret:@"db426a9829e4b49a0dcac7b4162da6b6" url:@"http://www.umeng.com/social"];
-    //设置手机QQ 的AppId，Appkey，和分享URL，需要#import "UMSocialQQHandler.h"
-    [UMSocialQQHandler setQQWithAppId:@"100424468" appKey:@"c7394704798a158208a74ab60104f0ba" url:@"http://www.umeng.com/social"];
+   
     //打开新浪微博的SSO开关，设置新浪微博回调地址，这里必须要和你在新浪微博后台设置的回调地址一致。需要 #import "UMSocialSinaSSOHandler.h"
-    [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:@"3921700954"
-                                              secret:@"04b48b094faeb16683c32669824ebdad"
+    [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:@"21858432"
+                                              secret:@"1fc059b7ef51ba7331e9169d13dff910"
                                          RedirectURL:@"http://sns.whalecloud.com/sina2/callback"];
     
     // Override point for customization after application launch.

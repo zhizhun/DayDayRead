@@ -7,8 +7,18 @@
 //
 
 #import "RunViewCell.h"
-
+#import <UIImageView+WebCache.h>
 @implementation RunViewCell
+
+
+- (void)setBook:(bookDetail *)book {
+    
+    self.bookTitleLabel.text = book.title;
+    self.authorLabel.text = book.author;
+    
+    NSString *cover = [book.cover substringFromIndex:7];
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:cover]];
+}
 
 - (void)awakeFromNib {
     // Initialization code

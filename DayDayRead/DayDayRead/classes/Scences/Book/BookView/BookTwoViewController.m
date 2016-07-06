@@ -41,16 +41,17 @@ static int num = 0;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self requestData];
+    
+     [self requestData];
+    
     [self.tableView registerNib:[UINib nibWithNibName:@"BookCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+    
+   
+    
+   
   
 }
 
-
-- (void)viewDidAppear:(BOOL)animated{
-    //[self requestData];
-    
-}
 
 
 - (void)requestData {
@@ -61,7 +62,7 @@ static int num = 0;
     
     __weak typeof(self)weakSelf = self;
     
-     NSString *strr = [NSString stringWithFormat:@"http://api.zhuishushenqi.com/book-list?duration=all&sort=created&start=%d&limit=20&", num];
+    NSString *strr = [NSString stringWithFormat:@"http://api.zhuishushenqi.com/book-list?duration=all&sort=created&start=%d&limit=20&", num];
     
     NSString *strAll = [NSString string];
     if ([self.string isEqualToString:@"全部书单"]) {
@@ -79,6 +80,7 @@ static int num = 0;
     if (self.allBookArray) {
         [self.allBookArray removeAllObjects];
     }
+    NSLog(@"=======%@", strAll);
     [NetWorkRequestManager requestType:GET urlString:strAll prama:nil success:^(id data) {
         NSMutableDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
         NSArray *array = dic[@"bookLists"];
@@ -86,6 +88,7 @@ static int num = 0;
             Book *book = [[Book alloc] init];
             [book setValuesForKeysWithDictionary:dict];
             [weakSelf.allBookArray addObject:book];
+            NSLog(@"-+_+)_+_)+%@", weakSelf.allBookArray);
         }
         dispatch_async(dispatch_get_main_queue(), ^{
             [weakSelf.tableView reloadData];

@@ -123,6 +123,16 @@
 		D67603491D2A4B1D0046DB58 /* ReadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D67603401D2A4B1D0046DB58 /* ReadingViewController.xib */; };
 		D676034A1D2A4B1D0046DB58 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D67603411D2A4B1D0046DB58 /* README.md */; };
 		D676034E1D2A4E550046DB58 /* ShareFundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D676034D1D2A4E550046DB58 /* ShareFundationViewController.m */; };
+		D67603F31D2A8C650046DB58 /* ArchiverHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D67603F01D2A8C650046DB58 /* ArchiverHandle.m */; };
+		D67603F71D2A8C930046DB58 /* BookReadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D67603F61D2A8C930046DB58 /* BookReadManager.m */; };
+		D67603FD1D2AAC8D0046DB58 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D67603FC1D2AAC8D0046DB58 /* User.m */; };
+		D67604001D2AAD120046DB58 /* UserFileHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D67603FF1D2AAD120046DB58 /* UserFileHandle.m */; };
+		D67C279B1D2B9CE2007D99F0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D67C27941D2B9CE2007D99F0 /* LoginViewController.m */; };
+		D67C279C1D2B9CE2007D99F0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D67C27951D2B9CE2007D99F0 /* LoginViewController.xib */; };
+		D67C279D1D2B9CE2007D99F0 /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D67C27971D2B9CE2007D99F0 /* RegistViewController.m */; };
+		D67C279E1D2B9CE2007D99F0 /* RegistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D67C27981D2B9CE2007D99F0 /* RegistViewController.xib */; };
+		D67C27A21D2BA24A007D99F0 /* DefaultAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = D67C27A01D2BA24A007D99F0 /* DefaultAvatar.png */; };
+		D67C27A31D2BA24A007D99F0 /* DefaultAvatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D67C27A11D2BA24A007D99F0 /* DefaultAvatar@2x.png */; };
 		D69B34D41D235DE100BD3F0A /* BookHelpe.m in Sources */ = {isa = PBXBuildFile; fileRef = D69B34D31D235DE100BD3F0A /* BookHelpe.m */; };
 		D6AB211B1D275265006234EF /* forum_book_entry@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6AB21191D275265006234EF /* forum_book_entry@2x.png */; };
 		D6AB211C1D275265006234EF /* forum_book_entry@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6AB211A1D275265006234EF /* forum_book_entry@3x.png */; };
@@ -192,7 +202,6 @@
 		D6B284351D221CE4000D81EC /* hsm_default_avatar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B284341D221CE4000D81EC /* hsm_default_avatar@3x.png */; };
 		D6B284371D22266A000D81EC /* hsm_icon_1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B284361D22266A000D81EC /* hsm_icon_1@3x.png */; };
 		D6B284391D222691000D81EC /* hsm_icon_3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B284381D222691000D81EC /* hsm_icon_3@3x.png */; };
-		D6B284421D2256B4000D81EC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B284411D2256B4000D81EC /* LoginViewController.m */; };
 		D6B2844C1D22BE44000D81EC /* BookHelpeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B2844B1D22BE44000D81EC /* BookHelpeViewController.m */; };
 		D6B284501D22BF70000D81EC /* BookHelpeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B2844E1D22BF70000D81EC /* BookHelpeViewCell.m */; };
 		D6B284511D22BF70000D81EC /* BookHelpeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B2844F1D22BF70000D81EC /* BookHelpeViewCell.xib */; };
@@ -447,6 +456,22 @@
 		D67603411D2A4B1D0046DB58 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D676034C1D2A4E550046DB58 /* ShareFundationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareFundationViewController.h; sourceTree = "<group>"; };
 		D676034D1D2A4E550046DB58 /* ShareFundationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareFundationViewController.m; sourceTree = "<group>"; };
+		D67603EF1D2A8C650046DB58 /* ArchiverHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchiverHandle.h; sourceTree = "<group>"; };
+		D67603F01D2A8C650046DB58 /* ArchiverHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchiverHandle.m; sourceTree = "<group>"; };
+		D67603F51D2A8C930046DB58 /* BookReadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookReadManager.h; sourceTree = "<group>"; };
+		D67603F61D2A8C930046DB58 /* BookReadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookReadManager.m; sourceTree = "<group>"; };
+		D67603FB1D2AAC8D0046DB58 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = ../../../Helper/User.h; sourceTree = "<group>"; };
+		D67603FC1D2AAC8D0046DB58 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = ../../../Helper/User.m; sourceTree = "<group>"; };
+		D67603FE1D2AAD120046DB58 /* UserFileHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserFileHandle.h; sourceTree = "<group>"; };
+		D67603FF1D2AAD120046DB58 /* UserFileHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserFileHandle.m; sourceTree = "<group>"; };
+		D67C27931D2B9CE2007D99F0 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../../User/Controller/LoginViewController.h; sourceTree = "<group>"; };
+		D67C27941D2B9CE2007D99F0 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../../User/Controller/LoginViewController.m; sourceTree = "<group>"; };
+		D67C27951D2B9CE2007D99F0 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = ../../User/Controller/LoginViewController.xib; sourceTree = "<group>"; };
+		D67C27961D2B9CE2007D99F0 /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegistViewController.h; path = ../../User/Controller/RegistViewController.h; sourceTree = "<group>"; };
+		D67C27971D2B9CE2007D99F0 /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistViewController.m; path = ../../User/Controller/RegistViewController.m; sourceTree = "<group>"; };
+		D67C27981D2B9CE2007D99F0 /* RegistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RegistViewController.xib; path = ../../User/Controller/RegistViewController.xib; sourceTree = "<group>"; };
+		D67C27A01D2BA24A007D99F0 /* DefaultAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DefaultAvatar.png; sourceTree = "<group>"; };
+		D67C27A11D2BA24A007D99F0 /* DefaultAvatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DefaultAvatar@2x.png"; sourceTree = "<group>"; };
 		D69B34D21D235DE100BD3F0A /* BookHelpe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookHelpe.h; sourceTree = "<group>"; };
 		D69B34D31D235DE100BD3F0A /* BookHelpe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookHelpe.m; sourceTree = "<group>"; };
 		D6AB21191D275265006234EF /* forum_book_entry@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forum_book_entry@2x.png"; sourceTree = "<group>"; };
@@ -560,8 +585,6 @@
 		D6B284341D221CE4000D81EC /* hsm_default_avatar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hsm_default_avatar@3x.png"; sourceTree = "<group>"; };
 		D6B284361D22266A000D81EC /* hsm_icon_1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hsm_icon_1@3x.png"; sourceTree = "<group>"; };
 		D6B284381D222691000D81EC /* hsm_icon_3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hsm_icon_3@3x.png"; sourceTree = "<group>"; };
-		D6B284401D2256B4000D81EC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		D6B284411D2256B4000D81EC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		D6B2844A1D22BE44000D81EC /* BookHelpeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookHelpeViewController.h; sourceTree = "<group>"; };
 		D6B2844B1D22BE44000D81EC /* BookHelpeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookHelpeViewController.m; sourceTree = "<group>"; };
 		D6B2844D1D22BF70000D81EC /* BookHelpeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookHelpeViewCell.h; sourceTree = "<group>"; };
@@ -1005,6 +1028,7 @@
 		D60E34061D1CC6BF005CF58F /* Scences */ = {
 			isa = PBXGroup;
 			children = (
+				D67C278F1D2B9C89007D99F0 /* User */,
 				D676034B1D2A4E550046DB58 /* Share */,
 				D67603311D2A4B1D0046DB58 /* Read */,
 				D6C784391D269AAE00421069 /* Review */,
@@ -1028,10 +1052,16 @@
 		D637ACE21D23B31600BB5900 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				D67603FE1D2AAD120046DB58 /* UserFileHandle.h */,
+				D67603FF1D2AAD120046DB58 /* UserFileHandle.m */,
+				D67603EF1D2A8C650046DB58 /* ArchiverHandle.h */,
+				D67603F01D2A8C650046DB58 /* ArchiverHandle.m */,
 				D637ACE31D23B31600BB5900 /* NetWorkRequestManager.h */,
 				D637ACE41D23B31600BB5900 /* NetWorkRequestManager.m */,
 				D637ACE51D23B31600BB5900 /* Tool.h */,
 				D637ACE61D23B31600BB5900 /* Tool.m */,
+				D67603F51D2A8C930046DB58 /* BookReadManager.h */,
+				D67603F61D2A8C930046DB58 /* BookReadManager.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -1230,6 +1260,41 @@
 				D676034D1D2A4E550046DB58 /* ShareFundationViewController.m */,
 			);
 			path = Share;
+			sourceTree = "<group>";
+		};
+		D67C278F1D2B9C89007D99F0 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				D67C27901D2B9C89007D99F0 /* Controller */,
+				D67C27911D2B9C89007D99F0 /* Model */,
+				D67C27921D2B9C89007D99F0 /* View */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		D67C27901D2B9C89007D99F0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D67C27911D2B9C89007D99F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D67C27A01D2BA24A007D99F0 /* DefaultAvatar.png */,
+				D67C27A11D2BA24A007D99F0 /* DefaultAvatar@2x.png */,
+				D67603FB1D2AAC8D0046DB58 /* User.h */,
+				D67603FC1D2AAC8D0046DB58 /* User.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D67C27921D2B9C89007D99F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D6AB21511D27B2A8006234EF /* Controller */ = {
@@ -1516,8 +1581,12 @@
 		D6B2843D1D225677000D81EC /* Viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
-				D6B284401D2256B4000D81EC /* LoginViewController.h */,
-				D6B284411D2256B4000D81EC /* LoginViewController.m */,
+				D67C27931D2B9CE2007D99F0 /* LoginViewController.h */,
+				D67C27941D2B9CE2007D99F0 /* LoginViewController.m */,
+				D67C27951D2B9CE2007D99F0 /* LoginViewController.xib */,
+				D67C27961D2B9CE2007D99F0 /* RegistViewController.h */,
+				D67C27971D2B9CE2007D99F0 /* RegistViewController.m */,
+				D67C27981D2B9CE2007D99F0 /* RegistViewController.xib */,
 			);
 			path = Viewcontrollers;
 			sourceTree = "<group>";
@@ -1882,6 +1951,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = D60E334F1D1CC18B005CF58F;
 			productRefGroup = D60E33591D1CC18B005CF58F /* Products */;
@@ -1921,6 +1991,7 @@
 				D652207F1D280BC700B94801 /* preview_btn@3x.png in Resources */,
 				D6C0C1761D24AAE7005B541F /* DynamicHotDetailViewController.xib in Resources */,
 				D6399A1F1D23FA170006CD28 /* CommonCell.xib in Resources */,
+				D67C27A21D2BA24A007D99F0 /* DefaultAvatar.png in Resources */,
 				D6C784781D26B34100421069 /* f_girl_icon@2x.png in Resources */,
 				D6C784741D26B34100421069 /* exchange_tixian@2x.png in Resources */,
 				D60E33EB1D1CC4D0005CF58F /* Icon-76.png in Resources */,
@@ -1968,6 +2039,7 @@
 				D6B1E4271D1E35CC004EAEB1 /* rsm_icon_4@2x.png in Resources */,
 				D60E33FA1D1CC4D0005CF58F /* ip5@2x.png in Resources */,
 				D67603491D2A4B1D0046DB58 /* ReadingViewController.xib in Resources */,
+				D67C279E1D2B9CE2007D99F0 /* RegistViewController.xib in Resources */,
 				D60E33661D1CC18C005CF58F /* Main.storyboard in Resources */,
 				D6C7847A1D26B34100421069 /* zuire@2x.png in Resources */,
 				D6C0C1E51D2540C6005B541F /* ComprehensiveCell.xib in Resources */,
@@ -1987,6 +2059,7 @@
 				D60E33FC1D1CC4D0005CF58F /* ip6p@3x.png in Resources */,
 				D653CA4A1D210FFC000E881A /* Icon-Small-40@2x副本.png in Resources */,
 				D6C0C1741D24AAE7005B541F /* DynamicColumnDetailViewController.xib in Resources */,
+				D67C27A31D2BA24A007D99F0 /* DefaultAvatar@2x.png in Resources */,
 				D60E33EF1D1CC4D0005CF58F /* Icon-Small-40@3x.png in Resources */,
 				D6C784761D26B34100421069 /* exp_paiming@2x.png in Resources */,
 				D60E33FD1D1CC4D0005CF58F /* ip@1x.png in Resources */,
@@ -2002,6 +2075,7 @@
 				D6B1E40E1D1E119C004EAEB1 /* RunViewCell.xib in Resources */,
 				D6C7848B1D26B6D900421069 /* userCenter_rate@3x.png in Resources */,
 				D6AB211C1D275265006234EF /* forum_book_entry@3x.png in Resources */,
+				D67C279C1D2B9CE2007D99F0 /* LoginViewController.xib in Resources */,
 				D6B1E4291D1E35F2004EAEB1 /* rsm_icon_7@2x.png in Resources */,
 				D6B1E4151D1E1DDA004EAEB1 /* d_icon@2x.png in Resources */,
 			);
@@ -2077,6 +2151,7 @@
 				D637ACF01D23BEA300BB5900 /* Detail.m in Sources */,
 				D6B1E4951D1EC512004EAEB1 /* MJRefreshFooter.m in Sources */,
 				D6399A3B1D23FA680006CD28 /* HotTableViewController.m in Sources */,
+				D67603F71D2A8C930046DB58 /* BookReadManager.m in Sources */,
 				D6B1E4571D1EA6A3004EAEB1 /* Comic.m in Sources */,
 				D67603481D2A4B1D0046DB58 /* ReadingViewController.m in Sources */,
 				D6B1E49C1D1EC512004EAEB1 /* MJRefreshBackStateFooter.m in Sources */,
@@ -2091,6 +2166,7 @@
 				D6399A201D23FA170006CD28 /* HeadReusableView.m in Sources */,
 				D6C0C1841D24AAF6005B541F /* ComprehensiveViewController.m in Sources */,
 				D6C0C1851D24AAF6005B541F /* README.md in Sources */,
+				D67604001D2AAD120046DB58 /* UserFileHandle.m in Sources */,
 				D6C0C16E1D24AAE7005B541F /* DynamicMineViewController.m in Sources */,
 				D6B1E4A11D1EC512004EAEB1 /* MJRefreshConst.m in Sources */,
 				D60482381D23FA2200CFA284 /* SingletonBook.m in Sources */,
@@ -2123,6 +2199,7 @@
 				D69B34D41D235DE100BD3F0A /* BookHelpe.m in Sources */,
 				D60482351D23FA2200CFA284 /* BookCell.m in Sources */,
 				D637ACE71D23B31600BB5900 /* NetWorkRequestManager.m in Sources */,
+				D67603F31D2A8C650046DB58 /* ArchiverHandle.m in Sources */,
 				D6C0C1781D24AAE7005B541F /* Dynamic.m in Sources */,
 				D6C0C1401D24A170005B541F /* README.md in Sources */,
 				D6C0C16F1D24AAE7005B541F /* DynamicViewController.m in Sources */,
@@ -2135,6 +2212,7 @@
 				D6B1E4121D1E18DB004EAEB1 /* ComunityViewCell.m in Sources */,
 				D6C0C16C1D24AAE7005B541F /* DynamicColumnViewController.m in Sources */,
 				D6B2844C1D22BE44000D81EC /* BookHelpeViewController.m in Sources */,
+				D67C279D1D2B9CE2007D99F0 /* RegistViewController.m in Sources */,
 				D6399A141D23FA020006CD28 /* CommonModel.m in Sources */,
 				D6399A341D23FA680006CD28 /* ClassifyDetailViewController.m in Sources */,
 				D6B1E4A51D1EC512004EAEB1 /* UIView+MJExtension.m in Sources */,
@@ -2151,6 +2229,7 @@
 				D6B1E49A1D1EC512004EAEB1 /* MJRefreshBackGifFooter.m in Sources */,
 				D653CA481D20D68C000E881A /* Result.m in Sources */,
 				D6399A0D1D23F7B80006CD28 /* NSString+URL.m in Sources */,
+				D67C279B1D2B9CE2007D99F0 /* LoginViewController.m in Sources */,
 				D6B1E4961D1EC512004EAEB1 /* MJRefreshHeader.m in Sources */,
 				D60E33631D1CC18C005CF58F /* ViewController.m in Sources */,
 				D6C0C1731D24AAE7005B541F /* DynamicColumnDetailViewController.m in Sources */,
@@ -2179,6 +2258,7 @@
 				D6AB21881D27C7F8006234EF /* BookDetailModelViewController.m in Sources */,
 				D60482701D23FD8000CFA284 /* ThrViewController.m in Sources */,
 				D67603451D2A4B1D0046DB58 /* README.md in Sources */,
+				D67603FD1D2AAC8D0046DB58 /* User.m in Sources */,
 				D6B1E44A1D1E7D6D004EAEB1 /* PlayViewController.m in Sources */,
 				D60482791D23FD8000CFA284 /* RemainViewController.m in Sources */,
 				D6C0C17D1D24AAE7005B541F /* MyInformationCell.m in Sources */,
@@ -2195,7 +2275,6 @@
 				D6B1E45B1D1EA816004EAEB1 /* ComicViewCell.m in Sources */,
 				D604827B1D23FD8000CFA284 /* WHotViewController.m in Sources */,
 				D6B1E4931D1EC512004EAEB1 /* MJRefreshBackFooter.m in Sources */,
-				D6B284421D2256B4000D81EC /* LoginViewController.m in Sources */,
 				D6C0C1F11D254AAB005B541F /* ComprehensiveDetailCell.m in Sources */,
 				D65F49841D1D32A20023A740 /* RootViewController.m in Sources */,
 			);
@@ -2320,6 +2399,10 @@
 				INFOPLIST_FILE = DayDayRead/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DayDayRead/classes/Scences/weibo_ios_sdk-master/libWeiboSDK",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -2347,6 +2430,10 @@
 				INFOPLIST_FILE = DayDayRead/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DayDayRead/classes/Scences/weibo_ios_sdk-master/libWeiboSDK",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

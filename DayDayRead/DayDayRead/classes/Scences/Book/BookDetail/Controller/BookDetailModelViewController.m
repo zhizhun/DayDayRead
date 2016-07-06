@@ -14,8 +14,9 @@
 #import "NetWorkRequestManager.h"
 #import "Tool.h"
 #import "BeforeReadViewController.h"
-//#import "ShareFundationViewController.h"
-@interface BookDetailModelViewController ()
+#import "ShareFundationViewController.h"
+#import <UMSocial.h>
+@interface BookDetailModelViewController ()<UMSocialUIDelegate>
 @property (nonatomic, strong) NSMutableArray *allHeader;
 
 @property (nonatomic, strong) NSMutableArray *allDetail;
@@ -130,9 +131,9 @@
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
         button.frame = CGRectMake(self.view.frame.size.width-70, 20, 60, 30);
-        [button setImage:[UIImage imageNamed:@"forum_book_entry@3x"] forState:UIControlStateNormal];
+        [button setTitle:@"分享" forState:UIControlStateNormal];
         button.tintColor = [UIColor grayColor];
-        [button addTarget:self action:@selector(nextAction) forControlEvents:UIControlEventTouchUpInside];
+        [button addTarget:self action:@selector(nextAction:) forControlEvents:UIControlEventTouchUpInside];
         [headerCell addSubview:button];
         
         return headerCell;
@@ -146,14 +147,32 @@
 
 
 // 分享
-- (void)nextAction {
+- (void)nextAction:(UIButton *)sender {
     
     BookHeaderModel *model = self.allHeader[0];
     
-    //ShareFundationViewController *share = [[ShareFundationViewController alloc] init];
-    //[share shareFundationTitleString:model.title contentString:model.desc urlString:[model.author objectForKey:@"avatar"]];
-    
+      
+    [[UMSocialData defaultData].urlResource setResourceType:UMSocialUrlResourceTypeImage url:[model.author objectForKey:@"avatar"]];
+    [UMSocialData defaultData].extConfig.title = model.title;
+    [UMSocialData defaultData].extConfig.qqData.url = @"http://baidu.com";
+    [UMSocialSnsService presentSnsIconSheetView:self
+                                         appKey:@"507fcab25270157b37000010"
+                                      shareText:model.desc
+                                     shareImage:[UIImage imageNamed:@"book"]
+                                shareToSnsNames:@[UMShareToWechatSession,UMShareToWechatTimeline,UMShareToSina,UMShareToQQ,UMShareToQzone]
+                                       delegate:self];
 }
+
+-(void)didFinishGetUMSocialDataInViewController:(UMSocialResponseEntity *)response
+{
+    //根据`responseCode`得到发送结果,如果分享成功
+    if(response.responseCode == UMSResponseCodeSuccess)
+    {
+        //得到分享到的平台名
+        NSLog(@"share to sns name is %@",[[response.data allKeys] objectAtIndex:0]);
+    }
+}
+
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
