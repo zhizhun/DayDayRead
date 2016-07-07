@@ -70,7 +70,10 @@ int isNum = 1;
     }
     return _findArray;
 }
-
+- (void)viewWillAppear:(BOOL)animated{
+    //注册cell
+    [_runTableView registerNib:[UINib nibWithNibName:@"RunViewCell" bundle:nil] forCellReuseIdentifier:@"run"];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -79,8 +82,6 @@ int isNum = 1;
     [self setNavandStatus];
     //布局视图
     [self initViews];
-    //注册cell
-    [_runTableView registerNib:[UINib nibWithNibName:@"RunViewCell" bundle:nil] forCellReuseIdentifier:@"run"];
     //下拉刷新
     [self downRefresh];
     

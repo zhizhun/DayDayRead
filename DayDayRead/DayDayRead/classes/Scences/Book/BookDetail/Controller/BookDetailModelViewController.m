@@ -204,7 +204,6 @@
         BeforeReadViewController *beforVC = [[BeforeReadViewController alloc] init];
         BookDetailModel *model = self.allDetail[indexPath.row];
         beforVC._id = (NSString *)model._id;
-        NSLog(@"----%@___", model._id);
         [self.navigationController pushViewController:beforVC animated:YES];
     }
     
