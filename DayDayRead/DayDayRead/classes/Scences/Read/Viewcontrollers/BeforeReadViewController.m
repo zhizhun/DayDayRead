@@ -80,7 +80,10 @@
     } else {
         // 如果没有登录, 点击弹出登录界面
         LoginViewController *loginVC = [[LoginViewController alloc] init];
-        // 模态登录界面
+        // 登录界面
+        loginVC.block = ^(User *user) {
+            
+        };
         [self.navigationController pushViewController:loginVC animated:YES];
     }
 

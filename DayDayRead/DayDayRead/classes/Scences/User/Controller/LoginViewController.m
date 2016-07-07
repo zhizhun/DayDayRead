@@ -50,12 +50,11 @@
 
 - (IBAction)loginAction:(id)sender {
     
-    RootViewController *rootVC = [[RootViewController alloc] init];
-    __weak LoginViewController *loginVC = self;
+        __weak LoginViewController *loginVC = self;
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:nil preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
         if ([alertController.message isEqualToString:@"登录成功"]) {
-            [self.navigationController pushViewController:rootVC animated:YES];
+            [self.navigationController popViewControllerAnimated:YES];
         }
     }];
     [alertController addAction:action];
@@ -82,7 +81,7 @@
                 [UserFileHandle saveUserInfo:user];
                 alertController.message = @"登录成功";
                 //传值
-               // loginVC.block(user);
+                loginVC.block(user);
                 
             }else{
                 if ([responseObject[@"code"] intValue] == 1102) {
