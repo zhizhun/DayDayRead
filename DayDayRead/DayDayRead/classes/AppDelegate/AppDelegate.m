@@ -9,10 +9,10 @@
 #import "AppDelegate.h"
 #import "RootViewController.h"
 #import "LeftViewController.h"
-#import <UMSocial.h>
 
 
-#import <UMSocialSinaSSOHandler.h>
+
+
 @interface AppDelegate ()
 
 @end
@@ -23,13 +23,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     
-    //设置友盟社会化组件appkey
-    [UMSocialData setAppKey:@"5779dec1e0f55a109d0006eb"];
-   
-    //打开新浪微博的SSO开关，设置新浪微博回调地址，这里必须要和你在新浪微博后台设置的回调地址一致。需要 #import "UMSocialSinaSSOHandler.h"
-    [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:@"21858432"
-                                              secret:@"1fc059b7ef51ba7331e9169d13dff910"
-                                         RedirectURL:@"http://sns.whalecloud.com/sina2/callback"];
     
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -56,14 +49,6 @@
     return YES;
 }
 
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
-{
-    BOOL result = [UMSocialSnsService handleOpenURL:url];
-    if (result == FALSE) {
-        //调用其他SDK，例如支付宝SDK等
-    }
-    return result;
-}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

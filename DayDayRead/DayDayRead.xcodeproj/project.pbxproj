@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		644A4605A727D92A95F9C4B5 /* libPods-DayDayRead.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 768C144FEAB23B24074B1805 /* libPods-DayDayRead.a */; };
+		D602DF4C1D2D2DD900940C96 /* DynamicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D602DF4B1D2D2DD900940C96 /* DynamicManager.m */; };
 		D604822C1D23FA2200CFA284 /* BookOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482121D23FA2200CFA284 /* BookOneViewController.m */; };
 		D604822D1D23FA2200CFA284 /* BookThrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482141D23FA2200CFA284 /* BookThrViewController.m */; };
 		D604822E1D23FA2200CFA284 /* BookTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60482161D23FA2200CFA284 /* BookTwoViewController.m */; };
@@ -136,6 +137,11 @@
 		D68964971D27C87600B8C120 /* DynamicDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D68964951D27C87600B8C120 /* DynamicDetailCell.m */; };
 		D68964981D27C87600B8C120 /* DynamicDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68964961D27C87600B8C120 /* DynamicDetailCell.xib */; };
 		D689649B1D27C9FC00B8C120 /* DynamicDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = D689649A1D27C9FC00B8C120 /* DynamicDetail.m */; };
+		D6928CB51D2D213E00BA70E5 /* JXLDayAndNightManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6928CAA1D2D213E00BA70E5 /* JXLDayAndNightManager.m */; };
+		D6928CB61D2D213E00BA70E5 /* UIView+JXLDAN.m in Sources */ = {isa = PBXBuildFile; fileRef = D6928CAD1D2D213E00BA70E5 /* UIView+JXLDAN.m */; };
+		D6928CB71D2D213E00BA70E5 /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6928CAF1D2D213E00BA70E5 /* SetViewController.m */; };
+		D6928CB81D2D213E00BA70E5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D6928CB11D2D213E00BA70E5 /* README.md */; };
+		D6928CB91D2D213E00BA70E5 /* SetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6928CB41D2D213E00BA70E5 /* SetCell.m */; };
 		D69B34D41D235DE100BD3F0A /* BookHelpe.m in Sources */ = {isa = PBXBuildFile; fileRef = D69B34D31D235DE100BD3F0A /* BookHelpe.m */; };
 		D6AB211B1D275265006234EF /* forum_book_entry@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6AB21191D275265006234EF /* forum_book_entry@2x.png */; };
 		D6AB211C1D275265006234EF /* forum_book_entry@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6AB211A1D275265006234EF /* forum_book_entry@3x.png */; };
@@ -211,9 +217,6 @@
 		D6B284531D22CCA0000D81EC /* d_comment@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B284521D22CCA0000D81EC /* d_comment@3x.png */; };
 		D6B284551D22CD13000D81EC /* f_like_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B284541D22CD13000D81EC /* f_like_icon@3x.png */; };
 		D6BD1D041D2562F60083AD40 /* TTZS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6BD1D031D2562F60083AD40 /* TTZS.jpg */; };
-		D6C0C13F1D24A170005B541F /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1391D24A170005B541F /* SetViewController.m */; };
-		D6C0C1401D24A170005B541F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C13B1D24A170005B541F /* README.md */; };
-		D6C0C1411D24A170005B541F /* SetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C13E1D24A170005B541F /* SetCell.m */; };
 		D6C0C16C1D24AAE7005B541F /* DynamicColumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1451D24AAE7005B541F /* DynamicColumnViewController.m */; };
 		D6C0C16D1D24AAE7005B541F /* DynamicHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1471D24AAE7005B541F /* DynamicHotViewController.m */; };
 		D6C0C16E1D24AAE7005B541F /* DynamicMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0C1491D24AAE7005B541F /* DynamicMineViewController.m */; };
@@ -275,6 +278,8 @@
 		5D619B38EC8FFE4D9C2FB466 /* Pods-DayDayRead.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayDayRead.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DayDayRead/Pods-DayDayRead.debug.xcconfig"; sourceTree = "<group>"; };
 		768C144FEAB23B24074B1805 /* libPods-DayDayRead.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DayDayRead.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1553C804E93C2DDE7E11CD /* Pods-DayDayRead.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayDayRead.release.xcconfig"; path = "Pods/Target Support Files/Pods-DayDayRead/Pods-DayDayRead.release.xcconfig"; sourceTree = "<group>"; };
+		D602DF4A1D2D2DD900940C96 /* DynamicManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicManager.h; sourceTree = "<group>"; };
+		D602DF4B1D2D2DD900940C96 /* DynamicManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicManager.m; sourceTree = "<group>"; };
 		D60482111D23FA2200CFA284 /* BookOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookOneViewController.h; sourceTree = "<group>"; };
 		D60482121D23FA2200CFA284 /* BookOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookOneViewController.m; sourceTree = "<group>"; };
 		D60482131D23FA2200CFA284 /* BookThrViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookThrViewController.h; sourceTree = "<group>"; };
@@ -479,6 +484,16 @@
 		D68964961D27C87600B8C120 /* DynamicDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DynamicDetailCell.xib; path = ../dynamicDetail/View/DynamicDetailCell.xib; sourceTree = "<group>"; };
 		D68964991D27C9FC00B8C120 /* DynamicDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicDetail.h; sourceTree = "<group>"; };
 		D689649A1D27C9FC00B8C120 /* DynamicDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicDetail.m; sourceTree = "<group>"; };
+		D6928CA91D2D213E00BA70E5 /* JXLDayAndNightManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXLDayAndNightManager.h; sourceTree = "<group>"; };
+		D6928CAA1D2D213E00BA70E5 /* JXLDayAndNightManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXLDayAndNightManager.m; sourceTree = "<group>"; };
+		D6928CAB1D2D213E00BA70E5 /* JXLDayAndNightMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXLDayAndNightMode.h; sourceTree = "<group>"; };
+		D6928CAC1D2D213E00BA70E5 /* UIView+JXLDAN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JXLDAN.h"; sourceTree = "<group>"; };
+		D6928CAD1D2D213E00BA70E5 /* UIView+JXLDAN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JXLDAN.m"; sourceTree = "<group>"; };
+		D6928CAE1D2D213E00BA70E5 /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
+		D6928CAF1D2D213E00BA70E5 /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
+		D6928CB11D2D213E00BA70E5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D6928CB31D2D213E00BA70E5 /* SetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetCell.h; sourceTree = "<group>"; };
+		D6928CB41D2D213E00BA70E5 /* SetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetCell.m; sourceTree = "<group>"; };
 		D69B34D21D235DE100BD3F0A /* BookHelpe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookHelpe.h; sourceTree = "<group>"; };
 		D69B34D31D235DE100BD3F0A /* BookHelpe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookHelpe.m; sourceTree = "<group>"; };
 		D6AB21191D275265006234EF /* forum_book_entry@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forum_book_entry@2x.png"; sourceTree = "<group>"; };
@@ -600,11 +615,6 @@
 		D6B284521D22CCA0000D81EC /* d_comment@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d_comment@3x.png"; sourceTree = "<group>"; };
 		D6B284541D22CD13000D81EC /* f_like_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f_like_icon@3x.png"; sourceTree = "<group>"; };
 		D6BD1D031D2562F60083AD40 /* TTZS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = TTZS.jpg; path = ../TTZS.jpg; sourceTree = "<group>"; };
-		D6C0C1381D24A170005B541F /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
-		D6C0C1391D24A170005B541F /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
-		D6C0C13B1D24A170005B541F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D6C0C13D1D24A170005B541F /* SetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetCell.h; sourceTree = "<group>"; };
-		D6C0C13E1D24A170005B541F /* SetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetCell.m; sourceTree = "<group>"; };
 		D6C0C1441D24AAE7005B541F /* DynamicColumnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicColumnViewController.h; sourceTree = "<group>"; };
 		D6C0C1451D24AAE7005B541F /* DynamicColumnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicColumnViewController.m; sourceTree = "<group>"; };
 		D6C0C1461D24AAE7005B541F /* DynamicHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicHotViewController.h; sourceTree = "<group>"; };
@@ -1034,13 +1044,13 @@
 		D60E34061D1CC6BF005CF58F /* Scences */ = {
 			isa = PBXGroup;
 			children = (
+				D6928CA61D2D213E00BA70E5 /* Set */,
 				D67C278F1D2B9C89007D99F0 /* User */,
 				D64D5C9D1D2A5D98008A786E /* Read */,
 				D676034B1D2A4E550046DB58 /* Share */,
 				D6C784391D269AAE00421069 /* Review */,
 				D6C0C17E1D24AAF6005B541F /* Comprehensive */,
 				D6C0C1421D24AAE7005B541F /* dynamic */,
-				D6C0C1361D24A170005B541F /* Set */,
 				D60482391D23FD8000CFA284 /* List */,
 				D6399A101D23F9C50006CD28 /* Classification */,
 				D604820F1D23FA2200CFA284 /* Book */,
@@ -1299,6 +1309,55 @@
 		D67C27921D2B9C89007D99F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6928CA61D2D213E00BA70E5 /* Set */ = {
+			isa = PBXGroup;
+			children = (
+				D6928CA71D2D213E00BA70E5 /* Controller */,
+				D6928CB01D2D213E00BA70E5 /* Model */,
+				D6928CB21D2D213E00BA70E5 /* View */,
+			);
+			path = Set;
+			sourceTree = "<group>";
+		};
+		D6928CA71D2D213E00BA70E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6928CA81D2D213E00BA70E5 /* JXLDayAndNightMode */,
+				D6928CAE1D2D213E00BA70E5 /* SetViewController.h */,
+				D6928CAF1D2D213E00BA70E5 /* SetViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D6928CA81D2D213E00BA70E5 /* JXLDayAndNightMode */ = {
+			isa = PBXGroup;
+			children = (
+				D6928CA91D2D213E00BA70E5 /* JXLDayAndNightManager.h */,
+				D6928CAA1D2D213E00BA70E5 /* JXLDayAndNightManager.m */,
+				D6928CAB1D2D213E00BA70E5 /* JXLDayAndNightMode.h */,
+				D6928CAC1D2D213E00BA70E5 /* UIView+JXLDAN.h */,
+				D6928CAD1D2D213E00BA70E5 /* UIView+JXLDAN.m */,
+			);
+			path = JXLDayAndNightMode;
+			sourceTree = "<group>";
+		};
+		D6928CB01D2D213E00BA70E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6928CB11D2D213E00BA70E5 /* README.md */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6928CB21D2D213E00BA70E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6928CB31D2D213E00BA70E5 /* SetCell.h */,
+				D6928CB41D2D213E00BA70E5 /* SetCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1643,42 +1702,6 @@
 			path = Viewcontrollers;
 			sourceTree = "<group>";
 		};
-		D6C0C1361D24A170005B541F /* Set */ = {
-			isa = PBXGroup;
-			children = (
-				D6C0C1371D24A170005B541F /* Controller */,
-				D6C0C13A1D24A170005B541F /* Model */,
-				D6C0C13C1D24A170005B541F /* View */,
-			);
-			path = Set;
-			sourceTree = "<group>";
-		};
-		D6C0C1371D24A170005B541F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D6C0C1381D24A170005B541F /* SetViewController.h */,
-				D6C0C1391D24A170005B541F /* SetViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		D6C0C13A1D24A170005B541F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D6C0C13B1D24A170005B541F /* README.md */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D6C0C13C1D24A170005B541F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D6C0C13D1D24A170005B541F /* SetCell.h */,
-				D6C0C13E1D24A170005B541F /* SetCell.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		D6C0C1421D24AAE7005B541F /* dynamic */ = {
 			isa = PBXGroup;
 			children = (
@@ -1751,6 +1774,8 @@
 		D6C0C15E1D24AAE7005B541F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D602DF4A1D2D2DD900940C96 /* DynamicManager.h */,
+				D602DF4B1D2D2DD900940C96 /* DynamicManager.m */,
 				D6C0C15F1D24AAE7005B541F /* Dynamic.h */,
 				D6C0C1601D24AAE7005B541F /* Dynamic.m */,
 				D6C0C1611D24AAE7005B541F /* DynamicHot.h */,
@@ -2042,7 +2067,6 @@
 				D6C0C1EA1D254950005B541F /* ComprehensiveDetailViewController.xib in Resources */,
 				D6B1E4271D1E35CC004EAEB1 /* rsm_icon_4@2x.png in Resources */,
 				D60E33FA1D1CC4D0005CF58F /* ip5@2x.png in Resources */,
-				D67603491D2A4B1D0046DB58 /* ReadingViewController.xib in Resources */,
 				D67C279E1D2B9CE2007D99F0 /* RegistViewController.xib in Resources */,
 				D60E33661D1CC18C005CF58F /* Main.storyboard in Resources */,
 				D6C7847A1D26B34100421069 /* zuire@2x.png in Resources */,
@@ -2160,6 +2184,7 @@
 				D6399A371D23FA680006CD28 /* NewBookTableViewController.m in Sources */,
 				D653CA441D20D4C9000E881A /* ResultsViewCell.m in Sources */,
 				D604827A1D23FD8000CFA284 /* WEndViewController.m in Sources */,
+				D6928CB61D2D213E00BA70E5 /* UIView+JXLDAN.m in Sources */,
 				D604827C1D23FD8000CFA284 /* WPotentialViewController.m in Sources */,
 				D6B1E43C1D1E5B04004EAEB1 /* Game.m in Sources */,
 				D60E34071D1CC6BF005CF58F /* AppDelegate.m in Sources */,
@@ -2174,7 +2199,6 @@
 				D60482711D23FD8000CFA284 /* TwoViewController.m in Sources */,
 				D6B1E4A31D1EC512004EAEB1 /* UIScrollView+MJExtension.m in Sources */,
 				D6399A3A1D23FA680006CD28 /* SingleList.m in Sources */,
-				D6C0C1411D24A170005B541F /* SetCell.m in Sources */,
 				D6399A391D23FA680006CD28 /* ReputablyViewController.m in Sources */,
 				D6AB216E1D27B410006234EF /* BookReViewDTCell.m in Sources */,
 				D6AB21851D27B58A006234EF /* BookHeaderModel.m in Sources */,
@@ -2192,6 +2216,7 @@
 				D6AB21621D27B401006234EF /* BookReviewThr.m in Sources */,
 				D6C0C16D1D24AAE7005B541F /* DynamicHotViewController.m in Sources */,
 				D6AB21591D27B3F6006234EF /* ReViewController.m in Sources */,
+				D602DF4C1D2D2DD900940C96 /* DynamicManager.m in Sources */,
 				D6C0C1711D24AAE7005B541F /* NickNameViewController.m in Sources */,
 				D6AB21811D27B514006234EF /* BookHeaderModelCell.m in Sources */,
 				D653CA6C1D217581000E881A /* UIViewController+RESideMenu.m in Sources */,
@@ -2199,10 +2224,10 @@
 				D6AB217C1D27B4F4006234EF /* BookDetailModelCell.m in Sources */,
 				D69B34D41D235DE100BD3F0A /* BookHelpe.m in Sources */,
 				D60482351D23FA2200CFA284 /* BookCell.m in Sources */,
+				D6928CB71D2D213E00BA70E5 /* SetViewController.m in Sources */,
 				D637ACE71D23B31600BB5900 /* NetWorkRequestManager.m in Sources */,
 				D67603F31D2A8C650046DB58 /* ArchiverHandle.m in Sources */,
 				D6C0C1781D24AAE7005B541F /* Dynamic.m in Sources */,
-				D6C0C1401D24A170005B541F /* README.md in Sources */,
 				D6C0C16F1D24AAE7005B541F /* DynamicViewController.m in Sources */,
 				D6B1E4991D1EC512004EAEB1 /* MJRefreshAutoStateFooter.m in Sources */,
 				D6AB216C1D27B410006234EF /* BookReViewCell.m in Sources */,
@@ -2220,6 +2245,8 @@
 				D6B1E4A51D1EC512004EAEB1 /* UIView+MJExtension.m in Sources */,
 				D68964971D27C87600B8C120 /* DynamicDetailCell.m in Sources */,
 				D60482731D23FD8000CFA284 /* HotCell.m in Sources */,
+				D6928CB91D2D213E00BA70E5 /* SetCell.m in Sources */,
+				D6928CB51D2D213E00BA70E5 /* JXLDayAndNightManager.m in Sources */,
 				D653CA3D1D20D486000E881A /* ResultsViewController.m in Sources */,
 				D6AB21601D27B401006234EF /* BookReviewHeader.m in Sources */,
 				D6B1E4921D1EC512004EAEB1 /* MJRefreshAutoFooter.m in Sources */,
@@ -2247,11 +2274,11 @@
 				D6B1E4471D1E6F70004EAEB1 /* CALayer+XibBorderColor.m in Sources */,
 				D60482311D23FA2200CFA284 /* Book.m in Sources */,
 				D6C0C1751D24AAE7005B541F /* DynamicHotDetailViewController.m in Sources */,
+				D6928CB81D2D213E00BA70E5 /* README.md in Sources */,
 				D6B1E4A21D1EC512004EAEB1 /* NSBundle+MJRefresh.m in Sources */,
 				D6399A1E1D23FA170006CD28 /* CommonCell.m in Sources */,
 				D6399A361D23FA680006CD28 /* BurglarViewController.m in Sources */,
 				D6B1E4981D1EC512004EAEB1 /* MJRefreshAutoNormalFooter.m in Sources */,
-				D6C0C13F1D24A170005B541F /* SetViewController.m in Sources */,
 				D6C0C1791D24AAE7005B541F /* DynamicHot.m in Sources */,
 				D6B1E4541D1EA688004EAEB1 /* ComicViewController.m in Sources */,
 				D637ACE81D23B31600BB5900 /* Tool.m in Sources */,
@@ -2262,7 +2289,6 @@
 				D653CA6B1D217581000E881A /* RESideMenu.m in Sources */,
 				D6AB21881D27C7F8006234EF /* BookDetailModelViewController.m in Sources */,
 				D60482701D23FD8000CFA284 /* ThrViewController.m in Sources */,
-				D67603451D2A4B1D0046DB58 /* README.md in Sources */,
 				D67603FD1D2AAC8D0046DB58 /* User.m in Sources */,
 				D6B1E44A1D1E7D6D004EAEB1 /* PlayViewController.m in Sources */,
 				D60482791D23FD8000CFA284 /* RemainViewController.m in Sources */,

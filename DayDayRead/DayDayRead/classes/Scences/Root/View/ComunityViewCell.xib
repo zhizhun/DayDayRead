@@ -23,7 +23,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="综合讨论区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDK-BI-26E">
                         <rect key="frame" x="84" y="29" width="203" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -35,6 +35,7 @@
                     <constraint firstItem="jeu-RI-nyw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="zzA-Qb-fxL"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="myImageView" destination="jeu-RI-nyw" id="IcX-gU-x7G"/>
                 <outlet property="nameLabel" destination="xDK-BI-26E" id="0Fx-Jm-NOB"/>

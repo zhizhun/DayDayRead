@@ -12,9 +12,11 @@
 #import "NickNameViewController.h"
 #import <Masonry.h>
 
+
 @interface MyInformationViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)NSMutableArray *dataArray;
+@property (nonatomic, strong) UIImagePickerController *imagePicker; //图片选择器
 
 
 @end
@@ -47,6 +49,8 @@
     
     
 }
+
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
@@ -67,7 +71,7 @@
         }
         if (indexPath.row == 1) {
             cell.contentLabel.text = @"修改昵称";
-           cell.contentLabel1.text = @"修改昵称";
+           cell.contentLabel1.text = @"";
             return cell;
         }
         if (indexPath.row == 2) {
@@ -87,18 +91,53 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (indexPath.row == 0) {
-              HeadPortraitViewController *headVc = [[HeadPortraitViewController alloc] init];
-        UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:headVc];
-        naVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-        [self.view.window.rootViewController presentViewController:naVC
-                                                          animated:YES completion:nil];    }
+//              HeadPortraitViewController *headVc = [[HeadPortraitViewController alloc] init];
+//        UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:headVc];
+//        naVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+//        [self.view.window.rootViewController presentViewController:naVC
+//                                                          animated:YES completion:nil];
+        //调用系统相册 相机
+        //添加alartSheet
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+        UIAlertAction *photoAction = [UIAlertAction actionWithTitle:@"相册" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            //指定资源类型
+            _imagePicker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+            _imagePicker.allowsEditing = YES;
+            [self presentViewController:_imagePicker animated:YES completion:nil];
+            
+            
+        }];
+        
+        UIAlertAction *cameraAction = [UIAlertAction actionWithTitle:@"相机" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            _imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+            _imagePicker.allowsEditing = YES;
+            [self presentViewController:_imagePicker animated:YES completion:nil];
+            
+            
+        }];
+        UIAlertAction *canAction = [UIAlertAction actionWithTitle:@"取消" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+            
+        }];
+        [alert addAction:photoAction];
+        [alert addAction:cameraAction];
+        [alert addAction:canAction];
+        //显示alertController
+        [self presentViewController:alert animated:YES completion:nil];
+
+    }
     if (indexPath.row == 1) {
         
         NickNameViewController *nickVC = [[NickNameViewController alloc] init];
         UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:nickVC];
         naVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-        [self.view.window.rootViewController presentViewController:naVC
-                                                          animated:YES completion:nil];
+        nickVC.block = ^void(NSString *textString) {
+            MyInformationCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+            cell.contentLabel.text = @"修改昵称";
+            cell.contentLabel1.text = textString;
+        
+        };
+        [self presentViewController:naVC                                                         animated:YES completion:nil];
     }
     if (indexPath.row == 2) {
        

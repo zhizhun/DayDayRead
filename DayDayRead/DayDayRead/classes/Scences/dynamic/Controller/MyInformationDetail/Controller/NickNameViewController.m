@@ -7,8 +7,10 @@
 //
 
 #import "NickNameViewController.h"
+#import <Masonry.h>
 
 @interface NickNameViewController ()
+@property (nonatomic,strong)UITextField *nicknameTextfield;
 
 @end
 
@@ -28,12 +30,28 @@
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(leftACtion:)];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStylePlain target:self action:nil];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStylePlain target:self action:@selector(rightACtion:)];
     
+    self.nicknameTextfield = [[UITextField alloc] init];
+    self.nicknameTextfield.borderStyle =  UITextBorderStyleRoundedRect;
+    self.nicknameTextfield.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:self.nicknameTextfield];
+    [self.nicknameTextfield mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view);
+        make.left.equalTo(self.view);
+        make.width.mas_equalTo([UIScreen mainScreen].bounds.size.width);
+        make.height.mas_equalTo (40);
+        
+    }];
 }
 
 - (void)leftACtion:(UIBarButtonItem *)sender {
     
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+- (void)rightACtion:(UIBarButtonItem *)sender {
+    self.block(_nicknameTextfield.text);
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }

@@ -27,7 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"综合讨论区";
+    self.title = @"综合讨论";
   
     
     self.dataArray = [NSMutableArray array];
@@ -113,7 +113,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     Comprehensive *comprehensive = self.dataArray[indexPath.row];
     CGFloat height = [Tool calculateTextHeightWithMovie:comprehensive.title LabelWidth:self.view.frame.size.width-70 font:13.0];
-    return 75+height;
+    return 80+height;
 }
 
 - (void)didReceiveMemoryWarning {

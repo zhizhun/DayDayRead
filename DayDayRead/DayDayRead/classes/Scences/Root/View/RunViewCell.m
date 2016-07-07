@@ -8,7 +8,31 @@
 
 #import "RunViewCell.h"
 #import <UIImageView+WebCache.h>
+#import "JXLDayAndNightMode.h"
 @implementation RunViewCell
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        
+        [self jxl_setDayMode:^(UIView *view) {
+            RunViewCell *cell = (RunViewCell *)view;
+            cell.backgroundColor = [UIColor whiteColor];
+            cell.contentView.backgroundColor = [UIColor whiteColor];
+            
+            
+            
+        } nightMode:^(UIView *view) {
+            RunViewCell *cell = (RunViewCell *)view;
+            cell.backgroundColor = [UIColor blackColor];
+            cell.contentView.backgroundColor = [UIColor blackColor];
+            
+        }];
+        
+        
+    }
+    return self;
+}
+
 
 
 - (void)setBook:(bookDetail *)book {

@@ -69,11 +69,11 @@
 
 - (void)initLayout {
     
-    //    NSDictionary *post = [_dynamic.refTweet objectForKey:@"post"];
-    //
+    
+
     NSString *_id =[_dynamicHot.tweet objectForKey:@"_id"];
     
-    //    NSString *_id = _dynamicDetail._id;
+    
     NSString *URLStr = [NSString stringWithFormat:@"http://api.zhuishushenqi.com/user/twitter/%@?start=0&limit=20",_id ];
     [NetWorkRequestManager requestType:GET urlString:URLStr prama:nil success:^(id data) {
         ;

@@ -13,6 +13,11 @@
 #import "DynamicColumnDetailViewController.h"
 #import "MJRefresh.h"
 #import "Tool.h"
+#import "DynamicManager.h"
+#import "ArchiverHandle.h"
+#import "UserFileHandle.h"
+#import "LoginViewController.h"
+
 
 @interface DynamicColumnViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)UITableView *tableView;
@@ -72,9 +77,9 @@
         NSArray *array = [dict objectForKey:@"timeline"];
         for (NSDictionary *dic in array) {
             NSDictionary *di = [dic objectForKey:@"tweet"];
-            Dynamic *dynamic = [Dynamic new];
-            [dynamic setValuesForKeysWithDictionary:di];
-            [self.dataArray addObject:dynamic];
+            self.dynamic = [Dynamic new];
+            [self.dynamic setValuesForKeysWithDictionary:di];
+            [self.dataArray addObject:self.dynamic];
           
           
         }
@@ -106,11 +111,23 @@
     DynamicCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.dynamic = self.dataArray[indexPath.row];
    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(cell.frame.size.width - 50, 25, 60, 20);
+    [button setTitle:@"转发" forState:UIControlStateNormal];
+    button.tag = indexPath.row;
+    [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+    button.backgroundColor = [UIColor cyanColor];
+    [cell.contentView addSubview: button];
+    
+    BOOL isFav = [[DynamicManager shareDynamicManager]isFavoriteDynamicWith_id:[_dynamic.refTweet objectForKey:@"_id"]];
+    if (isFav) {
+        [button setTitle:@"已转发" forState:UIControlStateNormal];
+    }
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 200;
+    return 230;
 }
 
 
@@ -126,7 +143,43 @@
 
    }
 
+- (void)buttonClick:(UIButton *)sender {
+    
+    if ([UserFileHandle selectUserInfo].isLogin) {
+        [self favAvactionDynamic:sender];
+    }
+    else {
+        //跳转登录页面
+        // 如果没有登录, 点击弹出登录界面
+        LoginViewController *loginVC = [[LoginViewController alloc] init];
+        // 模态登录界面
+        [self.navigationController pushViewController:loginVC animated:YES];
 
+    }
+
+}
+
+- (void)favAvactionDynamic:(UIButton *)sender {
+    //先判断是不是登录
+    Dynamic *dynamic = self.dataArray[sender.tag];
+    BOOL isFav = [[DynamicManager shareDynamicManager]isFavoriteDynamicWith_id:dynamic._id];
+    NSLog(@"----------%@",dynamic);
+    
+    if (isFav) {
+        //取消收藏
+        [[DynamicManager shareDynamicManager]deleteDynamic:dynamic];
+       sender.titleLabel.text = @"转发";
+        sender.backgroundColor = [UIColor redColor];
+        NSLog(@"取消转发");
+        return;
+    }
+    
+    [[DynamicManager shareDynamicManager]insertNewDynamic:dynamic];
+    sender.titleLabel.text = @"取消收藏";
+    sender.backgroundColor = [UIColor brownColor];
+    NSLog(@"收藏成功");
+    
+}
 /*
 #pragma mark - Navigation
 

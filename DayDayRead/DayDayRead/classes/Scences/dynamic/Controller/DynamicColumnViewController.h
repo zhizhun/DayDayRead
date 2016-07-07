@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Dynamic.h"
 @interface DynamicColumnViewController : UIViewController
-
+@property (nonatomic,strong)Dynamic *dynamic;
 @end

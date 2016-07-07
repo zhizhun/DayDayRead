@@ -93,7 +93,7 @@ static int temp =0;
     
     [backView addSubview:self.titleLabl];
     [self.titleLabl mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.nameLabel.mas_bottom).offset(kSpace);
+        make.top.equalTo(self.nameLabel.mas_bottom).offset(kSpace*3);
         make.left.equalTo(self.avatarImageView.mas_right).offset(kSpace);
         make.right.equalTo(backView).offset(-kSpace);
 

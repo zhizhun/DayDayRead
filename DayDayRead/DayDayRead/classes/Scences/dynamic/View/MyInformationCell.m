@@ -43,9 +43,9 @@
     self.contentLabel = [[UILabel alloc] init];
     
     _contentLabel.textAlignment = NSTextAlignmentLeft;
-   
+    
     [backView addSubview:_contentLabel];
-   
+    
     [_contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(backView).offset(0);
         make.left.equalTo(backView).offset(10);
@@ -59,7 +59,7 @@
     [backView addSubview:self.imageView1];
     
     [self.imageView1 mas_makeConstraints:^(MASConstraintMaker *make) {
-       
+        
         make.top.equalTo(backView).offset(0);
         make.right.equalTo(backView).offset(-50);
         
@@ -76,9 +76,9 @@
         make.right.equalTo(backView).offset(-50);
         
         make.height.mas_equalTo(30);
-       
+        
     }];
-
+    
 }
 
 @end

@@ -10,4 +10,6 @@
 
 @interface NickNameViewController : UIViewController
 
+
+@property (nonatomic,strong)void (^block)(NSString *);
 @end

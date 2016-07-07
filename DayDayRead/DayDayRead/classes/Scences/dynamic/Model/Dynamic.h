@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Dynamic : NSObject
-@property (nonatomic, strong)NSArray *timeline;
+@interface Dynamic : NSObject<NSCoding>
+@property (nonatomic, strong)NSString *_id;
 @property (nonatomic, strong)NSDictionary *tweet;
 //包含 title  content commented retweeted created
 //包含avatar  nickname lv
@@ -24,4 +24,7 @@
 @property (nonatomic, strong)NSString *created;
 //现在的时间
 @property (nonatomic, strong)NSString *hotAt;
+
+//是否收藏
+@property (nonatomic, assign) BOOL isFavorite;
 @end

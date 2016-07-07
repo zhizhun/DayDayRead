@@ -17,6 +17,7 @@
 #import "Tool.h"
 
 
+
 @interface DynamicColumnDetailViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 
@@ -69,11 +70,11 @@
 
 - (void)initLayout {
     
-//    NSDictionary *post = [_dynamic.refTweet objectForKey:@"post"];
-//   
+
+ 
     NSString *_id =[_dynamic.refTweet objectForKey:@"_id"];
     
-//    NSString *_id = _dynamicDetail._id;
+
     NSString *URLStr = [NSString stringWithFormat:@"http://api.zhuishushenqi.com/user/twitter/%@?start=0&limit=20",_id ];
     [NetWorkRequestManager requestType:GET urlString:URLStr prama:nil success:^(id data) {
         ;
@@ -99,9 +100,7 @@
    }
 - (void)requestData {
     
-//    NSDictionary *post = [_dynamic.refTweet objectForKey:@"post"];
-//   http://api.zhuishushenqi.com/user/twitter/5778bdd7ef14ca970991e5cf?start=0&limit=20
-//        NSString *_id = [post objectForKey:@"_id"];
+
    NSString *_id =[_dynamic.refTweet objectForKey:@"_id"];
         NSString *urlStr1 =[NSString stringWithFormat: @"http://api.zhuishushenqi.com/user/twitter/%@/comments?start=0&limit=20",_id];
         NSString *urlStr = [NSString stringWithFormat:urlStr1,_flag];
@@ -166,7 +165,7 @@
         CGFloat height3 = [Tool calculateTextHeightWithMovie:[dynamicDetail.tweet objectForKey:@"title"] LabelWidth:self.view.frame.size.width-70 font:13.0];
          CGFloat height4 = [Tool calculateTextHeightWithMovie:[dynamicDetail.tweet objectForKey:@"content"] LabelWidth:self.view.frame.size.width-70 font:13.0];
         
-        return 600+height1+height2+height3+height4;
+        return 800+height1+height2+height3+height4;
         
     }
     

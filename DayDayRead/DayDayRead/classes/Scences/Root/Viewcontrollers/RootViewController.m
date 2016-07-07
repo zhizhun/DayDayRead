@@ -24,6 +24,7 @@
 #import "BookReadManager.h"
 #import <UIImageView+WebCache.h>
 #import "BeforeReadViewController.h"
+#import "JXLDayAndNightMode.h"
 #define kWith self.view.frame.size.width
 #define kHeight 50
 #define kSHeight self.view.frame.size.height
@@ -88,9 +89,18 @@ int isNum = 1;
     [self setNavandStatus];
     //布局视图
     [self initViews];
+    [_runTableView jxl_setDayMode:^(UIView *view) {
+        
+        view.backgroundColor = [UIColor whiteColor];
+    } nightMode:^(UIView *view) {
+        
+        view.backgroundColor = [UIColor blackColor];
+        
+    }];
+    
     //注册cell
     [_runTableView registerNib:[UINib nibWithNibName:@"RunViewCell" bundle:nil] forCellReuseIdentifier:@"run"];
-
+    
     
     //下拉刷新
     [self downRefresh];
@@ -150,6 +160,20 @@ int isNum = 1;
     [_runButton setTitle:@"追书" forState:UIControlStateNormal];
     [_runButton setTintColor:[UIColor grayColor]];
     [_runButton setBackgroundColor:[UIColor whiteColor]];
+    [_runButton jxl_setDayMode:^(UIView *view) {
+        
+        UIButton *setButton = (UIButton *)view;
+        setButton.backgroundColor = [UIColor whiteColor];
+        [setButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        
+    } nightMode:^(UIView *view) {
+        
+        UIButton *setButton = (UIButton *)view;
+        setButton.backgroundColor = [UIColor blackColor];
+        [setButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        
+    }];
+    
     [_runButton addTarget:self action:@selector(runAction:) forControlEvents:UIControlEventTouchUpInside];
     UILabel *labelone = [[UILabel alloc] initWithFrame:CGRectMake(kWith/3, kHeight/3, 1, kHeight/3)];
     labelone.backgroundColor = [UIColor grayColor];
@@ -161,6 +185,20 @@ int isNum = 1;
     [_comunityButton setTitle:@"社区" forState:UIControlStateNormal];
     [_comunityButton setTintColor:[UIColor grayColor]];
     [_comunityButton setBackgroundColor:[UIColor whiteColor]];
+    [_comunityButton jxl_setDayMode:^(UIView *view) {
+        
+        UIButton *setButton = (UIButton *)view;
+        setButton.backgroundColor = [UIColor whiteColor];
+        [setButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        
+    } nightMode:^(UIView *view) {
+        
+        UIButton *setButton = (UIButton *)view;
+        setButton.backgroundColor = [UIColor blackColor];
+        [setButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        
+    }];
+    
     [_comunityButton addTarget:self action:@selector(comunityAction:) forControlEvents:UIControlEventTouchUpInside];
     UILabel *labeltwo = [[UILabel alloc] initWithFrame:CGRectMake(kWith/3*2, kHeight/3, 1, kHeight/3)];
     labeltwo.backgroundColor = [UIColor grayColor];
@@ -172,6 +210,20 @@ int isNum = 1;
     [_findButton setTitle:@"发现" forState:UIControlStateNormal];
     [_findButton setTintColor:[UIColor grayColor]];
     [_findButton setBackgroundColor:[UIColor whiteColor]];
+    [_findButton jxl_setDayMode:^(UIView *view) {
+        
+        UIButton *setButton = (UIButton *)view;
+        setButton.backgroundColor = [UIColor whiteColor];
+        [setButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        
+    } nightMode:^(UIView *view) {
+        
+        UIButton *setButton = (UIButton *)view;
+        setButton.backgroundColor = [UIColor blackColor];
+        [setButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        
+    }];
+    
     [_findButton addTarget:self action:@selector(findAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_findButton];
     
@@ -187,6 +239,15 @@ int isNum = 1;
     _runTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kHeight+1, kWith, kTHeight) style:UITableViewStylePlain];
     _runTableView.delegate = self;
     _runTableView.dataSource = self;
+    [_runTableView jxl_setDayMode:^(UIView *view) {
+        
+        view.backgroundColor = [UIColor whiteColor];
+    } nightMode:^(UIView *view) {
+        
+        view.backgroundColor = [UIColor blackColor];
+        
+    }];
+    
     [self.view addSubview:_runTableView];
 }
 //追书按钮点击事件
@@ -201,6 +262,14 @@ int isNum = 1;
         _runTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kHeight+1, kWith, kTHeight+64) style:UITableViewStylePlain];
         _runTableView.delegate = self;
         _runTableView.dataSource = self;
+        [_runTableView jxl_setDayMode:^(UIView *view) {
+            
+            view.backgroundColor = [UIColor whiteColor];
+        } nightMode:^(UIView *view) {
+            
+            view.backgroundColor = [UIColor blackColor];
+            
+        }];
         [self.view addSubview:_runTableView];
         [_runTableView registerNib:[UINib nibWithNibName:@"RunViewCell" bundle:nil] forCellReuseIdentifier:@"run"];
     }
@@ -220,6 +289,14 @@ int isNum = 1;
         _comunityTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kHeight+1, kWith, kTHeight + 64) style:UITableViewStylePlain];
         _comunityTableView.delegate = self;
         _comunityTableView.dataSource = self;
+        [_comunityTableView jxl_setDayMode:^(UIView *view) {
+            
+            view.backgroundColor = [UIColor whiteColor];
+        } nightMode:^(UIView *view) {
+            
+            view.backgroundColor = [UIColor blackColor];
+            
+        }];
         [self.view addSubview:_comunityTableView];
         //[_comunityTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"comunity"];
         [_comunityTableView registerNib:[UINib nibWithNibName:@"ComunityViewCell" bundle:nil] forCellReuseIdentifier:@"comunity"];
@@ -239,6 +316,14 @@ int isNum = 1;
         _findTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kHeight+1, kWith, kTHeight + 64) style:UITableViewStylePlain];
         _findTableView.delegate = self;
         _findTableView.dataSource = self;
+        [_findTableView jxl_setDayMode:^(UIView *view) {
+            
+            view.backgroundColor = [UIColor whiteColor];
+        } nightMode:^(UIView *view) {
+            
+            view.backgroundColor = [UIColor blackColor];
+            
+        }];
         [self.view addSubview:_findTableView];
         [_findTableView registerNib:[UINib nibWithNibName:@"ComunityViewCell" bundle:nil] forCellReuseIdentifier:@"find"];
     }
@@ -264,9 +349,9 @@ int isNum = 1;
             return 3;
         }
         //if (section == 2) {
-//            return 3;
-//        }
-            }
+        //            return 3;
+        //        }
+    }
     if (isNum == 3) {
         return 6;
     }
@@ -277,16 +362,16 @@ int isNum = 1;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (isNum == 1) {
-       
+        
+        
+        if (self.bookDetails.count == 0) {
             
-            if (self.bookDetails.count == 0) {
-                
-                RunViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"run" forIndexPath:indexPath];
+            RunViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"run" forIndexPath:indexPath];
 #warning 此处添加代码
-                
-                cell.bookTitleLabel.text = @"请加入书籍";
-                return cell;
-            }
+            
+            cell.bookTitleLabel.text = @"请加入书籍";
+            return cell;
+        }
         
         RunViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"run" forIndexPath:indexPath];
 #warning 此处添加代码
@@ -309,18 +394,18 @@ int isNum = 1;
             return cell;
         }
     }
-//        if (indexPath.section == 2) {
-//            //我关注的
-//        }
-        
-
+    //        if (indexPath.section == 2) {
+    //            //我关注的
+    //        }
+    
+    
     //}
-//    if (isNum == 2) {
-//        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"comunity" forIndexPath:indexPath];
-//        cell.textLabel.text = @"社区";
-//        return cell;
-//
-//    }
+    //    if (isNum == 2) {
+    //        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"comunity" forIndexPath:indexPath];
+    //        cell.textLabel.text = @"社区";
+    //        return cell;
+    //
+    //    }
     
     ComunityViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"find" forIndexPath:indexPath];
     cell.myImageView.image = [UIImage imageNamed:self.findArray[indexPath.row][1]];
@@ -331,9 +416,9 @@ int isNum = 1;
     if (section == 1) {
         return @"公共社区";
     }
-//    if (section == 2) {
-//        return @"我的社区";
-//    }
+    //    if (section == 2) {
+    //        return @"我的社区";
+    //    }
     return @"";
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -344,7 +429,7 @@ int isNum = 1;
     if (isNum == 2) {
         if (indexPath.section == 0) {
             [self.navigationController pushViewController:[[DynamicViewController alloc] init] animated:YES];
-
+            
         }
         if (indexPath.section == 1 && indexPath.row == 1) {
             [self.navigationController pushViewController:[[ReViewController alloc] init] animated:YES];
@@ -374,13 +459,17 @@ int isNum = 1;
             [self.navigationController pushViewController:[[ComicViewController alloc] init] animated:YES];
         }
     }
-    if (self.bookDetails.count == 0) {
+    if (isNum == 1) {
         
-    } else {
-    BeforeReadViewController *readVC = [[BeforeReadViewController alloc] init];
-    bookDetail *book = self.bookDetails[indexPath.row];
-    readVC._id = book._id;
-    [self.navigationController pushViewController:readVC animated:YES];
+        
+        if (self.bookDetails.count == 0) {
+            
+        } else {
+            BeforeReadViewController *readVC = [[BeforeReadViewController alloc] init];
+            bookDetail *book = self.bookDetails[indexPath.row];
+            readVC._id = book._id;
+            [self.navigationController pushViewController:readVC animated:YES];
+        }
     }
 }
 

@@ -15,8 +15,8 @@
 #import "NetWorkRequestManager.h"
 #import "Tool.h"
 #import "MJRefresh.h"
-#import <UMSocial.h>
-@interface DetailViewController ()<UITableViewDataSource,UITableViewDelegate, UMSocialUIDelegate>
+
+@interface DetailViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *nameImageView;
 @property (weak, nonatomic) IBOutlet UILabel *lvLabel;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -108,28 +108,28 @@ static int num = 0;
     
    
     
-    NSString *avatar = [_book.author objectForKey:@"avatar"];
-    NSString *url = [NSString stringWithFormat:@"%@%@",B00K_ROOT,avatar];
-    [[UMSocialData defaultData].urlResource setResourceType:UMSocialUrlResourceTypeImage url:url];
-    [UMSocialData defaultData].extConfig.title = _book.title;
-    [UMSocialData defaultData].extConfig.qqData.url = @"http://baidu.com";
-    [UMSocialSnsService presentSnsIconSheetView:self
-                                         appKey:@"507fcab25270157b37000010"
-                                      shareText:nil
-                                     shareImage:[UIImage imageNamed:@"book"]
-                                shareToSnsNames:@[UMShareToWechatSession,UMShareToWechatTimeline,UMShareToSina,UMShareToQQ,UMShareToQzone]
-                                       delegate:self];
+//    NSString *avatar = [_book.author objectForKey:@"avatar"];
+//    NSString *url = [NSString stringWithFormat:@"%@%@",B00K_ROOT,avatar];
+//    [[UMSocialData defaultData].urlResource setResourceType:UMSocialUrlResourceTypeImage url:url];
+//    [UMSocialData defaultData].extConfig.title = _book.title;
+//    [UMSocialData defaultData].extConfig.qqData.url = @"http://baidu.com";
+//    [UMSocialSnsService presentSnsIconSheetView:self
+//                                         appKey:@"507fcab25270157b37000010"
+//                                      shareText:nil
+//                                     shareImage:[UIImage imageNamed:@"book"]
+//                                shareToSnsNames:@[UMShareToWechatSession,UMShareToWechatTimeline,UMShareToSina,UMShareToQQ,UMShareToQzone]
+//                                       delegate:self];
 }
 
--(void)didFinishGetUMSocialDataInViewController:(UMSocialResponseEntity *)response
-{
-    //根据`responseCode`得到发送结果,如果分享成功
-    if(response.responseCode == UMSResponseCodeSuccess)
-    {
-        //得到分享到的平台名
-        NSLog(@"share to sns name is %@",[[response.data allKeys] objectAtIndex:0]);
-    }
-}
+//-(void)didFinishGetUMSocialDataInViewController:(UMSocialResponseEntity *)response
+//{
+//    //根据`responseCode`得到发送结果,如果分享成功
+//    if(response.responseCode == UMSResponseCodeSuccess)
+//    {
+//        //得到分享到的平台名
+//        NSLog(@"share to sns name is %@",[[response.data allKeys] objectAtIndex:0]);
+//    }
+//}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;

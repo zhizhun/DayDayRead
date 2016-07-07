@@ -9,6 +9,8 @@
 #import "SetViewController.h"
 #import "SetCell.h"
 #import "RESideMenu.h"
+#import "JXLDayAndNightMode.h"
+
 
 @interface SetViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)UITableView *tableView;
@@ -37,6 +39,17 @@
     self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:(UITableViewStyleGrouped)];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
+    
+    [_tableView jxl_setDayMode:^(UIView *view) {
+        
+        view.backgroundColor = [UIColor whiteColor];
+    } nightMode:^(UIView *view) {
+        
+        view.backgroundColor = [UIColor blackColor];
+        
+    }];
+
     [self.view addSubview:self.tableView];
     //注册cell
     [self.tableView registerClass:[SetCell class] forCellReuseIdentifier:@"cell"];
@@ -78,10 +91,27 @@
         }
         if (indexPath.row == 2) {
             cell.leftLabel.text = @"省流量模式 (无头像)";
+            
+            UISwitch *sw = [[UISwitch alloc] init];
+            [sw addTarget: self action: @selector(imageViewChanged:) forControlEvents: UIControlEventValueChanged];
+            sw.frame = CGRectMake(0, 0, 80, 40);
+              cell.accessoryView = sw;
+
+            [cell.contentView addSubview: sw];
+
           
         }
         if (indexPath.row == 3) {
             cell.leftLabel.text = @"夜间模式";
+            
+        UISwitch *switchView = [[UISwitch alloc] initWithFrame:CGRectMake(0, 0, 80, 40)];
+            if (JXLDayAndNightModeDay == [[JXLDayAndNightManager shareManager] contentMode]) {
+                switchView.on = NO;
+            } else {
+                switchView.on = YES;
+            }
+          cell.accessoryView = switchView;
+            [switchView addTarget:self action:@selector(switchValueChange:) forControlEvents:UIControlEventValueChanged];
             
         }
         
@@ -89,7 +119,7 @@
     if (indexPath.section == 2) {
         if (indexPath.row == 0) {
             cell.leftLabel.text = @"清理网络缓存";
-            cell.rightLabel.text = @"33MB";
+            cell.rightLabel.text = @"0MB";
         }
         if (indexPath.row == 1) {
             cell.leftLabel.text = @"书籍缓存管理";
@@ -125,17 +155,7 @@
     return 30;
 }
 
-//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-//    if (section == 0) {
-//        UILabel *contentLabel = [[UILabel alloc] init];
-//        contentLabel.backgroundColor = [UIColor cyanColor];
-//        contentLabel.text = @"11";
-//        [self.view addSubview:contentLabel];
-//        return contentLabel;
-//    }
-//    
-//    return nil;
-//}
+
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     if (section == 0) {
         
@@ -149,6 +169,98 @@
        return @"关于我们 V2.25.0";
     }
     return nil;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath  {
+    if (indexPath.section == 1) {
+        switch (indexPath.row) {
+            case 0:
+                
+                break;
+            case 1:
+                
+                break;
+            case 2:{
+                
+                
+                break;
+            }
+            case 3:
+                
+                break;
+                
+            default:
+                break;
+        }
+    }
+    if (indexPath.section == 2) {
+        switch (indexPath.row) {
+            case 0:{
+                [self clearAllCache];
+                break;
+            }
+            case 1:{
+            }
+                break;
+              
+            case 2:{
+                UIAlertController *alertView= [UIAlertController alertControllerWithTitle:@"免责声明" message:nil preferredStyle:UIAlertControllerStyleAlert];
+               alertView.message = @"天天追书提醒您：在使用天天追书前，请您务必自诩阅读并透彻理解本声明。您可以选择不使用天天追书，但如果还有，您的使用行为将视为对本声明全部内容的认可 天天追书是一款提供网络小说即时更新的工具，为广大小说爱好者提供一种方便、快捷、舒适的试读体验。天天煮熟致力于最大程度的减少网络小说与读者在自行搜寻过程中毫无意义的时间浪费，通过专业搜索展示不同网站中网络小说的最新章节。天天追书为广大小说爱好者提供方便、跨界、舒适体验的同时，也使优秀网络小说得以更迅捷、更广泛的传播，从而达到了在一定程度促进网络文学充分繁荣发展之目的。";
+
+                                UIAlertAction *action2 =[UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    
+                }];
+
+                [alertView addAction:action2];
+                [self presentViewController:alertView animated:YES completion:nil];
+              
+                break;
+            }
+            case 3:{
+                
+                break;
+            }
+            case 4:{
+                
+                break;
+            }
+            case 5:{
+                
+                break;
+            }
+
+                default:
+                break;
+        }
+
+    }
+}
+
+//夜间模式
+- (void)switchValueChange:(UISwitch *)switchView {
+    if (switchView.on) {
+        
+        [[JXLDayAndNightManager shareManager] nightMode];
+    } else {
+        [[JXLDayAndNightManager shareManager] dayMode];
+    }
+}
+
+
+#pragma mark - 自定义方法
+#pragma mark 清理缓存
+- (void)clearAllCache
+{
+#warning 清除缓存，真正执行的代理，放在了alerView的代理方法中
+    // 弹框警告
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"确定清理缓存吗？" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    [alertView show];
+}
+#pragma mark - UIAlertViewDelegate Method
+#pragma mark 处理alertView的点击
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    
 }
 
 

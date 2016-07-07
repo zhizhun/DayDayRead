@@ -33,8 +33,7 @@
     NSString *nickname = [dynamicDetail.user objectForKey:@"nickname"];
     NSString *lv = [dynamicDetail.user objectForKey:@"lv"];
     self.nickNameLabel.text = [NSString stringWithFormat:@"%@%@%@",nickname,@" Lv.",lv];
-//
-//  
+ 
     self.titleLabel.text =  [dynamicDetail.tweet objectForKey:@"title"];
    
     self.contentLabel.text = [dynamicDetail.tweet objectForKey:@"content"];
