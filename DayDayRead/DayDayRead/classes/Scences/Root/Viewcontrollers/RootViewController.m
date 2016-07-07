@@ -80,7 +80,13 @@ int isNum = 1;
     }
     return _findArray;
 }
-
+- (void)viewWillAppear:(BOOL)animated{
+    //注册cell
+    [_runTableView registerNib:[UINib nibWithNibName:@"RunViewCell" bundle:nil] forCellReuseIdentifier:@"run"];
+    
+    self.bookDetails = [[BookReadManager shareBookReadManager] selectAllBooks];
+    [self.runTableView reloadData];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -101,20 +107,12 @@ int isNum = 1;
     //注册cell
     [_runTableView registerNib:[UINib nibWithNibName:@"RunViewCell" bundle:nil] forCellReuseIdentifier:@"run"];
     
-    
     //下拉刷新
     [self downRefresh];
     
     
 }
 
-#warning 此处添加代码
-- (void)viewWillAppear:(BOOL)animated {
-    
-    self.bookDetails = [[BookReadManager shareBookReadManager] selectAllBooks];
-    [self.runTableView reloadData];
-    
-}
 
 - (void)downRefresh{
     _runTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
@@ -362,8 +360,6 @@ int isNum = 1;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (isNum == 1) {
-        
-        
         if (self.bookDetails.count == 0) {
             
             RunViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"run" forIndexPath:indexPath];
