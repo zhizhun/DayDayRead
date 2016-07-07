@@ -80,7 +80,10 @@ int isNum = 1;
     }
     return _findArray;
 }
-
+- (void)viewWillAppear:(BOOL)animated{
+    //注册cell
+    [_runTableView registerNib:[UINib nibWithNibName:@"RunViewCell" bundle:nil] forCellReuseIdentifier:@"run"];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

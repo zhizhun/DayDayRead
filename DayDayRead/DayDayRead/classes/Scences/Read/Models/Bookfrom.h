@@ -17,6 +17,7 @@
 @property (nonatomic,copy)NSString *source;
 //来源名称
 @property (nonatomic,copy)NSString *name;
-
+@property (nonatomic,strong)NSNumber *chaptersCount;
+@property (nonatomic,copy)NSString *host;
 
 @end
