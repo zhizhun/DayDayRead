@@ -25,7 +25,7 @@
 
       
         NSInteger stri =_commonModel.latelyFollower;
-        self.latelyFollowerLabel.text = [NSString stringWithFormat:@"%ld%@",(long)stri,@" 人在追   |"];
+        self.latelyFollowerLabel.text = [NSString stringWithFormat:@"%0.2ld%@",(long)stri,@" 人在追   |"];
        
 
         
@@ -34,6 +34,9 @@
        
 
         NSString *str = _commonModel.cover;
+        if (_commonModel.cover.length != 0) {
+            
+       
         NSRange range = [str rangeOfString: @"cover"];
         if (range.location != NSNotFound) {
             NSString *addressStr = @"http://statics.zhuishushenqi.com";
@@ -45,6 +48,7 @@
             NSString *str1 = [ _commonModel.cover substringFromIndex:7];
   [self.bookImageView sd_setImageWithURL:[NSURL URLWithString:str1] placeholderImage:[UIImage imageNamed:@"1.jpg"]];
             
+        }
         }
     }
     
