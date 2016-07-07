@@ -82,7 +82,7 @@
     NSString *typeStr = @"&type=new&major=";
     NSString *str = [NSString stringWithFormat:@"%@%@%@%@%@",urlString,_textStr,urlStr,typeStr,self.dataStr];
     NSString *encodedString = [str URLEncodedString];
-    
+       
     [NetWorkRequestManager requestType:GET urlString:encodedString prama:nil success:^(id data) {
         __weak typeof(NewBookTableViewController)*newVC = self;
         NSMutableDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];

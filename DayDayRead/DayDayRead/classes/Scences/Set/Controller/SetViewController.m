@@ -93,7 +93,7 @@
             cell.leftLabel.text = @"省流量模式 (无头像)";
             
             UISwitch *sw = [[UISwitch alloc] init];
-            [sw addTarget: self action: @selector(imageViewChanged:) forControlEvents: UIControlEventValueChanged];
+            [sw addTarget: self action: nil forControlEvents: UIControlEventValueChanged];
             sw.frame = CGRectMake(0, 0, 80, 40);
               cell.accessoryView = sw;
 
