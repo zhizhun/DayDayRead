@@ -19,7 +19,7 @@
                 <outlet property="myImageView" destination="vEL-WM-1yj" id="9Gb-YJ-coS"/>
                 <outlet property="myScrollView" destination="xv3-3W-Nkn" id="Dme-5v-rum"/>
                 <outlet property="numLabel" destination="FQC-W6-LYj" id="6kb-cj-SPP"/>
-                <outlet property="runButton" destination="34a-cO-boG" id="Fdl-vM-M3i"/>
+                <outlet property="runButton" destination="34a-cO-boG" id="3ad-8k-why"/>
                 <outlet property="runNumLabel" destination="uv8-Yp-Zyv" id="1V2-Vc-mO6"/>
                 <outlet property="timeLabel" destination="qdK-Uh-rDk" id="ESd-CE-MjP"/>
                 <outlet property="titleLabel" destination="7oA-ng-lOp" id="ws5-nf-839"/>
@@ -89,7 +89,7 @@
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <connections>
-                                        <action selector="didRunUpdate:" destination="-1" eventType="touchUpInside" id="eto-RU-icq"/>
+                                        <action selector="didRunUpdate:" destination="-1" eventType="touchUpInside" id="oNJ-Nm-wH6"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzz-GC-h3f">

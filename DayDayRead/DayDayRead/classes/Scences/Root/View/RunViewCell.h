@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "bookDetail.h"
 @interface RunViewCell : UITableViewCell
+
+@property (weak, nonatomic) IBOutlet UIImageView *bookImageView;
+
+@property (weak, nonatomic) IBOutlet UILabel *bookTitleLabel;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *authorLabel;
+
+
+@property (nonatomic, strong) bookDetail *book;
+
 
 @end

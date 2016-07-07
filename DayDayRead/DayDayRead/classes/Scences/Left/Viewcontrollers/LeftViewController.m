@@ -71,7 +71,11 @@
 }
 - (void)personAction:(UIButton *)sender{
     self.myLabel.frame = CGRectMake(0, 51, 2, kWidth/3+30);
-    [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[[LoginViewController alloc] init]] animated:YES];
+    LoginViewController *loginVC = [[LoginViewController alloc] init];
+    loginVC.block = ^(User *user) {
+        
+    };
+    [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:loginVC ]  animated:YES];
     [self.sideMenuViewController hideMenuViewController];
 }
 

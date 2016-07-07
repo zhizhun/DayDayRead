@@ -20,6 +20,10 @@
 #import "DynamicViewController.h"
 #import "ComprehensiveViewController.h"
 #import "ReViewController.h"
+#import "bookDetail.h"
+#import "BookReadManager.h"
+#import <UIImageView+WebCache.h>
+#import "BeforeReadViewController.h"
 #define kWith self.view.frame.size.width
 #define kHeight 50
 #define kSHeight self.view.frame.size.height
@@ -46,12 +50,17 @@
 //下划线
 @property (nonatomic,strong)UILabel *redLabel;
 
+#warning 此处添加代码
+@property (nonatomic, strong) NSMutableArray *bookDetails;
+
+
 @end
 //显示标识
 int isNum = 1;
 @implementation RootViewController
 
 //懒加载
+
 - (NSMutableArray *)runArray{
     if (!_runArray) {
         _runArray = [NSMutableArray array];
@@ -82,14 +91,31 @@ int isNum = 1;
     [self setNavandStatus];
     //布局视图
     [self initViews];
+    //注册cell
+    [_runTableView registerNib:[UINib nibWithNibName:@"RunViewCell" bundle:nil] forCellReuseIdentifier:@"run"];
+
+    
     //下拉刷新
     [self downRefresh];
     
+    
 }
+
+#warning 此处添加代码
+- (void)viewWillAppear:(BOOL)animated {
+    
+    self.bookDetails = [[BookReadManager shareBookReadManager] selectAllBooks];
+    [self.runTableView reloadData];
+    
+}
+
 - (void)downRefresh{
     _runTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         dispatch_async(dispatch_get_main_queue(), ^{
             //结束刷新
+            
+            self.bookDetails = [[BookReadManager shareBookReadManager] selectAllBooks];
+            [self.runTableView reloadData];
             [_runTableView.mj_header endRefreshing];
         });
     }];
@@ -243,17 +269,32 @@ int isNum = 1;
         //if (section == 2) {
 //            return 3;
 //        }
-        return 10;
-    }
+            }
     if (isNum == 3) {
         return 6;
     }
-    return 20;
+    if (self.bookDetails.count == 0) {
+        return 1;
+    }
+    return self.bookDetails.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (isNum == 1) {
-        RunViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"run" forIndexPath:indexPath];
+       
+            
+            if (self.bookDetails.count == 0) {
+                
+                RunViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"run" forIndexPath:indexPath];
+#warning 此处添加代码
+                
+                cell.bookTitleLabel.text = @"请加入书籍";
+                return cell;
+            }
         
+        RunViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"run" forIndexPath:indexPath];
+#warning 此处添加代码
+        bookDetail *book = self.bookDetails[indexPath.row];
+        cell.book = book;
         return cell;
     }
     if (isNum == 2) {
@@ -335,6 +376,35 @@ int isNum = 1;
         if (indexPath.row == 5) {
             [self.navigationController pushViewController:[[ComicViewController alloc] init] animated:YES];
         }
+    }
+    if (self.bookDetails.count == 0) {
+        
+    } else {
+    BeforeReadViewController *readVC = [[BeforeReadViewController alloc] init];
+    bookDetail *book = self.bookDetails[indexPath.row];
+    readVC._id = book._id;
+    [self.navigationController pushViewController:readVC animated:YES];
+    }
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // 取出对应的元素
+        if (self.bookDetails.count == 0) {
+            
+        }
+        bookDetail *book = self.bookDetails[indexPath.row];
+        [self.bookDetails removeObject:book];
+        [[BookReadManager shareBookReadManager] deleteBook:book];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        
     }
 }
 @end

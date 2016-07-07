@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "bookDetail.h"
 @interface BeforeReadViewController : UIViewController
 
 @property (nonatomic,copy)NSString *_id;
+
+
+
 
 @end

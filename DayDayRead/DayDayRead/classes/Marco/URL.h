@@ -112,6 +112,11 @@
 // 书评区
 #define REVIEW_ALL_URL @"http://api.zhuishushenqi.com/post/review?duration=all&sort=updated&type=all&start=0&limit=20"
 
+//注册URL
 
+#define USER_REGISTER_URL @"http://162.211.125.85/douban/user.php/DRegister"
+//登录URL
+
+#define USER_LOGIN_URL @"http://162.211.125.85/douban/user.php/DLogin"
 
 #endif /* URL_h */

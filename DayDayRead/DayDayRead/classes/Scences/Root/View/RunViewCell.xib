@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,36 +16,42 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-60.png" translatesAutoresizingMaskIntoConstraints="NO" id="b3b-3P-aCX">
-                        <rect key="frame" x="15" y="8" width="45" height="63"/>
+                        <rect key="frame" x="35" y="8" width="45" height="63"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="45" id="ANJ-Wa-Egu"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一天前：第一千九百八十章乱古纪元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xft-rs-s1o">
-                        <rect key="frame" x="68" y="44" width="244" height="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一天前：第一千九百八十章乱古纪元" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xft-rs-s1o">
+                        <rect key="frame" x="151" y="44" width="161" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完美世界" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GG9-56-jzk">
-                        <rect key="frame" x="68" y="15" width="244" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完美世界" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GG9-56-jzk">
+                        <rect key="frame" x="151" y="15" width="161" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="xft-rs-s1o" firstAttribute="top" secondItem="GG9-56-jzk" secondAttribute="bottom" constant="8" id="2GO-bf-dh0"/>
-                    <constraint firstAttribute="trailing" secondItem="xft-rs-s1o" secondAttribute="trailing" constant="8" id="CGO-g9-OSw"/>
-                    <constraint firstItem="xft-rs-s1o" firstAttribute="leading" secondItem="b3b-3P-aCX" secondAttribute="trailing" constant="8" id="FsF-Bu-B5A"/>
+                    <constraint firstItem="xft-rs-s1o" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="5TS-6O-QtD"/>
                     <constraint firstItem="b3b-3P-aCX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="HF8-4a-c3b"/>
+                    <constraint firstItem="GG9-56-jzk" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="I4u-hN-yhW"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="xft-rs-s1o" secondAttribute="bottom" constant="11" id="IiB-w1-9QS"/>
+                    <constraint firstItem="GG9-56-jzk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="Xz3-76-mLH"/>
+                    <constraint firstItem="xft-rs-s1o" firstAttribute="top" secondItem="GG9-56-jzk" secondAttribute="bottom" constant="8" id="fcw-ks-ImF"/>
+                    <constraint firstItem="xft-rs-s1o" firstAttribute="leading" secondItem="b3b-3P-aCX" secondAttribute="trailing" constant="71" id="g4b-6u-c3r"/>
                     <constraint firstAttribute="bottom" secondItem="b3b-3P-aCX" secondAttribute="bottom" constant="8" id="g99-FA-PSW"/>
-                    <constraint firstItem="GG9-56-jzk" firstAttribute="leading" secondItem="b3b-3P-aCX" secondAttribute="trailing" constant="8" id="kL5-Yh-qB7"/>
-                    <constraint firstItem="GG9-56-jzk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="lzZ-85-gL7"/>
-                    <constraint firstAttribute="trailing" secondItem="GG9-56-jzk" secondAttribute="trailing" constant="8" id="sLs-Ug-Bm8"/>
-                    <constraint firstItem="b3b-3P-aCX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="yj1-d1-XUA"/>
+                    <constraint firstItem="GG9-56-jzk" firstAttribute="leading" secondItem="b3b-3P-aCX" secondAttribute="trailing" constant="71" id="kwr-PJ-sqP"/>
+                    <constraint firstItem="b3b-3P-aCX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="35" id="yj1-d1-XUA"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="authorLabel" destination="xft-rs-s1o" id="N0K-mn-7rO"/>
+                <outlet property="bookImageView" destination="b3b-3P-aCX" id="fIS-xr-bvD"/>
+                <outlet property="bookTitleLabel" destination="GG9-56-jzk" id="cax-Se-v5T"/>
+            </connections>
             <point key="canvasLocation" x="340" y="415"/>
         </tableViewCell>
     </objects>
