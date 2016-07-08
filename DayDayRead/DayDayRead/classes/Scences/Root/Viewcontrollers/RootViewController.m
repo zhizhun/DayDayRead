@@ -423,10 +423,7 @@
         cell.book = book;
         return cell;
     }
-    if (isNum == 2) {
-        
-        ComunityViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"comunity" forIndexPath:indexPath];
-         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     if ([Danli shareDanli].num  == 2) {
         
         ComunityViewCell *cell = [self.comunityTableView  dequeueReusableCellWithIdentifier:@"comunity" forIndexPath:indexPath];
