@@ -67,33 +67,30 @@
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zr8-rp-iR2">
-                                    <rect key="frame" x="313" y="361" width="71" height="30"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="30" id="Klr-zB-epY"/>
-                                    </constraints>
-                                    <state key="normal" title="去注册&gt;&gt;"/>
-                                    <connections>
-                                        <action selector="goToRegist:" destination="-1" eventType="touchUpInside" id="2tI-JB-SOd"/>
-                                    </connections>
-                                </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBf-Wg-RiM">
-                                    <rect key="frame" x="30" y="468" width="304" height="28"/>
+                                    <rect key="frame" x="30" y="528" width="304" height="28"/>
                                     <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <state key="normal" title="注销"/>
                                     <connections>
                                         <action selector="logoutAction:" destination="-1" eventType="touchUpInside" id="HB7-o3-3GI"/>
                                     </connections>
                                 </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTB-al-Z1S">
+                                    <rect key="frame" x="30" y="468" width="304" height="30"/>
+                                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" title="注册"/>
+                                    <connections>
+                                        <action selector="goToRegist:" destination="-1" eventType="touchUpInside" id="A23-uU-GTg"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="1Il-8O-j8s" firstAttribute="top" secondItem="ruX-2R-sTD" secondAttribute="bottom" constant="25" id="0OG-7I-8ib"/>
-                                <constraint firstItem="zr8-rp-iR2" firstAttribute="leading" secondItem="ddf-gI-Ust" secondAttribute="leading" constant="313" id="5Fc-9q-RzO"/>
+                                <constraint firstItem="WBf-Wg-RiM" firstAttribute="top" secondItem="eTB-al-Z1S" secondAttribute="bottom" constant="30" id="4dk-tE-rnp"/>
                                 <constraint firstItem="7xt-Rw-PSO" firstAttribute="top" secondItem="ddf-gI-Ust" secondAttribute="top" constant="54" id="6So-nZ-6VG"/>
-                                <constraint firstAttribute="trailing" secondItem="zr8-rp-iR2" secondAttribute="trailing" constant="30" id="B00-iW-TeF"/>
-                                <constraint firstAttribute="bottom" secondItem="WBf-Wg-RiM" secondAttribute="bottom" constant="232" id="Ck7-zW-Ick"/>
-                                <constraint firstItem="zr8-rp-iR2" firstAttribute="top" secondItem="1Il-8O-j8s" secondAttribute="bottom" constant="23" id="CmU-tI-hg5"/>
+                                <constraint firstAttribute="bottom" secondItem="WBf-Wg-RiM" secondAttribute="bottom" constant="172" id="Ck7-zW-Ick"/>
+                                <constraint firstAttribute="trailing" secondItem="eTB-al-Z1S" secondAttribute="trailing" constant="80" id="GFb-CU-Kbx"/>
                                 <constraint firstAttribute="bottom" secondItem="gSZ-zy-HV3" secondAttribute="bottom" constant="290" id="I2l-z7-F3Q"/>
                                 <constraint firstItem="DU7-BF-KQQ" firstAttribute="leading" secondItem="ddf-gI-Ust" secondAttribute="leading" constant="30" id="Ie3-OH-LGi"/>
                                 <constraint firstAttribute="trailing" secondItem="7xt-Rw-PSO" secondAttribute="trailing" constant="126" id="IhR-sJ-XaE"/>
@@ -102,16 +99,17 @@
                                 <constraint firstItem="NRN-0G-BzM" firstAttribute="leading" secondItem="ddf-gI-Ust" secondAttribute="leading" constant="30" id="RAe-Nb-XuR"/>
                                 <constraint firstItem="ruX-2R-sTD" firstAttribute="centerY" secondItem="DU7-BF-KQQ" secondAttribute="centerY" id="Ru7-dH-jhU"/>
                                 <constraint firstItem="gSZ-zy-HV3" firstAttribute="leading" secondItem="ddf-gI-Ust" secondAttribute="leading" constant="30" id="aKE-dp-0BD"/>
-                                <constraint firstItem="gSZ-zy-HV3" firstAttribute="top" secondItem="zr8-rp-iR2" secondAttribute="bottom" constant="17" id="fDf-0h-WQL"/>
                                 <constraint firstItem="ruX-2R-sTD" firstAttribute="top" secondItem="7xt-Rw-PSO" secondAttribute="bottom" constant="49" id="hJi-fE-gZc"/>
+                                <constraint firstItem="eTB-al-Z1S" firstAttribute="top" secondItem="gSZ-zy-HV3" secondAttribute="bottom" constant="30" id="mb2-xZ-xeL"/>
                                 <constraint firstItem="NRN-0G-BzM" firstAttribute="top" secondItem="DU7-BF-KQQ" secondAttribute="bottom" constant="26" id="qUt-XE-XJa"/>
                                 <constraint firstAttribute="trailing" secondItem="1Il-8O-j8s" secondAttribute="trailing" constant="80" id="qd2-hN-hLl"/>
                                 <constraint firstAttribute="trailing" secondItem="WBf-Wg-RiM" secondAttribute="trailing" constant="80" id="rDw-hF-6e1"/>
+                                <constraint firstItem="eTB-al-Z1S" firstAttribute="leading" secondItem="ddf-gI-Ust" secondAttribute="leading" constant="30" id="sCg-xo-EvH"/>
                                 <constraint firstItem="DU7-BF-KQQ" firstAttribute="top" secondItem="ddf-gI-Ust" secondAttribute="top" constant="250" id="sVa-h1-LNK"/>
                                 <constraint firstItem="ruX-2R-sTD" firstAttribute="leading" secondItem="DU7-BF-KQQ" secondAttribute="trailing" constant="20" id="snE-bx-7h6"/>
                                 <constraint firstItem="1Il-8O-j8s" firstAttribute="leading" secondItem="NRN-0G-BzM" secondAttribute="trailing" constant="20" id="uBM-NY-FlF"/>
                                 <constraint firstAttribute="trailing" secondItem="ruX-2R-sTD" secondAttribute="trailing" constant="80" id="udx-KO-jYV"/>
-                                <constraint firstItem="WBf-Wg-RiM" firstAttribute="top" secondItem="gSZ-zy-HV3" secondAttribute="bottom" constant="30" id="uiF-3d-FkC"/>
+                                <constraint firstItem="WBf-Wg-RiM" firstAttribute="top" secondItem="gSZ-zy-HV3" secondAttribute="bottom" constant="90" id="uiF-3d-FkC"/>
                                 <constraint firstItem="WBf-Wg-RiM" firstAttribute="leading" secondItem="ddf-gI-Ust" secondAttribute="leading" constant="30" id="vaP-C7-Pbl"/>
                                 <constraint firstAttribute="trailing" secondItem="gSZ-zy-HV3" secondAttribute="trailing" constant="80" id="wmq-ob-FVh"/>
                             </constraints>
