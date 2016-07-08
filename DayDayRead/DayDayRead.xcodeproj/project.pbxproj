@@ -275,6 +275,7 @@
 		D6C7CFAA1D2F7EE0005B109F /* NaoZhongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C7CFA91D2F7EE0005B109F /* NaoZhongViewController.m */; };
 		D6C7CFAE1D2F7F42005B109F /* 情非得已.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D6C7CFAC1D2F7F42005B109F /* 情非得已.mp3 */; };
 		D6C7CFAF1D2F7F42005B109F /* 林俊杰-背对背拥抱.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D6C7CFAD1D2F7F42005B109F /* 林俊杰-背对背拥抱.mp3 */; };
+		D6C9BF6F1D2E935C000DF76A /* Danli.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C9BF6E1D2E935C000DF76A /* Danli.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -701,6 +702,8 @@
 		D6C7CFA91D2F7EE0005B109F /* NaoZhongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaoZhongViewController.m; sourceTree = "<group>"; };
 		D6C7CFAC1D2F7F42005B109F /* 情非得已.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "情非得已.mp3"; sourceTree = "<group>"; };
 		D6C7CFAD1D2F7F42005B109F /* 林俊杰-背对背拥抱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "林俊杰-背对背拥抱.mp3"; sourceTree = "<group>"; };
+		D6C9BF6D1D2E935C000DF76A /* Danli.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Danli.h; sourceTree = "<group>"; };
+		D6C9BF6E1D2E935C000DF76A /* Danli.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Danli.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1087,6 +1090,8 @@
 				D637ACE61D23B31600BB5900 /* Tool.m */,
 				D67603F51D2A8C930046DB58 /* BookReadManager.h */,
 				D67603F61D2A8C930046DB58 /* BookReadManager.m */,
+				D6C9BF6D1D2E935C000DF76A /* Danli.h */,
+				D6C9BF6E1D2E935C000DF76A /* Danli.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -2283,6 +2288,7 @@
 				D6399A381D23FA680006CD28 /* NSArray+log.m in Sources */,
 				D653CA6B1D217581000E881A /* RESideMenu.m in Sources */,
 				D6AB21881D27C7F8006234EF /* BookDetailModelViewController.m in Sources */,
+				D6C9BF6F1D2E935C000DF76A /* Danli.m in Sources */,
 				D60482701D23FD8000CFA284 /* ThrViewController.m in Sources */,
 				D67603FD1D2AAC8D0046DB58 /* User.m in Sources */,
 				D6B1E44A1D1E7D6D004EAEB1 /* PlayViewController.m in Sources */,
