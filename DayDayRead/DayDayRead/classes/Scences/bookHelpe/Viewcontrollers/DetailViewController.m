@@ -146,8 +146,8 @@ static int num = 0;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     Detail *detail = self.allArray[indexPath.row];
-    CGFloat height = [Tool calculateTextHeightWithMovie:detail.content LabelWidth:self.view.frame.size.width-70 font:15.0];
-    return 65+height;
+    CGFloat height = [Tool calculateTextHeightWithMovie:detail.content LabelWidth:self.view.frame.size.width-70 font:18.0];
+    return 40+height;
 }
 
 - (void)didReceiveMemoryWarning {
