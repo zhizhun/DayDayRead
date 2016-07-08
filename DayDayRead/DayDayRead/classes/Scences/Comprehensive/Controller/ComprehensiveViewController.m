@@ -41,19 +41,20 @@
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-self.navigationController.navigationBar.frame.size.height-[UIApplication sharedApplication].statusBarFrame.size.height) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    _tableView.showsVerticalScrollIndicator = NO;
     
     
     [self.view addSubview:self.tableView];
     
     //注册cell
-//    [self.tableView registerClass:[ComprehensiveCell class] forCellReuseIdentifier:@"cell"];
+
     [self.tableView registerNib:[UINib nibWithNibName:@"ComprehensiveCell" bundle:nil] forCellReuseIdentifier:@"aa"];
     
 }
 - (void)downRefresh {
     _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.index = 0;
+            
             [self requestData];
             //结束刷新
             [_tableView.mj_header endRefreshing];
@@ -85,13 +86,14 @@
             
         }
         dispatch_async(dispatch_get_main_queue(), ^{
+           
             [self.tableView reloadData];
             
         });
     } fail:^(NSError *error) {
         NSLog(@"%@",error);
     }];
-    _index+=20;
+    
 
     
 }

@@ -368,6 +368,7 @@ int isNum = 1;
         if (self.bookDetails.count == 0) {
             
             RunViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"run" forIndexPath:indexPath];
+             cell.selectionStyle = UITableViewCellSelectionStyleNone;
 #warning 此处添加代码
             
             cell.bookTitleLabel.text = @"请加入书籍";
@@ -383,6 +384,7 @@ int isNum = 1;
     if (isNum == 2) {
         
         ComunityViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"comunity" forIndexPath:indexPath];
+         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
         if (indexPath.section == 0) {
             cell.myImageView.image = [UIImage imageNamed:self.comunityArray[0][1]];
@@ -409,6 +411,7 @@ int isNum = 1;
     //    }
     
     ComunityViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"find" forIndexPath:indexPath];
+     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.myImageView.image = [UIImage imageNamed:self.findArray[indexPath.row][1]];
     cell.nameLabel.text = self.findArray[indexPath.row][0];
     return cell;

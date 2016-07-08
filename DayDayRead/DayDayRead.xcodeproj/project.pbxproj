@@ -272,6 +272,9 @@
 		D6C784871D26B6A800421069 /* rsm_icon_2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C784851D26B6A800421069 /* rsm_icon_2@3x.png */; };
 		D6C7848A1D26B6D900421069 /* userCenter_rate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C784881D26B6D900421069 /* userCenter_rate@2x.png */; };
 		D6C7848B1D26B6D900421069 /* userCenter_rate@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C784891D26B6D900421069 /* userCenter_rate@3x.png */; };
+		D6C7CFAA1D2F7EE0005B109F /* NaoZhongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C7CFA91D2F7EE0005B109F /* NaoZhongViewController.m */; };
+		D6C7CFAE1D2F7F42005B109F /* 情非得已.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D6C7CFAC1D2F7F42005B109F /* 情非得已.mp3 */; };
+		D6C7CFAF1D2F7F42005B109F /* 林俊杰-背对背拥抱.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D6C7CFAD1D2F7F42005B109F /* 林俊杰-背对背拥抱.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -694,6 +697,10 @@
 		D6C784851D26B6A800421069 /* rsm_icon_2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rsm_icon_2@3x.png"; sourceTree = "<group>"; };
 		D6C784881D26B6D900421069 /* userCenter_rate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "userCenter_rate@2x.png"; sourceTree = "<group>"; };
 		D6C784891D26B6D900421069 /* userCenter_rate@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "userCenter_rate@3x.png"; sourceTree = "<group>"; };
+		D6C7CFA81D2F7EE0005B109F /* NaoZhongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaoZhongViewController.h; sourceTree = "<group>"; };
+		D6C7CFA91D2F7EE0005B109F /* NaoZhongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaoZhongViewController.m; sourceTree = "<group>"; };
+		D6C7CFAC1D2F7F42005B109F /* 情非得已.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "情非得已.mp3"; sourceTree = "<group>"; };
+		D6C7CFAD1D2F7F42005B109F /* 林俊杰-背对背拥抱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "林俊杰-背对背拥抱.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -924,6 +931,7 @@
 		D60E33CC1D1CC4D0005CF58F /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				D6C7CFAB1D2F7F42005B109F /* Songs */,
 				D60E33CD1D1CC4D0005CF58F /* icons */,
 				D60E33DF1D1CC4D0005CF58F /* images */,
 			);
@@ -1338,6 +1346,8 @@
 				D6928CA81D2D213E00BA70E5 /* JXLDayAndNightMode */,
 				D6928CAE1D2D213E00BA70E5 /* SetViewController.h */,
 				D6928CAF1D2D213E00BA70E5 /* SetViewController.m */,
+				D6C7CFA81D2F7EE0005B109F /* NaoZhongViewController.h */,
+				D6C7CFA91D2F7EE0005B109F /* NaoZhongViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1906,6 +1916,15 @@
 			path = pictures;
 			sourceTree = "<group>";
 		};
+		D6C7CFAB1D2F7F42005B109F /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				D6C7CFAC1D2F7F42005B109F /* 情非得已.mp3 */,
+				D6C7CFAD1D2F7F42005B109F /* 林俊杰-背对背拥抱.mp3 */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1940,6 +1959,7 @@
 				TargetAttributes = {
 					D60E33571D1CC18B005CF58F = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = F96788RG97;
 					};
 				};
 			};
@@ -2001,6 +2021,7 @@
 				D6C784871D26B6A800421069 /* rsm_icon_2@3x.png in Resources */,
 				D6C7846F1D26B34100421069 /* bd_star_filled@3x.png in Resources */,
 				D6C784711D26B34100421069 /* bd_useful@3x.png in Resources */,
+				D6C7CFAE1D2F7F42005B109F /* 情非得已.mp3 in Resources */,
 				D6C7847B1D26B34100421069 /* zuire@3x.png in Resources */,
 				D6B1E4251D1E35B8004EAEB1 /* rsm_icon_3@2x.png in Resources */,
 				D60E33EE1D1CC4D0005CF58F /* Icon-Small-40@2x.png in Resources */,
@@ -2034,6 +2055,7 @@
 				D68964981D27C87600B8C120 /* DynamicDetailCell.xib in Resources */,
 				D652207B1D27FB4400B94801 /* night_mode@3x.png in Resources */,
 				D6B1E4171D1E1F1E004EAEB1 /* f_ramble_icon@2x.png in Resources */,
+				D6C7CFAF1D2F7F42005B109F /* 林俊杰-背对背拥抱.mp3 in Resources */,
 				D6B1E4211D1E35A7004EAEB1 /* rsm_icon_1@2x.png in Resources */,
 				D6C779DF1D1FCBB500A07CFB /* 1055.png in Resources */,
 				D60E33F01D1CC4D0005CF58F /* Icon-Small-50.png in Resources */,
@@ -2150,6 +2172,7 @@
 				D6B1E4951D1EC512004EAEB1 /* MJRefreshFooter.m in Sources */,
 				D6399A3B1D23FA680006CD28 /* HotTableViewController.m in Sources */,
 				D67603F71D2A8C930046DB58 /* BookReadManager.m in Sources */,
+				D6C7CFAA1D2F7EE0005B109F /* NaoZhongViewController.m in Sources */,
 				D6B1E4571D1EA6A3004EAEB1 /* Comic.m in Sources */,
 				D6B1E49C1D1EC512004EAEB1 /* MJRefreshBackStateFooter.m in Sources */,
 				D6C779E61D1FDB0D00A07CFB /* SearchViewController.m in Sources */,
@@ -2419,7 +2442,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dayday.readbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fea9c478-d582-4a84-920b-03caf1c8241b";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -2430,7 +2453,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wei Yang (F2N9DLANA4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DayDayRead/classes/Marco/PrefixHeader.pch";
@@ -2452,7 +2475,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dayday.readbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fea9c478-d582-4a84-920b-03caf1c8241b";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

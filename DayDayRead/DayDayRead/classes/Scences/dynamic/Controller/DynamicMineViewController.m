@@ -182,10 +182,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     Dynamic *dynamic = self.dataArray[indexPath.row];
     
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(40, 0, [UIScreen mainScreen].bounds.size.width, 40)];
-    titleLabel.numberOfLines = 2;
+    
     [cell.contentView addSubview:titleLabel];
     titleLabel.text = [dynamic.refTweet objectForKey:@"title"];
     

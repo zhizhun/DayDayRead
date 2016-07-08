@@ -10,6 +10,7 @@
 #import "SetCell.h"
 #import "RESideMenu.h"
 #import "JXLDayAndNightMode.h"
+#import "NaoZhongViewController.h"
 
 
 @interface SetViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -86,14 +87,14 @@
             cell.rightLabel.text = @"最近阅读";
         }
         if (indexPath.row == 1) {
-            cell.leftLabel.text = @"书架同步";
+            cell.leftLabel.text = @"防沉迷、娱乐";
             
         }
         if (indexPath.row == 2) {
             cell.leftLabel.text = @"省流量模式 (无头像)";
             
             UISwitch *sw = [[UISwitch alloc] init];
-            [sw addTarget: self action: nil forControlEvents: UIControlEventValueChanged];
+            [sw addTarget: self action: NULL forControlEvents: UIControlEventValueChanged];
             sw.frame = CGRectMake(0, 0, 80, 40);
               cell.accessoryView = sw;
 
@@ -141,7 +142,7 @@
             cell.leftLabel.text = @"请赐予我评分";
             
         }
-        
+               
     }
 
 
@@ -177,9 +178,12 @@
             case 0:
                 
                 break;
-            case 1:
+            case 1:{
+                NaoZhongViewController *naozhong = [[NaoZhongViewController alloc] init];
+                [self.navigationController pushViewController:naozhong animated:YES];
                 
                 break;
+            }
             case 2:{
                 
                 
@@ -205,7 +209,7 @@
               
             case 2:{
                 UIAlertController *alertView= [UIAlertController alertControllerWithTitle:@"免责声明" message:nil preferredStyle:UIAlertControllerStyleAlert];
-               alertView.message = @"天天追书提醒您：在使用天天追书前，请您务必自诩阅读并透彻理解本声明。您可以选择不使用天天追书，但如果还有，您的使用行为将视为对本声明全部内容的认可 天天追书是一款提供网络小说即时更新的工具，为广大小说爱好者提供一种方便、快捷、舒适的试读体验。天天煮熟致力于最大程度的减少网络小说与读者在自行搜寻过程中毫无意义的时间浪费，通过专业搜索展示不同网站中网络小说的最新章节。天天追书为广大小说爱好者提供方便、跨界、舒适体验的同时，也使优秀网络小说得以更迅捷、更广泛的传播，从而达到了在一定程度促进网络文学充分繁荣发展之目的。";
+               alertView.message = @"天天追书提醒您：在使用天天追书前，请您务必仔细阅读并透彻理解本声明。您可以选择不使用天天追书，但如果您使用天天追书，您的使用行为将视为对本声明全部内容的认可。                天天追书是一款提供网络小说即时更新的工具，为广大小说爱好者提供一种方便、快捷、舒适的试读体验。天天追书致力于最大程度的减少网络小说与读者在自行搜寻过程中毫无意义的时间浪费，通过专业搜索展示不同网站中网络小说的最新章节。天天追书为广大小说爱好者提供方便、跨界、舒适体验的同时，也使优秀网络小说得以更迅捷、更广泛的传播，从而达到了在一定程度促进网络文学充分繁荣发展之目的。";
 
                                 UIAlertAction *action2 =[UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                     

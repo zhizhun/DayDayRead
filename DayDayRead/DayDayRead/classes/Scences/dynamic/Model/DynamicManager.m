@@ -52,7 +52,8 @@ static sqlite3 *db = nil;
     if (result == SQLITE_OK) {
         NSLog(@"关闭成功");
     }else{
-        NSLog(@"失败");
+        NSLog(@"关闭失败");
+        NSLog(@"%d",result);
     }
 }
 
@@ -88,8 +89,7 @@ static sqlite3 *db = nil;
         NSString *archiverKey = [NSString stringWithFormat:@"%@%@",kDynamicArchiver, [dynamic.refTweet objectForKey:@"_id"]];
         NSData *data = [[ArchiverHandle shareArchiverHandle]dataOfArchiveObject:dynamic forKey:archiverKey];
             sqlite3_bind_blob(stmt, 5, [data bytes], (int)[data length], NULL);NSLog(@"插入成功");
-            NSLog(@"%@======",imageViewStr);
-            NSLog(@"%@----",dynamic._id);
+           
         sqlite3_step(stmt);
     }else{
         NSLog(@"插入语句错误 %d",result);
@@ -105,33 +105,45 @@ static sqlite3 *db = nil;
     NSString * string = @"delete from DynamicTable where _id = ? and userName = ? ";
     int result = sqlite3_prepare_v2(db, [string UTF8String], -1, &stmt, NULL);
     if (result == SQLITE_OK) {
-        sqlite3_bind_text(stmt, 1, [dynamic._id UTF8String], -1, NULL);
+        sqlite3_bind_text(stmt, 1, [[dynamic.refTweet objectForKey:@"_id"] UTF8String], -1, NULL);
+        sqlite3_bind_text(stmt, 2, [[UserFileHandle selectUserInfo].userName UTF8String], -1, NULL);
         
-        sqlite3_step(stmt);
+        if (sqlite3_step(stmt) == SQLITE_DONE) {
+            NSLog(@"删除成功");
+        } else {
+            NSLog(@"删除失败");
+        }
+    } else {
+        NSLog(@"删除失败 result = %d", result);
     }
     sqlite3_finalize(stmt);
+//    sqlite3_step(stmt);
+    [self closeDM];
 }
 //查询某个
 
 - (Dynamic *)selectDynamicWith_id:(NSString *)_id {
     [self openDM];
     
-    sqlite3_stmt *stmt = nil;
+    static sqlite3_stmt *stmt = nil;
     
     NSString *string = @"select data from DynamicTable where _id = ? and userName = ?";
     int result = sqlite3_prepare_v2(db, [string UTF8String], -1, &stmt, NULL);
     Dynamic *dynamic = nil;
     if (result == SQLITE_OK) {
-        sqlite3_bind_text(stmt, 1, [dynamic._id UTF8String], -1, NULL);
+        sqlite3_bind_text(stmt, 1, [_id UTF8String], -1, NULL);
+        sqlite3_bind_text(stmt, 2, [[UserFileHandle selectUserInfo].userName UTF8String], -1, NULL);
         if (sqlite3_step(stmt) == SQLITE_ROW) {
             NSData * data = [NSData dataWithBytes:sqlite3_column_blob(stmt, 0) length:sqlite3_column_bytes(stmt, 0)];
             NSString *stringKey = [NSString stringWithFormat:@"%@%@",kDynamicArchiver,_id];
 
             dynamic = [[ArchiverHandle shareArchiverHandle] unArchiveObject:data forKey:stringKey];
-            NSLog(@"-=====---");
+           
      }
     }
-    sqlite3_finalize(stmt);
+//    sqlite3_finalize(stmt);
+    sqlite3_step(stmt);
+    [self closeDM];
         return dynamic;
 }
 
