@@ -64,7 +64,7 @@ static BOOL isHidden = YES;
     // Do any additional setup after loading the view from its nib.
     //隐藏导航栏
     self.navigationController.navigationBarHidden = YES;
-    NSLog(@"%@",self._id);
+
     //请求数据
     [self requestData];
 

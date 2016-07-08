@@ -185,9 +185,8 @@
     self.navigationController.navigationBar.barTintColor = [UIColor redColor];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addAction:)];
     UIBarButtonItem *searchItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(searchAction:)];
-    self.navigationItem.rightBarButtonItems = @[rightItem,searchItem];
+    self.navigationItem.rightBarButtonItem = searchItem;
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_menu_icon@2x"] style:UIBarButtonItemStylePlain target:self action:@selector(presentLeftMenuViewController:)];
     self.navigationItem.leftBarButtonItem = leftItem;
 }
@@ -197,10 +196,6 @@
     [self.navigationController pushViewController:searchVC animated:YES];
 }
 
-//添加标签按钮
-- (void)addAction:(UIBarButtonItem *)sender{
-    
-}
 
 //布局视图
 - (void)initViews{
@@ -474,6 +469,9 @@
     return @"";
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if ([Danli shareDanli].num == 1) {
+        return 90;
+    }
     return 80;
 }
 
