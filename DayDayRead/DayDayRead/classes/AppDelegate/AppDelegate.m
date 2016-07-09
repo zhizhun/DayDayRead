@@ -111,6 +111,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    [NSThread sleepForTimeInterval:3.0f];
     RootViewController *rootVC = [[RootViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rootVC];
     LeftViewController *leftVC = [[LeftViewController alloc] init];

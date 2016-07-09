@@ -144,7 +144,7 @@ static sqlite3 *db = nil;
 //    sqlite3_finalize(stmt);
     sqlite3_step(stmt);
     [self closeDM];
-        return dynamic;
+    return dynamic;
 }
 
 //查询所有
@@ -165,7 +165,7 @@ static sqlite3 *db = nil;
             NSString *string = [NSString stringWithFormat:@"%@%@",kDynamicArchiver, _id];
             Dynamic *dynamic = [[ArchiverHandle shareArchiverHandle]unArchiveObject:data forKey:string];
             [results addObject:dynamic];
-            NSLog(@"--------------");
+           
         }
     }
     sqlite3_finalize(stmt);

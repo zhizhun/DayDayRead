@@ -163,21 +163,21 @@
     //先判断是不是登录
     Dynamic *dynamic = self.dataArray[sender.tag];
     BOOL isFav = [[DynamicManager shareDynamicManager]isFavoriteDynamicWith_id:dynamic._id];
-    NSLog(@"----------%@",dynamic);
+    
     
     if (isFav) {
         //取消收藏
         [[DynamicManager shareDynamicManager]deleteDynamic:dynamic];
-       sender.titleLabel.text = @"转发";
+      
         sender.backgroundColor = [UIColor redColor];
-        NSLog(@"取消转发");
+        ;
         return;
     }
     
     [[DynamicManager shareDynamicManager]insertNewDynamic:dynamic];
-    sender.titleLabel.text = @"取消收藏";
+    
     sender.backgroundColor = [UIColor brownColor];
-    NSLog(@"收藏成功");
+   
     
 }
 /*
