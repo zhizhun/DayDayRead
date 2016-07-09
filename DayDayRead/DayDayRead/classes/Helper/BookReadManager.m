@@ -38,7 +38,7 @@ static sqlite3 *db = nil;
 // 打开数据库
 - (void)openBookRead {
     
-    NSLog(@"%@", self.dataDetailPath);
+   
     
     int result = sqlite3_open([self.dataDetailPath UTF8String], &db);
     if (result == SQLITE_OK) {
@@ -165,7 +165,7 @@ static sqlite3 *db = nil;
             NSString *string = [NSString stringWithFormat:@"%@%@", kBookArchiver, Id];
             bookDetail *book = [[ArchiverHandle shareArchiverHandle] unArchiveObject:data forKey:string];
             [results addObject:book];
-            NSLog(@"成功");
+         
             
         }
     }

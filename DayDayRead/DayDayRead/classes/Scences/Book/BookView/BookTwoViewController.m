@@ -80,7 +80,7 @@ static int num = 0;
     if (self.allBookArray) {
         [self.allBookArray removeAllObjects];
     }
-    NSLog(@"=======%@", strAll);
+   
     [NetWorkRequestManager requestType:GET urlString:strAll prama:nil success:^(id data) {
         NSMutableDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
         NSArray *array = dic[@"bookLists"];
@@ -88,7 +88,7 @@ static int num = 0;
             Book *book = [[Book alloc] init];
             [book setValuesForKeysWithDictionary:dict];
             [weakSelf.allBookArray addObject:book];
-            NSLog(@"-+_+)_+_)+%@", weakSelf.allBookArray);
+          
         }
         dispatch_async(dispatch_get_main_queue(), ^{
             [weakSelf.tableView reloadData];
