@@ -53,10 +53,6 @@
     //请求数据
     [self loadData];
     
-    
-    
-   
-    
 }
 
 //追加更新
@@ -86,10 +82,7 @@
         };
         [self.navigationController pushViewController:loginVC animated:YES];
     }
-
-
 }
-
 
 
 - (void)loadData{

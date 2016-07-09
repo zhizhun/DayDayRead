@@ -25,6 +25,7 @@
 #import <UIImageView+WebCache.h>
 #import "BeforeReadViewController.h"
 #import "JXLDayAndNightMode.h"
+#import "Danli.h"
 #define kWith self.view.frame.size.width
 #define kHeight 50
 #define kSHeight self.view.frame.size.height
@@ -56,8 +57,8 @@
 
 
 @end
-//显示标识
-int isNum = 1;
+
+
 @implementation RootViewController
 
 //懒加载
@@ -81,11 +82,12 @@ int isNum = 1;
     return _findArray;
 }
 - (void)viewWillAppear:(BOOL)animated{
-    //注册cell
-    [_runTableView registerNib:[UINib nibWithNibName:@"RunViewCell" bundle:nil] forCellReuseIdentifier:@"run"];
+
     
     self.bookDetails = [[BookReadManager shareBookReadManager] selectAllBooks];
     [self.runTableView reloadData];
+   
+    
 }
 
 - (void)viewDidLoad {
@@ -103,18 +105,64 @@ int isNum = 1;
         view.backgroundColor = [UIColor blackColor];
         
     }];
-    
+    self.comunityArray = @[@[@"动态",@"d_icon@2x"],@[@"综合讨论区",@"f_ramble_icon@2x"],@[@"书评区",@"forum_public_review_icon@2x"],@[@"书荒互助区",@"forum_public_help_icon@2x"]].mutableCopy;
+    self.findArray = @[@[@"排行榜",@"rsm_icon_1@2x"],@[@"主题书单",@"rsm_icon_2@2x"],@[@"分类",@"rsm_icon_3@2x"],@[@"听书专区",@"rsm_icon_4@2x"],@[@"游戏中心",@"rsm_icon_7@2x"],@[@"漫画中心",@"rsm_icon_8@2x"]].mutableCopy;
     //注册cell
-    [_runTableView registerNib:[UINib nibWithNibName:@"RunViewCell" bundle:nil] forCellReuseIdentifier:@"run"];
-    
-    
+    if ([Danli shareDanli].num == 1) {
+        [_runTableView registerNib:[UINib nibWithNibName:@"RunViewCell" bundle:nil] forCellReuseIdentifier:@"run"];
+    }
+    if ([Danli shareDanli].num == 2) {
+        _redLabel.frame = CGRectMake(kWith/3, kHeight, kWith/3, 1);
+        [_runTableView removeFromSuperview];
+        _runTableView = nil;
+        [_findTableView removeFromSuperview];
+        _findTableView = nil;
+        
+        if (!_comunityTableView) {
+            _comunityTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kHeight+1, kWith, kTHeight + 64) style:UITableViewStylePlain];
+            _comunityTableView.delegate = self;
+            _comunityTableView.dataSource = self;
+            [_comunityTableView jxl_setDayMode:^(UIView *view) {
+                
+                view.backgroundColor = [UIColor whiteColor];
+            } nightMode:^(UIView *view) {
+                
+                view.backgroundColor = [UIColor blackColor];
+                
+            }];
+            [self.view addSubview:_comunityTableView];
+            //[_comunityTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"comunity"];
+            [_comunityTableView registerNib:[UINib nibWithNibName:@"ComunityViewCell" bundle:nil] forCellReuseIdentifier:@"comunity"];
+        }
+    }
+    if ([Danli shareDanli].num == 3) {
+        _redLabel.frame = CGRectMake(kWith/3*2, kHeight, kWith/3, 1);
+        [_runTableView removeFromSuperview];
+        _runTableView = nil;
+        [_comunityTableView removeFromSuperview];
+        _comunityTableView = nil;
+        
+        if (!_findTableView) {
+            _findTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kHeight+1, kWith, kTHeight + 64) style:UITableViewStylePlain];
+            _findTableView.delegate = self;
+            _findTableView.dataSource = self;
+            [_findTableView jxl_setDayMode:^(UIView *view) {
+                
+                view.backgroundColor = [UIColor whiteColor];
+            } nightMode:^(UIView *view) {
+                
+                view.backgroundColor = [UIColor blackColor];
+                
+            }];
+            [self.view addSubview:_findTableView];
+            [_findTableView registerNib:[UINib nibWithNibName:@"ComunityViewCell" bundle:nil] forCellReuseIdentifier:@"find"];
+        }
+    }
     //下拉刷新
     [self downRefresh];
     
     
 }
-
-
 
 
 - (void)downRefresh{
@@ -137,9 +185,8 @@ int isNum = 1;
     self.navigationController.navigationBar.barTintColor = [UIColor redColor];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addAction:)];
     UIBarButtonItem *searchItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(searchAction:)];
-    self.navigationItem.rightBarButtonItems = @[rightItem,searchItem];
+    self.navigationItem.rightBarButtonItem = searchItem;
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_menu_icon@2x"] style:UIBarButtonItemStylePlain target:self action:@selector(presentLeftMenuViewController:)];
     self.navigationItem.leftBarButtonItem = leftItem;
 }
@@ -149,10 +196,6 @@ int isNum = 1;
     [self.navigationController pushViewController:searchVC animated:YES];
 }
 
-//添加标签按钮
-- (void)addAction:(UIBarButtonItem *)sender{
-    
-}
 
 //布局视图
 - (void)initViews{
@@ -253,7 +296,7 @@ int isNum = 1;
 }
 //追书按钮点击事件
 - (void)runAction:(UIButton *)sender{
-    isNum = 1;
+    [Danli shareDanli].num = 1;
     [_comunityTableView removeFromSuperview];
     [_findTableView removeFromSuperview];
     _comunityTableView = nil;
@@ -279,13 +322,13 @@ int isNum = 1;
 }
 //社区按钮点击事件
 - (void)comunityAction:(UIButton *)sender{
-    isNum = 2;
+    [Danli shareDanli].num = 2;
     _redLabel.frame = CGRectMake(kWith/3, kHeight, kWith/3, 1);
     [_runTableView removeFromSuperview];
     _runTableView = nil;
     [_findTableView removeFromSuperview];
     _findTableView = nil;
-    self.comunityArray = @[@[@"动态",@"d_icon@2x"],@[@"综合讨论区",@"f_ramble_icon@2x"],@[@"书评区",@"forum_public_review_icon@2x"],@[@"书荒互助区",@"forum_public_help_icon@2x"]].mutableCopy;
+    
     if (!_comunityTableView) {
         _comunityTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kHeight+1, kWith, kTHeight + 64) style:UITableViewStylePlain];
         _comunityTableView.delegate = self;
@@ -306,13 +349,13 @@ int isNum = 1;
 }
 //发现按钮点击事件
 - (void)findAction:(UIButton *)sender{
-    isNum = 3;
+    [Danli shareDanli].num  = 3;
     _redLabel.frame = CGRectMake(kWith/3*2, kHeight, kWith/3, 1);
     [_runTableView removeFromSuperview];
     _runTableView = nil;
     [_comunityTableView removeFromSuperview];
     _comunityTableView = nil;
-    self.findArray = @[@[@"排行榜",@"rsm_icon_1@2x"],@[@"主题书单",@"rsm_icon_2@2x"],@[@"分类",@"rsm_icon_3@2x"],@[@"听书专区",@"rsm_icon_4@2x"],@[@"游戏中心",@"rsm_icon_7@2x"],@[@"漫画中心",@"rsm_icon_8@2x"]].mutableCopy;
+    
     if (!_findTableView) {
         _findTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kHeight+1, kWith, kTHeight + 64) style:UITableViewStylePlain];
         _findTableView.delegate = self;
@@ -336,13 +379,13 @@ int isNum = 1;
 
 #pragma mark - 代理方法
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    if (isNum == 2) {
+    if ([Danli shareDanli].num  == 2) {
         return 2;
     }
     return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if (isNum == 2) {
+    if ([Danli shareDanli].num  == 2) {
         if (section == 0) {
             return 1;
         }
@@ -353,7 +396,7 @@ int isNum = 1;
         //            return 3;
         //        }
     }
-    if (isNum == 3) {
+    if ([Danli shareDanli].num  == 3) {
         return 6;
     }
     if (self.bookDetails.count == 0) {
@@ -362,12 +405,10 @@ int isNum = 1;
     return self.bookDetails.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (isNum == 1) {
-        
-        
+    if ([Danli shareDanli].num  == 1) {
         if (self.bookDetails.count == 0) {
             
-            RunViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"run" forIndexPath:indexPath];
+            RunViewCell *cell = [self.runTableView dequeueReusableCellWithIdentifier:@"run" forIndexPath:indexPath];
 #warning 此处添加代码
             
             cell.bookTitleLabel.text = @"请加入书籍";
@@ -380,10 +421,12 @@ int isNum = 1;
         cell.book = book;
         return cell;
     }
-    if (isNum == 2) {
+    if ([Danli shareDanli].num  == 2) {
         
-        ComunityViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"comunity" forIndexPath:indexPath];
-        
+        ComunityViewCell *cell = [self.comunityTableView  dequeueReusableCellWithIdentifier:@"comunity" forIndexPath:indexPath];
+        if (!cell) {
+            cell = [[ComunityViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"comunity"];
+        }
         if (indexPath.section == 0) {
             cell.myImageView.image = [UIImage imageNamed:self.comunityArray[0][1]];
             cell.nameLabel.text = self.comunityArray[0][0];
@@ -408,7 +451,10 @@ int isNum = 1;
     //
     //    }
     
-    ComunityViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"find" forIndexPath:indexPath];
+    ComunityViewCell *cell = [self.findTableView dequeueReusableCellWithIdentifier:@"find" forIndexPath:indexPath];
+    if (!cell) {
+        cell = [[ComunityViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"find"];
+    }
     cell.myImageView.image = [UIImage imageNamed:self.findArray[indexPath.row][1]];
     cell.nameLabel.text = self.findArray[indexPath.row][0];
     return cell;
@@ -423,11 +469,14 @@ int isNum = 1;
     return @"";
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if ([Danli shareDanli].num == 1) {
+        return 90;
+    }
     return 80;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (isNum == 2) {
+    if ([Danli shareDanli].num  == 2) {
         if (indexPath.section == 0) {
             [self.navigationController pushViewController:[[DynamicViewController alloc] init] animated:YES];
             
@@ -443,7 +492,7 @@ int isNum = 1;
         }
         
     }
-    if (isNum == 3) {
+    if ([Danli shareDanli].num  == 3) {
         if (indexPath.row == 0) {
             [self.navigationController pushViewController:[[ListViewController alloc] init] animated:YES];
         }
@@ -460,7 +509,7 @@ int isNum = 1;
             [self.navigationController pushViewController:[[ComicViewController alloc] init] animated:YES];
         }
     }
-    if (isNum == 1) {
+    if ([Danli shareDanli].num  == 1) {
         
         
         if (self.bookDetails.count == 0) {
@@ -475,8 +524,10 @@ int isNum = 1;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    return YES;
+    if ([Danli shareDanli].num == 1) {
+        return YES;
+    }
+    return NO;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {

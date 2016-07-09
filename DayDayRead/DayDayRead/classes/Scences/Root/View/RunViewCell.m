@@ -41,7 +41,7 @@
     self.authorLabel.text = book.author;
     
     NSString *cover = [book.cover substringFromIndex:7];
-    [self.imageView sd_setImageWithURL:[NSURL URLWithString:cover]];
+    [self.bookImageView sd_setImageWithURL:[NSURL URLWithString:cover]];
 }
 
 - (void)awakeFromNib {
