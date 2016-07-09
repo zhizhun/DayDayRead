@@ -49,6 +49,8 @@ static int num = 0;
 }
 - (void)viewDidLoad {
     
+    self.title = @"书评";
+    
     [super viewDidLoad];
     
     [self initView];
@@ -178,10 +180,10 @@ static int num = 0;
 
 - (void)nextAction {
     
-    BookReviewOne *one = self.dictArray[0];
+    BookReviewHeader *header = self.dictArray[0];
     BeforeReadViewController *beforeVC = [[BeforeReadViewController alloc] init];
-    beforeVC._id = one._id;
-    NSLog(@"-----%@", one._id);
+    beforeVC._id = [header.book objectForKey:@"_id"];
+    
     [self.navigationController pushViewController:beforeVC animated:YES];
     
 }

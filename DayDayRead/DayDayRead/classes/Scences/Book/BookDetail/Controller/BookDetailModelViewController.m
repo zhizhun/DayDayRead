@@ -14,7 +14,7 @@
 #import "NetWorkRequestManager.h"
 #import "Tool.h"
 #import "BeforeReadViewController.h"
-#import "ShareFundationViewController.h"
+
 @interface BookDetailModelViewController ()
 @property (nonatomic, strong) NSMutableArray *allHeader;
 
