@@ -15,7 +15,7 @@
 #import "NetWorkRequestManager.h"
 #import "Tool.h"
 #import "MJRefresh.h"
-#import "ShareFundation.h"
+
 @interface DetailViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *nameImageView;
 @property (weak, nonatomic) IBOutlet UILabel *lvLabel;
@@ -105,14 +105,7 @@ static int num = 0;
 
 //分享
 - (IBAction)didShareAction:(id)sender {
-    
-    NSString *avatar = [_book.author objectForKey:@"avatar"];
-    NSString *url = [NSString stringWithFormat:@"%@%@",B00K_ROOT,avatar];
-    NSString *ti = [_book.author objectForKey:@"nickname"];
-    ShareFundation *share = [[ShareFundation alloc] init];
-    [share shareFundationTitleString:_book.title contentString:ti urlString:url];
-    
-    
+        
     
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{

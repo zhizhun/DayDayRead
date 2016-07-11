@@ -79,7 +79,7 @@
     NSString *typeStr = @"&type=hot&major=";
     NSString *str = [NSString stringWithFormat:@"%@%@%@%@%@",urlString,_textStr,urlStr,typeStr,self.dataStr];
     NSString *encodedString = [str URLEncodedString];
- NSLog(@"%@",encodedString);
+
     [NetWorkRequestManager requestType:GET urlString:encodedString prama:nil success:^(id data) {
         __weak typeof(HotTableViewController)*hotVC = self;
         NSMutableDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];

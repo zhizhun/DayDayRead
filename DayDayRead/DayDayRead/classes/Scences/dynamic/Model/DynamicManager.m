@@ -53,7 +53,7 @@ static sqlite3 *db = nil;
         NSLog(@"关闭成功");
     }else{
         NSLog(@"关闭失败");
-        NSLog(@"%d",result);
+       
     }
 }
 
